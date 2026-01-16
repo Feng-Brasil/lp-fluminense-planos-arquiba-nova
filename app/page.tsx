@@ -1,135 +1,117 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#171717] text-[#ffffff] selection:bg-[#68121f] selection:text-white">
-      {/* HEADER / NAVIGATION */}
-      <nav className="border-b border-[#393939] bg-[#171717]/90 sticky top-0 z-50 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#185347] rounded-full flex items-center justify-center border-2 border-[#68121f]">
-              <span className="font-bold text-xs">FFC</span>
-            </div>
-            <span className="uppercase tracking-tighter text-xl font-bold" style={{ fontFamily: 'Oswald, sans-serif' }}>
-              Sócio Futebol
+    <main className="min-h-screen bg-[#171717] text-[#ffffff] selection:bg-[#68121f] selection:text-white font-sans">
+      {/* HEADER STRIPES */}
+      <div className="w-full">
+        <div className="h-[28px] bg-[#68121f] w-full"></div>
+        <div className="h-[6px] bg-[#ffffff] w-full"></div>
+        <div className="h-[20px] bg-[#185347] w-full"></div>
+      </div>
+
+      {/* HERO SECTION - 100VH */}
+      <section className="relative h-[calc(100vh-54px)] w-full overflow-hidden flex flex-col">
+        {/* BACKGROUND IMAGE WITH OVERLAY */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2000" 
+            alt="Torcida Fluminense" 
+            className="w-full h-full object-cover blur-[2px] grayscale-[0.3]"
+          />
+          <div className="absolute inset-0 bg-black/70 backdrop-brightness-50"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#171717]/40 to-[#171717]"></div>
+        </div>
+
+        {/* TOP NAVIGATION BAR */}
+        <div className="relative z-20 w-full px-4 md:px-8 py-4 flex justify-between items-start max-w-[1440px] mx-auto">
+          {/* LOGO BLOCK */}
+          <div className="flex flex-col items-center bg-[#68121f] p-4 pt-2 min-w-[100px]">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/pt/a/a3/Fluminense_FC_escudo.png" 
+              alt="Fluminense" 
+              className="w-12 h-12 brightness-0 invert mb-2"
+            />
+            <span className="text-white text-xs font-bold tracking-tighter leading-none text-center">
+              SÓCIO<br/>FUTEBOL
             </span>
           </div>
-          <div className="hidden md:flex gap-8 uppercase text-sm font-medium tracking-widest">
-            <a href="#beneficios" className="hover:text-[#185347] transition-colors">Benefícios</a>
-            <a href="#plano" className="hover:text-[#185347] transition-colors">O Plano</a>
-            <a href="#contato" className="hover:text-[#185347] transition-colors">Assine Já</a>
+
+          {/* COUNTER */}
+          <div className="hidden md:flex flex-col items-center text-white">
+            <span className="text-xs tracking-[0.3em] font-bold opacity-80">SOMOS</span>
+            <span className="text-5xl font-black tracking-tighter leading-none">39.095</span>
+            <span className="text-xs tracking-[0.3em] font-bold opacity-80">SÓCIOS DO FLU</span>
+          </div>
+
+          {/* ACTIONS */}
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2 cursor-pointer group">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+              <span className="text-sm font-medium tracking-widest uppercase">Login</span>
+            </div>
+            <button className="bg-[#68121f] px-6 py-3 rounded-sm font-bold text-sm tracking-widest uppercase hover:bg-[#185347] transition-colors">
+              Cadastre-se
+            </button>
           </div>
         </div>
-      </nav>
 
-      {/* HERO SECTION */}
-      <section className="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40 border-b border-[#393939]">
-        <div className="absolute inset-0 z-0 opacity-20">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#185347] to-transparent"></div>
+        {/* BACK BUTTON */}
+        <div className="relative z-20 px-4 md:px-8 mt-4 max-w-[1440px] mx-auto w-full">
+          <button className="flex items-center gap-3 bg-[#68121f] px-4 py-2 rounded-md group">
+            <div className="bg-white/10 p-1 rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+              </svg>
+            </div>
+            <span className="text-sm font-bold uppercase tracking-widest">Voltar</span>
+          </button>
         </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-block px-3 py-1 bg-[#68121f] text-white text-xs font-bold uppercase tracking-widest mb-6">
-                Tradição e Glória
-              </span>
-              <h1 className="text-6xl md:text-8xl font-bold uppercase leading-none mb-6 italic" style={{ fontFamily: 'Oswald, sans-serif' }}>
-                PLANO <br />
-                <span className="text-[#185347]">ARQUIBA</span> <br />
-                NOVA
-              </h1>
-              <p className="text-xl text-gray-300 max-w-lg mb-10 leading-relaxed" style={{ fontFamily: 'Oswald, sans-serif' }}>
-                Seja um Guerreiro de verdade. Apoie o Fluminense de perto e garanta seu lugar nas Laranjeiras ou no Maracanã com benefícios exclusivos.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <a href="#contato" className="px-8 py-4 bg-[#ffffff] text-[#171717] font-bold uppercase tracking-widest hover:bg-[#185347] hover:text-white transition-all duration-300">
-                  Entre em contato →
-                </a>
-              </div>
-            </div>
 
-            {/* FORMULÁRIO DE LEADS */}
-            <div id="contato" className="bg-[#171717] border-2 border-[#185347] p-8 rounded-none shadow-[10px_10px_0px_0px_rgba(24,83,71,1)]">
-              <h2 className="text-3xl font-bold uppercase mb-6 text-center" style={{ fontFamily: 'Oswald, sans-serif' }}>
-                Faça parte da nossa história
-              </h2>
-              <form 
-                action="https://formspree.io/f/FORMSPREE_ID_NAO_FORNECIDO" 
-                method="POST"
-                className="space-y-4"
-              >
-                <div>
-                  <label htmlFor="name" className="block text-xs uppercase tracking-widest font-bold mb-2 text-gray-400">Nome Completo</label>
-                  <input 
-                    type="text" 
-                    name="name" 
-                    id="name"
-                    required 
-                    className="w-full px-4 py-3 bg-[#393939]/20 border border-[#393939] focus:border-[#185347] focus:ring-1 focus:ring-[#185347] outline-none transition-all text-white"
-                    placeholder="Seu nome tricolor"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-xs uppercase tracking-widest font-bold mb-2 text-gray-400">E-mail</label>
-                  <input 
-                    type="email" 
-                    name="email" 
-                    id="email"
-                    required 
-                    className="w-full px-4 py-3 bg-[#393939]/20 border border-[#393939] focus:border-[#185347] focus:ring-1 focus:ring-[#185347] outline-none transition-all text-white"
-                    placeholder="seu@email.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-xs uppercase tracking-widest font-bold mb-2 text-gray-400">Telefone / WhatsApp</label>
-                  <input 
-                    type="tel" 
-                    name="phone" 
-                    id="phone"
-                    required
-                    className="w-full px-4 py-3 bg-[#393939]/20 border border-[#393939] focus:border-[#185347] focus:ring-1 focus:ring-[#185347] outline-none transition-all text-white"
-                    placeholder="(21) 99999-9999"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-xs uppercase tracking-widest font-bold mb-2 text-gray-400">Dúvidas sobre o Plano Arquiba?</label>
-                  <textarea 
-                    name="message" 
-                    id="message"
-                    rows={3}
-                    className="w-full px-4 py-3 bg-[#393939]/20 border border-[#393939] focus:border-[#185347] focus:ring-1 focus:ring-[#185347] outline-none transition-all text-white"
-                    placeholder="Como podemos ajudar, guerreiro?"
-                  />
-                </div>
-                <button 
-                  type="submit"
-                  className="w-full py-4 bg-[#68121f] hover:bg-[#185347] text-white font-bold uppercase tracking-[0.2em] transition-colors duration-300 mt-4 border border-transparent"
-                  style={{ fontFamily: 'Oswald, sans-serif' }}
-                >
-                  Enviar e Garantir Vaga
-                </button>
-              </form>
-            </div>
+        {/* CENTRAL CONTENT */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4">
+          <span className="text-2xl md:text-3xl font-bold tracking-[0.4em] mb-2">PLANOS</span>
+          <h1 className="text-7xl md:text-[120px] font-black tracking-tighter leading-none mb-8">
+            ARQUIBA
+          </h1>
+          
+          <div className="mt-12 flex flex-col items-center animate-bounce">
+            <span className="text-sm md:text-lg font-medium tracking-[0.3em] mb-4">CONHEÇA TODOS OS PLANOS</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+            </svg>
+          </div>
+        </div>
+
+        {/* FLOATING WHATSAPP */}
+        <div className="fixed bottom-8 right-8 z-50">
+          <div className="w-16 h-16 bg-[#185347] rounded-full flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 transition-transform border-2 border-white/20">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/pt/a/a3/Fluminense_FC_escudo.png" 
+              alt="Suporte" 
+              className="w-10 h-10 brightness-0 invert"
+            />
           </div>
         </div>
       </section>
 
-      {/* BENEFICIOS */}
-      <section id="beneficios" className="py-24 bg-[#171717]">
+      {/* BENEFICIOS SECTION */}
+      <section id="beneficios" className="py-24 bg-[#171717] relative z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-8 border border-[#393939] hover:border-[#185347] transition-colors group">
+            <div className="p-8 border border-[#393939] hover:border-[#185347] transition-colors group bg-[#1a1a1a]">
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform inline-block">🏟️</div>
-              <h3 className="text-2xl font-bold uppercase mb-4" style={{ fontFamily: 'Oswald, sans-serif' }}>Prioridade 1</h3>
+              <h3 className="text-2xl font-bold uppercase mb-4 tracking-tighter">Prioridade 1</h3>
               <p className="text-gray-400 leading-relaxed">Garanta seu ingresso antes de todo mundo nos jogos com mando do Fluminense.</p>
             </div>
-            <div className="p-8 border border-[#393939] hover:border-[#68121f] transition-colors group">
+            <div className="p-8 border border-[#393939] hover:border-[#68121f] transition-colors group bg-[#1a1a1a]">
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform inline-block">🛡️</div>
-              <h3 className="text-2xl font-bold uppercase mb-4" style={{ fontFamily: 'Oswald, sans-serif' }}>Rede de Parceiros</h3>
+              <h3 className="text-2xl font-bold uppercase mb-4 tracking-tighter">Rede de Parceiros</h3>
               <p className="text-gray-400 leading-relaxed">Descontos exclusivos em produtos oficiais e marcas parceiras do Tricolor.</p>
             </div>
-            <div className="p-8 border border-[#393939] hover:border-[#185347] transition-colors group">
+            <div className="p-8 border border-[#393939] hover:border-[#185347] transition-colors group bg-[#1a1a1a]">
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform inline-block">⚽</div>
-              <h3 className="text-2xl font-bold uppercase mb-4" style={{ fontFamily: 'Oswald, sans-serif' }}>Experiências</h3>
+              <h3 className="text-2xl font-bold uppercase mb-4 tracking-tighter">Experiências</h3>
               <p className="text-gray-400 leading-relaxed">Participe de sorteios para visitas ao CT, Laranjeiras e eventos exclusivos.</p>
             </div>
           </div>
@@ -144,7 +126,7 @@ export default function Home() {
             <span className="w-12 h-1 bg-[#ffffff]"></span>
             <span className="w-12 h-1 bg-[#68121f]"></span>
           </div>
-          <p className="uppercase tracking-widest text-sm font-bold mb-4" style={{ fontFamily: 'Oswald, sans-serif' }}>
+          <p className="uppercase tracking-widest text-sm font-bold mb-4">
             Fluminense Football Club - Sócio Futebol
           </p>
           <p className="text-[#393939] text-xs uppercase tracking-tighter">

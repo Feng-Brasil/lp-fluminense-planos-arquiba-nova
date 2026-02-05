@@ -79,7 +79,7 @@ export default function Home() {
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
             </div>
-            {/* BOX 2 - ÍCONE DINHEIRO (Substituindo 💰) */}
+            {/* BOX 2 - ÍCONE DINHEIRO (Substituindo 💲) */}
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
               <div className="mb-3 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Descontos em ingressos para convidados</p>
             </div>
-            {/* BOX 3 - ÍCONE GRUPO (Substituindo 👥) */}
+            {/* BOX 3 - ÍCONE GRUPO */}
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
               <div className="mb-3 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
@@ -97,7 +97,7 @@ export default function Home() {
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
-            {/* BOX 4 - ÍCONE TROFÉU (Substituindo 🏆) */}
+            {/* BOX 4 - ÍCONE TROFÉU (Substituindo 🏆🎖️) */}
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
               <div className="mb-3 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">

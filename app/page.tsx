@@ -50,20 +50,24 @@ export default function Home() {
         </div>
 
         {/* CENTRAL CONTENT - Adjusted spacing and margins */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 py-12 -mt-20">
-          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-12 animate-pulse shadow-2xl border border-white/20">
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-16 md:pt-24 pb-12">
+          {/* BOX MANTIDO NO TOPO */}
+          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-20 animate-pulse shadow-2xl border border-white/20">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
           </div>
           
-          <h1 className="text-5xl md:text-[130px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
-            O FLU SE VIVE JUNTO!
-          </h1>
-          
-          <p className="mt-10 text-xl md:text-3xl font-medium max-w-3xl text-gray-200 drop-shadow-lg leading-relaxed">
-            Convide, economize e sigam juntos na arquibancada.
-          </p>
+          {/* TEXTOS ABAIXADOS COM MARGEM SUPERIOR MAIOR */}
+          <div className="mt-8">
+            <h1 className="text-5xl md:text-[130px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
+              O FLU SE VIVE JUNTO!
+            </h1>
+            
+            <p className="mt-10 text-xl md:text-3xl font-medium max-w-3xl mx-auto text-gray-200 drop-shadow-lg leading-relaxed">
+              Convide, economize e sigam juntos na arquibancada.
+            </p>
+          </div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
               <span className="block text-3xl mb-3">🎟️</span>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>

@@ -95,11 +95,12 @@ export default function Home() {
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
-            {/* BOX 4 - ÍCONE TROFÉU EM BRANCO */}
+            {/* BOX 4 - ÍCONE FOGO */}
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
               <div className="mb-3 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3-3V13.5M16.5 18.75V13.5m-9 5.25a3 3 0 0 0-3-3V13.5m3 5.25V13.5m3 0V5.25m0 0V3.75a1.125 1.125 0 0 1 1.125-1.125h4.5A1.125 1.125 0 0 1 16.5 3.75v1.5m-9 0h9" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
                 </svg>
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>

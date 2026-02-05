@@ -179,7 +179,7 @@ export default function Home() {
                 <img 
                   src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55067665758_fd737bdc80_o.jpg" 
                   alt="Torcida Tricolor Arquiba 75%" 
-                  className="w-full h-full object-cover object-[center_20%]"
+                  className="w-full h-full object-cover object-[center_35%]"
                 />
               </div>
             </div>

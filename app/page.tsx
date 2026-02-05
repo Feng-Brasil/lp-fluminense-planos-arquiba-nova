@@ -57,10 +57,10 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CENTRAL CONTENT - Textos subidos */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-8 md:pt-12 pb-12">
+        {/* CENTRAL CONTENT - Textos retornados para posição centralizada */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 pb-12">
           
-          <div className="mt-4 md:mt-8 space-y-8">
+          <div className="space-y-8">
             <h1 className="text-5xl md:text-[130px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!
             </h1>

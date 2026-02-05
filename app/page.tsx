@@ -4,7 +4,7 @@ export default function Home() {
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 
-          src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066304911_1ff1b8ac8b_o.jpg" 
+          src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/54977830972_fd630a8cec_o.jpg" 
           alt="Background Fluminense" 
           className="w-full h-full object-cover"
         />

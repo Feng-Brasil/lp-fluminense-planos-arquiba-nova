@@ -72,25 +72,25 @@ export default function Home() {
           <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
               <div className="mb-3 text-3xl">
-                🎟️
+                ⚡
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
               <div className="mb-3 text-3xl">
-                💰
+                💎
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Descontos em ingressos para convidados</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
               <div className="mb-3 text-3xl">
-                🏟️
+                🤝
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
               <div className="mb-3 text-3xl">
-                🇭🇺
+                🔥
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
             </div>

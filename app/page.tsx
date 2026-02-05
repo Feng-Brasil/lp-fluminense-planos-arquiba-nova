@@ -71,19 +71,35 @@ export default function Home() {
 
           <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
-              <span className="block text-3xl mb-3">🎟️</span>
+              <div className="mb-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+                </svg>
+              </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
-              <span className="block text-3xl mb-3">💰</span>
+              <div className="mb-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.546 1.16 3.742.16 3.742-1.818a1.818 1.818 0 0 0-1.818-1.818H10.91a1.818 1.818 0 0 1-1.818-1.818c0-1.978 2.196-2.978 3.742-1.818.257.193.53.362.818.506M12 3v3m0 12v3m0-15c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9Z" />
+                </svg>
+              </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Descontos em ingressos para convidados</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
-              <span className="block text-3xl mb-3">👥</span>
+              <div className="mb-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a5.97 5.97 0 0 0-.94 3.197M15.75 22.5a8.25 8.25 0 0 1-16.5 0c0-4.556 3.694-8.25 8.25-8.25s8.25 3.694 8.25 8.25ZM3 16.06V15c0-1.1.9-2 2-2h4c1.1 0 2 .9 2 2v1.06" />
+                </svg>
+              </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
-              <span className="block text-3xl mb-3">🏆</span>
+              <div className="mb-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0V9.403c0-.621-.504-1.125-1.125-1.125h-.872M9.503 8.278V9.403c0 .621.504 1.125 1.125 1.125h.872m3.13-3.133a3 3 0 1 1-6.258 0 3 3 0 0 1 6.258 0Z" />
+                </svg>
+              </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
             </div>
           </div>

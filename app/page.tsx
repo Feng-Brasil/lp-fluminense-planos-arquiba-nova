@@ -106,34 +106,43 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
             {/* ARQUIBA 100% */}
-            <div className="bg-black/70 backdrop-blur-lg border-t-8 border-[#68121f] p-10 rounded-b-xl shadow-2xl">
-              <div className="flex justify-between items-start mb-8">
-                <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 100%</h3>
-                <span className="bg-[#68121f] text-xs font-bold px-3 py-1 rounded">MAIS COMPLETO</span>
+            <div className="bg-black/70 backdrop-blur-lg border-t-8 border-[#68121f] p-10 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
+              <div className="flex-1">
+                <div className="flex justify-between items-start mb-8">
+                  <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 100%</h3>
+                  <span className="bg-[#68121f] text-xs font-bold px-3 py-1 rounded">MAIS COMPLETO</span>
+                </div>
+                <ul className="space-y-4 mb-10">
+                  <li className="flex items-center gap-3 text-gray-200">
+                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
+                    Mais liberdade para compartilhar a experiência
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-200">
+                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
+                    Pode contratar até 3 convidados
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-200">
+                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
+                    Pode cadastrar até 5 convidados
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-200 font-bold text-white">
+                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
+                    Mais pessoas com prioridade nos ingressos
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-200">
+                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
+                    Ideal para família e grupo de amigos
+                  </li>
+                </ul>
+                <p className="text-sm text-gray-400 italic">*Valor por convidado: R$ 25,00/mês</p>
               </div>
-              <ul className="space-y-4 mb-10">
-                <li className="flex items-center gap-3 text-gray-200">
-                  <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
-                  Mais liberdade para compartilhar a experiência
-                </li>
-                <li className="flex items-center gap-3 text-gray-200">
-                  <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
-                  Pode contratar até 3 convidados
-                </li>
-                <li className="flex items-center gap-3 text-gray-200">
-                  <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
-                  Pode cadastrar até 5 convidados
-                </li>
-                <li className="flex items-center gap-3 text-gray-200 font-bold text-white">
-                  <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
-                  Mais pessoas com prioridade nos ingressos
-                </li>
-                <li className="flex items-center gap-3 text-gray-200">
-                  <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
-                  Ideal para família e grupo de amigos
-                </li>
-              </ul>
-              <p className="text-sm text-gray-400 italic">*Valor por convidado: R$ 25,00/mês</p>
+              <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
+                <img 
+                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 
+                  alt="Torcida Tricolor" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
 
             {/* ARQUIBA 75% */}

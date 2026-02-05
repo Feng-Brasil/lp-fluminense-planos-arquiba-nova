@@ -160,10 +160,12 @@ export default function Home() {
           {/* BLOCO EMOCIONAL */}
           <div className="relative w-full h-[500px] rounded-3xl overflow-hidden mb-20">
             <img 
-              src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2000" 
-              alt="Amigos no estádio" 
-              className="w-full h-full object-cover brightness-[0.5]"
+              src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066304911_1ff1b8ac8b_o.jpg" 
+              alt="Torcida Fluminense" 
+              className="w-full h-full object-cover brightness-[0.4]"
             />
+            {/* Greenish Filter Overlay */}
+            <div className="absolute inset-0 bg-[#185347]/40 mix-blend-multiply"></div>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
               <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6 max-w-4xl">
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?

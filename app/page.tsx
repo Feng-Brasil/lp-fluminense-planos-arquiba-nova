@@ -49,25 +49,26 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CENTRAL CONTENT - Adjusted to move texts and box up */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-4 md:pt-8 pb-12">
-          {/* BOX SUBIDO - 1 MÊS GRÁTIS */}
-          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-4 animate-pulse shadow-2xl border border-white/20">
+        {/* CENTRAL CONTENT - Adjusted: Box moved up, texts moved down and spaced */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-0 md:pt-0 pb-12">
+          
+          {/* BOX SUBIDO - 1 MÊS GRÁTIS (Moved higher with negative margin/less top padding) */}
+          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-12 md:mb-20 animate-pulse shadow-2xl border border-white/20 -mt-4">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
           </div>
           
-          {/* TEXTOS SUBIDOS */}
-          <div className="mt-0">
+          {/* TEXTOS ABAIXADOS E ESPAÇADOS (Increased top margin and spacing) */}
+          <div className="mt-8 md:mt-12 space-y-8">
             <h1 className="text-5xl md:text-[130px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!
             </h1>
             
-            <p className="mt-4 text-xl md:text-3xl font-medium max-w-3xl mx-auto text-gray-200 drop-shadow-lg leading-relaxed">
+            <p className="text-xl md:text-3xl font-medium max-w-3xl mx-auto text-gray-200 drop-shadow-lg leading-relaxed">
               Convide, economize e sigam juntos na arquibancada.
             </p>
           </div>
 
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
               <span className="block text-3xl mb-3">🎟️</span>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
@@ -86,13 +87,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 mb-6 flex justify-center">
+          <div className="mt-12 mb-6 flex justify-center">
             <button className="bg-[#68121f] px-10 md:px-16 py-6 rounded-sm font-black text-lg md:text-xl tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(104,18,31,0.5)] hover:scale-105 block w-fit">
               Adicionar convidado agora
             </button>
           </div>
           
-          <div className="animate-bounce opacity-60 mt-2">
+          <div className="animate-bounce opacity-60 mt-4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-8 h-8">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
             </svg>

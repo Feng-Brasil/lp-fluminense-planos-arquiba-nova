@@ -49,47 +49,47 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CENTRAL CONTENT - Adjusted with -mt-40 to move everything further upwards */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 py-8 -mt-40">
-          <div className="bg-[#185347] text-white px-6 py-2 rounded-full font-black text-sm tracking-widest mb-6 animate-pulse shadow-2xl border border-white/20">
+        {/* CENTRAL CONTENT - Adjusted spacing and margins */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 py-12 -mt-20">
+          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-12 animate-pulse shadow-2xl border border-white/20">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
           </div>
           
-          <h1 className="text-5xl md:text-[120px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
+          <h1 className="text-5xl md:text-[130px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
             O FLU SE VIVE JUNTO!
           </h1>
           
-          <p className="mt-6 text-xl md:text-2xl font-medium max-w-2xl text-gray-200 drop-shadow-lg">
+          <p className="mt-10 text-xl md:text-3xl font-medium max-w-3xl text-gray-200 drop-shadow-lg leading-relaxed">
             Convide, economize e sigam juntos na arquibancada.
           </p>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-6xl">
-            <div className="bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#68121f] text-left">
-              <span className="block text-2xl mb-2">🎟️</span>
-              <p className="text-sm font-bold uppercase tracking-wider">Mais prioridade na compra de ingressos</p>
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
+            <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
+              <span className="block text-3xl mb-3">🎟️</span>
+              <p className="text-sm font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
             </div>
-            <div className="bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#185347] text-left">
-              <span className="block text-2xl mb-2">💰</span>
-              <p className="text-sm font-bold uppercase tracking-wider">Descontos em ingressos para convidados</p>
+            <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
+              <span className="block text-3xl mb-3">💰</span>
+              <p className="text-sm font-bold uppercase tracking-wider leading-snug">Descontos em ingressos para convidados</p>
             </div>
-            <div className="bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#68121f] text-left">
-              <span className="block text-2xl mb-2">👥</span>
-              <p className="text-sm font-bold uppercase tracking-wider">Viva o jogo com quem faz parte da sua história</p>
+            <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
+              <span className="block text-3xl mb-3">👥</span>
+              <p className="text-sm font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
-            <div className="bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#185347] text-left">
-              <span className="block text-2xl mb-2">🏆</span>
-              <p className="text-sm font-bold uppercase tracking-wider">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
+            <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
+              <span className="block text-3xl mb-3">🏆</span>
+              <p className="text-sm font-bold uppercase tracking-wider leading-snug">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
             </div>
           </div>
 
-          <div className="mt-12 mb-12 flex justify-center">
-            <button className="bg-[#68121f] px-8 md:px-12 py-5 rounded-sm font-black text-base md:text-lg tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_30px_rgba(104,18,31,0.4)] hover:scale-105 block w-fit">
+          <div className="mt-16 mb-12 flex justify-center">
+            <button className="bg-[#68121f] px-10 md:px-16 py-6 rounded-sm font-black text-lg md:text-xl tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(104,18,31,0.5)] hover:scale-105 block w-fit">
               Adicionar convidado agora
             </button>
           </div>
           
-          <div className="animate-bounce opacity-60">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
+          <div className="animate-bounce opacity-60 mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-8 h-8">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
             </svg>
           </div>

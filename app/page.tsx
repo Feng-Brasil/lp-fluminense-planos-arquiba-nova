@@ -147,8 +147,8 @@ export default function Home() {
               </div>
               <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
                 <img 
-                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 
-                  alt="Torcida Tricolor" 
+                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066489568_bbbfe6968c_o.jpg" 
+                  alt="Torcida Tricolor Arquiba 100%" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -178,8 +178,8 @@ export default function Home() {
               </div>
               <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
                 <img 
-                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 
-                  alt="Torcida Tricolor" 
+                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55067665758_fd737bdc80_o.jpg" 
+                  alt="Torcida Tricolor Arquiba 75%" 
                   className="w-full h-full object-cover"
                 />
               </div>

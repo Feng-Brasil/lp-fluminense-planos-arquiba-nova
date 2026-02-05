@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       {/* SCROLL 1 — HERO SECTION */}
-      <section className="relative h-screen w-full overflow-hidden flex flex-col pt-[54px] z-10">
+      <section className="relative min-h-screen w-full overflow-hidden flex flex-col pt-[54px] z-10">
         {/* Gradient Overlay para suavizar o topo */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none"></div>
 
@@ -50,17 +50,17 @@ export default function Home() {
         </div>
 
         {/* CENTRAL CONTENT */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 -mt-10">
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 py-12">
           <div className="bg-[#185347] text-white px-6 py-2 rounded-full font-black text-sm tracking-widest mb-8 animate-pulse shadow-2xl border border-white/20">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
           </div>
           
           <h1 className="text-6xl md:text-[120px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
-            Flu se vive junto!
+            O FLU SE VIVE JUNTO!
           </h1>
           
           <p className="mt-6 text-xl md:text-2xl font-medium max-w-2xl text-gray-200 drop-shadow-lg">
-            Agora você pode levar quem vive o Fluminense com você. Convide, economize e tenha tricolores juntos.
+            Convide, economize e sigam juntos na arquibancada.
           </p>
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-6xl">
@@ -78,15 +78,17 @@ export default function Home() {
             </div>
             <div className="bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#185347] text-left">
               <span className="block text-2xl mb-2">🏆</span>
-              <p className="text-sm font-bold uppercase tracking-wider">Caminho para a Libertadores, juntos desde agora</p>
+              <p className="text-sm font-bold uppercase tracking-wider">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
             </div>
           </div>
 
-          <button className="mt-12 bg-[#68121f] px-12 py-5 rounded-sm font-black text-lg tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_30px_rgba(104,18,31,0.4)] hover:scale-105">
-            Adicionar convidado agora
-          </button>
+          <div className="mt-12 mb-8">
+            <button className="bg-[#68121f] px-12 py-5 rounded-sm font-black text-lg tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_30px_rgba(104,18,31,0.4)] hover:scale-105 inline-block">
+              Adicionar convidado agora
+            </button>
+          </div>
           
-          <div className="mt-8 animate-bounce opacity-60">
+          <div className="animate-bounce opacity-60">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
             </svg>

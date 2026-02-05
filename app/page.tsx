@@ -95,8 +95,160 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BENEFICIOS SECTION */}
-      <section id="beneficios" className="py-32 bg-[#171717] relative z-20">
+      {/* PLANOS SECTION */}
+      <section className="py-24 bg-[#171717]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {/* Arquiba 100% */}
+            <div className="bg-[#1a1a1a] border-t-4 border-[#68121f] p-6 flex flex-col h-full">
+              <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Arquiba 100%</h3>
+              <ul className="text-xs space-y-3 mb-8 flex-grow text-gray-300">
+                <li>• Desconto em ingressos</li>
+                <li>• Prioridade 1 na compra de ingressos</li>
+                <li>• Nível 2 de acúmulo de pontos</li>
+                <li>• Até 3 convidados por R$ 25/mês cada</li>
+                <li>• Cashback nas lojas oficiais</li>
+                <li>• Direito a voto após 2 anos de contribuição ininterruptos</li>
+                <li>• 8 Cupons de R$ 10,00 no Zé Delivery</li>
+              </ul>
+              <div className="mt-auto">
+                <p className="text-2xl font-black mb-4">R$ 160,00/mês*</p>
+                <button className="w-full bg-[#68121f] py-3 font-black text-xs uppercase tracking-widest hover:bg-[#185347] transition-colors">ASSOCIE-SE</button>
+              </div>
+            </div>
+
+            {/* Arquiba 75% */}
+            <div className="bg-[#1a1a1a] border-t-4 border-[#185347] p-6 flex flex-col h-full">
+              <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Arquiba 75%</h3>
+              <ul className="text-xs space-y-3 mb-8 flex-grow text-gray-300">
+                <li>• Desconto em ingressos</li>
+                <li>• Prioridade 2 na compra de ingressos</li>
+                <li>• Nível 3 de acúmulo de pontos</li>
+                <li>• Até 1 convidado por R$ 25/mês</li>
+                <li>• Cashback nas lojas oficiais</li>
+                <li>• Direito a voto após 2 anos de contribuição ininterruptos</li>
+                <li>• 4 Cupons de R$ 10,00 no Zé Delivery</li>
+              </ul>
+              <div className="mt-auto">
+                <p className="text-2xl font-black mb-4">R$ 80,00/mês*</p>
+                <button className="w-full bg-[#185347] py-3 font-black text-xs uppercase tracking-widest hover:bg-[#68121f] transition-colors">ASSOCIE-SE</button>
+              </div>
+            </div>
+
+            {/* Arquiba Raiz */}
+            <div className="bg-[#1a1a1a] border-t-4 border-[#68121f] p-6 flex flex-col h-full">
+              <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Arquiba Raiz</h3>
+              <ul className="text-xs space-y-3 mb-8 flex-grow text-gray-300">
+                <li>• Desconto no setor popular do jogo e 60% nos demais ingressos</li>
+                <li>• Prioridade 3 na compra de ingressos</li>
+                <li>• Nível 4 de acúmulo de pontos</li>
+                <li>• Cashback nas lojas oficiais</li>
+                <li>• 2 Cupons de R$ 10,00 no Zé Delivery</li>
+              </ul>
+              <div className="mt-auto">
+                <p className="text-2xl font-black mb-4">R$ 40,00/mês*</p>
+                <button className="w-full bg-[#68121f] py-3 font-black text-xs uppercase tracking-widest hover:bg-[#185347] transition-colors">ASSOCIE-SE</button>
+              </div>
+            </div>
+
+            {/* Maraca + */}
+            <div className="bg-[#1a1a1a] border-t-4 border-[#185347] p-6 flex flex-col h-full">
+              <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Maraca +</h3>
+              <ul className="text-xs space-y-3 mb-8 flex-grow text-gray-300">
+                <li>• Desconto no Maracanã Mais (com buffet) e na arquibancada</li>
+                <li>• Prioridade 1 na compra de ingressos</li>
+                <li>• Nível 1 de acúmulo de pontos</li>
+                <li>• Cashback nas lojas oficiais</li>
+                <li>• Direito a voto após 2 anos de contribuição ininterruptos</li>
+                <li>• 30 Cupons de R$ 10,00 no Zé Delivery</li>
+              </ul>
+              <div className="mt-auto">
+                <p className="text-2xl font-black mb-4">R$ 600,00/mês*</p>
+                <button className="w-full bg-[#185347] py-3 font-black text-xs uppercase tracking-widest hover:bg-[#68121f] transition-colors">SAIBA MAIS</button>
+              </div>
+            </div>
+
+            {/* Sub-12 */}
+            <div className="bg-[#1a1a1a] border-t-4 border-[#68121f] p-6 flex flex-col h-full">
+              <h3 className="text-xl font-black mb-4 uppercase tracking-tighter">Sub-12</h3>
+              <ul className="text-xs space-y-3 mb-8 flex-grow text-gray-300">
+                <li>• Experiências exclusivas</li>
+                <li>• Nível 3 de acúmulo de pontos</li>
+                <li>• Cashback nas lojas oficiais</li>
+                <li>• Plano exclusivo para menores de 12 anos</li>
+              </ul>
+              <div className="mt-auto">
+                <p className="text-2xl font-black mb-4">R$ 15,00/mês*</p>
+                <button className="w-full bg-[#68121f] py-3 font-black text-xs uppercase tracking-widest hover:bg-[#185347] transition-colors">ASSOCIE-SE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CONVIDADOS SECTION */}
+      <section className="py-20 bg-[#121212]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-black uppercase mb-8 tracking-tighter">LEVE SEUS CONVIDADOS PARA O MARACA</h2>
+          <div className="space-y-4 text-gray-300 mb-10">
+            <p>Inclua convidados e leve seus amigos e familiares para apoiar o Flu no Maracanã!</p>
+            <p>50% de desconto em ingressos extras para convidados, na mesma prioridade do titular!</p>
+            <p>No plano Arquiba 75, você pode incluir até 1 convidado. No Arquiba 100, até 3!</p>
+            <p>Você pode cadastrar até 5 pessoas e escolher entre elas a cada jogo quem irá poder usar os ingressos extras.</p>
+            <p className="text-white font-bold text-xl">Valor por mês por convidado: R$25,00</p>
+          </div>
+          <button className="bg-[#68121f] px-12 py-4 font-black uppercase tracking-widest hover:bg-[#185347] transition-all">SEJA SÓCIO</button>
+        </div>
+      </section>
+
+      {/* PRIORIDADE SECTION */}
+      <section className="py-20 bg-[#171717] border-y border-[#333]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-black uppercase mb-8 tracking-tighter">PRIORIDADE NA COMPRA DE INGRESSOS</h2>
+          <p className="text-gray-300 mb-10">Garanta sua presença antes de todo mundo. A cada jogo no Maraca, a venda de ingressos será liberada antes para os sócios do Flu de acordo com a prioridade de cada plano.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 text-left">
+            <div className="bg-[#1a1a1a] p-4 border-l-4 border-[#68121f]">
+              <p className="font-bold">Prioridade 1: Arquiba 100%, Maraca +</p>
+            </div>
+            <div className="bg-[#1a1a1a] p-4 border-l-4 border-[#185347]">
+              <p className="font-bold">Prioridade 2: Arquiba 75%</p>
+            </div>
+            <div className="bg-[#1a1a1a] p-4 border-l-4 border-[#68121f]">
+              <p className="font-bold">Prioridade 3: Arquiba Raiz</p>
+            </div>
+            <div className="bg-[#1a1a1a] p-4 border-l-4 border-[#185347]">
+              <p className="font-bold">Prioridade 4: Guerreiro</p>
+            </div>
+          </div>
+          <button className="bg-[#185347] px-12 py-4 font-black uppercase tracking-widest hover:bg-[#68121f] transition-all">SEJA SÓCIO</button>
+        </div>
+      </section>
+
+      {/* EXPERIENCIAS SECTION */}
+      <section className="py-20 bg-[#121212]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-black uppercase mb-8 tracking-tighter">EXPERIÊNCIAS ÚNICAS E INESQUECÍVEIS</h2>
+          <p className="text-gray-300 mb-10">Ser sócio é poder viver momentos marcantes com o Flu, dentro ou fora do Maracanã, que serão lembrados para o resto da vida.</p>
+          <button className="bg-[#68121f] px-12 py-4 font-black uppercase tracking-widest hover:bg-[#185347] transition-all">SEJA SÓCIO</button>
+        </div>
+      </section>
+
+      {/* SUB-12 SECTION */}
+      <section className="py-20 bg-[#171717] border-t border-[#333]">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-black uppercase mb-8 tracking-tighter">SUB-12: O FUTURO DA TORCIDA</h2>
+          <p className="text-gray-300 mb-8">O plano feito para o guerreirinho de até 12 anos. Além de mostrar o amor pelo Tricolor, ainda aproveita benefícios exclusivos, como:</p>
+          <ul className="text-left max-w-md mx-auto space-y-3 mb-10 text-gray-300">
+            <li>• Experiências especiais para os pequenos tricolores</li>
+            <li>• Acúmulo de pontos</li>
+            <li>• 10% de cashback na loja oficial do clube</li>
+          </ul>
+          <button className="bg-[#185347] px-12 py-4 font-black uppercase tracking-widest hover:bg-[#68121f] transition-all">SEJA SÓCIO</button>
+        </div>
+      </section>
+
+      {/* BENEFICIOS SECTION (ORIGINAL) */}
+      <section id="beneficios" className="py-32 bg-[#121212] relative z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-12">
             <div className="p-10 border border-[#393939] hover:border-[#185347] transition-all group bg-[#1a1a1a] relative overflow-hidden">
@@ -116,6 +268,38 @@ export default function Home() {
               <h3 className="text-2xl font-black uppercase mb-4 tracking-tighter">Experiências</h3>
               <p className="text-gray-400 leading-relaxed font-medium">Participe de sorteios para visitas ao CT, Laranjeiras e eventos exclusivos.</p>
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-[#185347] group-hover:w-full transition-all duration-500"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ & CONTACT SECTION */}
+      <section className="py-20 bg-[#171717]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-black uppercase mb-12 tracking-tighter text-center">PERGUNTAS FREQUENTES</h2>
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h3 className="text-xl font-black uppercase mb-6 border-b border-[#68121f] pb-2">Informações de Contato</h3>
+              <div className="space-y-4 text-sm text-gray-300">
+                <p><span className="text-white font-bold">Horário:</span> Segunda a sexta, das 9h às 21h; Sábados: das 10h às 16h</p>
+                <p><span className="text-white font-bold">Telefone:</span> (21) 2117-4652</p>
+                <p><span className="text-white font-bold">E-mail:</span> contato@fluminense.com.br</p>
+                <p><span className="text-white font-bold">Chat:</span> <span className="text-[#185347] cursor-pointer hover:underline">Abrir chat</span></p>
+                <p><span className="text-white font-bold">WhatsApp:</span> Temporariamente indisponível</p>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-black uppercase mb-6 border-b border-[#185347] pb-2">Links de Navegação</h3>
+              <div className="grid grid-cols-2 gap-4 text-xs font-bold uppercase tracking-widest">
+                <a href="#" className="hover:text-[#68121f] transition-colors">HOME</a>
+                <a href="#" className="hover:text-[#68121f] transition-colors">MINHA CONTA</a>
+                <a href="#" className="hover:text-[#68121f] transition-colors">PLANOS</a>
+                <a href="#" className="hover:text-[#68121f] transition-colors">INGRESSOS</a>
+                <a href="#" className="hover:text-[#68121f] transition-colors">RESGATES</a>
+                <a href="#" className="hover:text-[#68121f] transition-colors">PARCEIROS</a>
+                <a href="#" className="hover:text-[#68121f] transition-colors">EMBAIXADAS</a>
+                <a href="#" className="hover:text-[#68121f] transition-colors">FALE CONOSCO</a>
+              </div>
             </div>
           </div>
         </div>

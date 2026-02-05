@@ -95,7 +95,7 @@ export default function Home() {
       </section>
 
       {/* SCROLL 2 — EXPLICAÇÃO + REGRAS */}
-      <section className="py-24 relative z-10 bg-black/40 backdrop-blur-sm">
+      <section className="py-24 relative z-10 bg-black/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 drop-shadow-lg">Seu plano agora vale ainda mais</h2>
@@ -146,25 +146,34 @@ export default function Home() {
             </div>
 
             {/* ARQUIBA 75% */}
-            <div className="bg-black/70 backdrop-blur-lg border-t-8 border-[#185347] p-10 rounded-b-xl shadow-2xl">
-              <div className="flex justify-between items-start mb-8">
-                <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 75%</h3>
+            <div className="bg-black/70 backdrop-blur-lg border-t-8 border-[#185347] p-10 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
+              <div className="flex-1">
+                <div className="flex justify-between items-start mb-8">
+                  <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 75%</h3>
+                </div>
+                <ul className="space-y-4 mb-10">
+                  <li className="flex items-center gap-3 text-gray-200">
+                    <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
+                    A forma mais fácil de trazer alguém para viver o Flu com você
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-200">
+                    <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
+                    Pode contratar 1 convidado
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-200">
+                    <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
+                    Pode cadastrar até 3 convidados
+                  </li>
+                </ul>
+                <p className="text-sm text-gray-400 italic">*Valor por convidado: R$ 25,00/mês</p>
               </div>
-              <ul className="space-y-4 mb-10">
-                <li className="flex items-center gap-3 text-gray-200">
-                  <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
-                  A forma mais fácil de trazer alguém para viver o Flu com você
-                </li>
-                <li className="flex items-center gap-3 text-gray-200">
-                  <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
-                  Pode contratar 1 convidado
-                </li>
-                <li className="flex items-center gap-3 text-gray-200">
-                  <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
-                  Pode cadastrar até 3 convidados
-                </li>
-              </ul>
-              <p className="text-sm text-gray-400 italic">*Valor por convidado: R$ 25,00/mês</p>
+              <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
+                <img 
+                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 
+                  alt="Torcida Tricolor" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
 

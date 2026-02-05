@@ -1,6 +1,18 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#171717] text-[#ffffff] selection:bg-[#68121f] selection:text-white font-sans overflow-x-hidden">
+    <main className="min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white font-sans overflow-x-hidden relative">
+      {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
+      <div className="fixed inset-0 z-0">
+        <img 
+          src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066304911_1ff1b8ac8b_o.jpg" 
+          alt="Background Fluminense" 
+          className="w-full h-full object-cover"
+        />
+        {/* Camada de Filtro Esverdeado e Escurecimento */}
+        <div className="absolute inset-0 bg-[#185347]/60 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+
       {/* HEADER STRIPES */}
       <div className="w-full fixed top-0 z-50">
         <div className="h-[28px] bg-[#68121f] w-full"></div>
@@ -9,23 +21,13 @@ export default function Home() {
       </div>
 
       {/* SCROLL 1 — HERO SECTION */}
-      <section className="relative h-screen w-full overflow-hidden flex flex-col pt-[54px]">
-        {/* BACKGROUND IMAGE WITH OVERLAY AND GREEN FILTER */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066304911_1ff1b8ac8b_o.jpg" 
-            alt="Torcida Fluminense Maracanã" 
-            className="w-full h-full object-cover brightness-[0.5]"
-          />
-          {/* Greenish Filter Overlay */}
-          <div className="absolute inset-0 bg-[#185347]/40 mix-blend-multiply"></div>
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-[#171717]"></div>
-        </div>
+      <section className="relative h-screen w-full overflow-hidden flex flex-col pt-[54px] z-10">
+        {/* Gradient Overlay para suavizar o topo */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none"></div>
 
         {/* TOP NAVIGATION BAR */}
         <div className="relative z-20 w-full px-4 md:px-12 py-0 flex justify-between items-start">
-          {/* LOGO SÓCIO FLU SUBSTITUINDO A CAIXA GRENÁ */}
+          {/* LOGO SÓCIO FLU */}
           <div className="pt-4">
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 
@@ -57,24 +59,24 @@ export default function Home() {
             Flu se vive junto!
           </h1>
           
-          <p className="mt-6 text-xl md:text-2xl font-medium max-w-2xl text-gray-200">
+          <p className="mt-6 text-xl md:text-2xl font-medium max-w-2xl text-gray-200 drop-shadow-lg">
             Agora você pode levar quem vive o Fluminense com você. Convide, economize e tenha tricolores juntos.
           </p>
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-6xl">
-            <div className="bg-black/40 backdrop-blur-md p-4 border-l-4 border-[#68121f] text-left">
+            <div className="bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#68121f] text-left">
               <span className="block text-2xl mb-2">🎟️</span>
               <p className="text-sm font-bold uppercase tracking-wider">Mais prioridade na compra de ingressos</p>
             </div>
-            <div className="bg-black/40 backdrop-blur-md p-4 border-l-4 border-[#185347] text-left">
+            <div className="bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#185347] text-left">
               <span className="block text-2xl mb-2">💰</span>
               <p className="text-sm font-bold uppercase tracking-wider">Descontos em ingressos para convidados</p>
             </div>
-            <div className="bg-black/40 backdrop-blur-md p-4 border-l-4 border-[#68121f] text-left">
+            <div className="bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#68121f] text-left">
               <span className="block text-2xl mb-2">👥</span>
               <p className="text-sm font-bold uppercase tracking-wider">Viva o jogo com quem faz parte da sua história</p>
             </div>
-            <div className="bg-black/40 backdrop-blur-md p-4 border-l-4 border-[#185347] text-left">
+            <div className="bg-black/60 backdrop-blur-md p-4 border-l-4 border-[#185347] text-left">
               <span className="block text-2xl mb-2">🏆</span>
               <p className="text-sm font-bold uppercase tracking-wider">Caminho para a Libertadores, juntos desde agora</p>
             </div>
@@ -93,18 +95,18 @@ export default function Home() {
       </section>
 
       {/* SCROLL 2 — EXPLICAÇÃO + REGRAS */}
-      <section className="py-24 bg-[#171717] relative">
+      <section className="py-24 relative z-10 bg-black/40 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-black uppercase tracking-tighter mb-6">Seu plano agora vale ainda mais</h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 drop-shadow-lg">Seu plano agora vale ainda mais</h2>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md">
               Com convidados, seu plano ganha mais poder: mais pessoas com prioridade, mais economia e mais companhia para viver cada jogo decisivo.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
             {/* ARQUIBA 100% */}
-            <div className="bg-[#1a1a1a] border-t-8 border-[#68121f] p-10 rounded-b-xl shadow-2xl">
+            <div className="bg-black/70 backdrop-blur-lg border-t-8 border-[#68121f] p-10 rounded-b-xl shadow-2xl">
               <div className="flex justify-between items-start mb-8">
                 <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 100%</h3>
                 <span className="bg-[#68121f] text-xs font-bold px-3 py-1 rounded">MAIS COMPLETO</span>
@@ -131,11 +133,11 @@ export default function Home() {
                   Ideal para família e grupo de amigos
                 </li>
               </ul>
-              <p className="text-sm text-gray-500 italic">*Valor por convidado: R$ 25,00/mês</p>
+              <p className="text-sm text-gray-400 italic">*Valor por convidado: R$ 25,00/mês</p>
             </div>
 
             {/* ARQUIBA 75% */}
-            <div className="bg-[#1a1a1a] border-t-8 border-[#185347] p-10 rounded-b-xl shadow-2xl">
+            <div className="bg-black/70 backdrop-blur-lg border-t-8 border-[#185347] p-10 rounded-b-xl shadow-2xl">
               <div className="flex justify-between items-start mb-8">
                 <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 75%</h3>
               </div>
@@ -153,24 +155,23 @@ export default function Home() {
                   Pode cadastrar até 3 convidados
                 </li>
               </ul>
-              <p className="text-sm text-gray-500 italic">*Valor por convidado: R$ 25,00/mês</p>
+              <p className="text-sm text-gray-400 italic">*Valor por convidado: R$ 25,00/mês</p>
             </div>
           </div>
 
           {/* BLOCO EMOCIONAL */}
-          <div className="relative w-full h-[500px] rounded-3xl overflow-hidden mb-20">
+          <div className="relative w-full h-[500px] rounded-3xl overflow-hidden mb-20 shadow-2xl">
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066304911_1ff1b8ac8b_o.jpg" 
               alt="Torcida Fluminense" 
               className="w-full h-full object-cover brightness-[0.4]"
             />
-            {/* Greenish Filter Overlay */}
             <div className="absolute inset-0 bg-[#185347]/40 mix-blend-multiply"></div>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
-              <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6 max-w-4xl">
+              <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6 max-w-4xl drop-shadow-2xl">
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?
               </h3>
-              <div className="bg-[#68121f] px-8 py-4 rounded-sm">
+              <div className="bg-[#68121f] px-8 py-4 rounded-sm shadow-xl">
                 <p className="font-black text-xl uppercase tracking-widest">Contrate um convidado e ganhe 1 mês grátis na mensalidade dele.</p>
               </div>
             </div>
@@ -180,7 +181,7 @@ export default function Home() {
             <button className="bg-[#185347] px-16 py-6 rounded-sm font-black text-2xl tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-2xl hover:scale-105 mb-4">
               Quero trazer meu convidado
             </button>
-            <p className="text-gray-500 font-bold uppercase tracking-widest text-sm">Leva menos de 1 minuto.</p>
+            <p className="text-gray-300 font-bold uppercase tracking-widest text-sm drop-shadow-md">Leva menos de 1 minuto.</p>
           </div>
         </div>
       </section>
@@ -197,7 +198,7 @@ export default function Home() {
       </div>
 
       {/* FOOTER */}
-      <footer className="py-16 border-t border-[#393939] bg-[#121212]">
+      <footer className="py-16 border-t border-white/10 bg-black/80 backdrop-blur-md relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center gap-1 mb-10">
             <span className="w-16 h-1.5 bg-[#68121f]"></span>
@@ -207,7 +208,7 @@ export default function Home() {
           <p className="uppercase tracking-[0.3em] text-sm font-black mb-6">
             Fluminense Football Club - Sócio Futebol
           </p>
-          <p className="text-[#4a4a4a] text-[10px] uppercase tracking-[0.2em] font-bold">
+          <p className="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold">
             &copy; {new Date().getFullYear()} - O orgulho de ser tricolor. Todos os direitos reservados.
           </p>
         </div>

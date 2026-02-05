@@ -95,7 +95,7 @@ export default function Home() {
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
-            {/* BOX 4 - ÍCONE FOGO */}
+            {/* BOX 4 - ÍCONE FOGO (ATUALIZADO) */}
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
               <div className="mb-3 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">

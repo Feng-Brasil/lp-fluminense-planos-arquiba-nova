@@ -177,7 +177,7 @@ export default function Home() {
               </div>
               <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
                 <img 
-                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55067665758_fd737bdc80_o.jpg" 
+                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55067665758_fd737bdc80_jhgsfrd.jpg" 
                   alt="Torcida Tricolor Arquiba 75%" 
                   className="w-full h-full object-cover object-[center_35%]"
                 />

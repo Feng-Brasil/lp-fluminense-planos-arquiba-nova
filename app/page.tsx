@@ -22,20 +22,13 @@ export default function Home() {
 
         {/* TOP NAVIGATION BAR */}
         <div className="relative z-20 w-full px-4 md:px-12 py-0 flex justify-between items-start">
-          {/* CAIXA GRENÁ DIMINUÍDA COM BANNER INTERNO */}
-          <div className="bg-[#68121f] p-2 shadow-xl flex flex-col items-center gap-2">
+          {/* LOGO SÓCIO FLU SUBSTITUINDO A CAIXA GRENÁ */}
+          <div className="pt-4">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/pt/a/a3/Fluminense_FC_escudo.png" 
-              alt="Fluminense" 
-              className="w-8 h-8 brightness-0 invert"
+              src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 
+              alt="Sócio Futebol" 
+              className="h-16 md:h-20 w-auto object-contain drop-shadow-2xl"
             />
-            <div className="border-t border-white/20 pt-2">
-              <img 
-                src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 
-                alt="Sócio Futebol" 
-                className="h-6 w-auto object-contain"
-              />
-            </div>
           </div>
 
           <div className="flex items-center gap-8 mt-8">

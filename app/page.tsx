@@ -50,12 +50,12 @@ export default function Home() {
         </div>
 
         {/* CENTRAL CONTENT */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 py-12">
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 py-8">
           <div className="bg-[#185347] text-white px-6 py-2 rounded-full font-black text-sm tracking-widest mb-8 animate-pulse shadow-2xl border border-white/20">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
           </div>
           
-          <h1 className="text-6xl md:text-[120px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
+          <h1 className="text-5xl md:text-[120px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
             O FLU SE VIVE JUNTO!
           </h1>
           
@@ -82,8 +82,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-12 mb-8">
-            <button className="bg-[#68121f] px-12 py-5 rounded-sm font-black text-lg tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_30px_rgba(104,18,31,0.4)] hover:scale-105 inline-block">
+          <div className="mt-12 mb-12 flex justify-center">
+            <button className="bg-[#68121f] px-8 md:px-12 py-5 rounded-sm font-black text-base md:text-lg tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_30px_rgba(104,18,31,0.4)] hover:scale-105 block w-fit">
               Adicionar convidado agora
             </button>
           </div>

@@ -116,9 +116,9 @@ export default function Home() {
             {/* ARQUIBA 100% */}
             <div className="bg-black/70 border-t-8 border-[#68121f] p-10 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
-                <div className="flex justify-between items-start mb-8">
+                <div className="flex justify-between items-start mb-8 gap-4">
                   <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 100%</h3>
-                  <span className="bg-[#68121f] text-xs font-bold px-3 py-1 rounded">MAIS COMPLETO</span>
+                  <span className="bg-[#68121f] text-xs font-bold px-4 py-1.5 rounded whitespace-nowrap">MAIS COMPLETO</span>
                 </div>
                 <ul className="space-y-4 mb-10">
                   <li className="flex items-center gap-3 text-gray-200">

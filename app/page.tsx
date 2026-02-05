@@ -73,7 +73,7 @@ export default function Home() {
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
               <div className="mb-3 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
                 </svg>
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
@@ -97,7 +97,7 @@ export default function Home() {
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
               <div className="mb-3 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.546 1.16 3.695 1.16 5.241 0M8.25 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.75 6h16.5M3.75 18h16.5" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.504-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c.982-1.432 2.654-2.486 4.64-3.004a7.48 7.48 0 0 1 4.22 0c1.986.518 3.658 1.572 4.64 3.004M5.25 4.236A7.45 7.45 0 0 0 4.5 7.5c0 2.091.852 3.984 2.235 5.344m10.515-8.608A7.45 7.45 0 0 1 19.5 7.5c0 2.091-.852 3.984-2.235 5.344" />
                 </svg>
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>

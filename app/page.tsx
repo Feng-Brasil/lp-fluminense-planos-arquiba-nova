@@ -10,13 +10,16 @@ export default function Home() {
 
       {/* SCROLL 1 — HERO SECTION */}
       <section className="relative h-screen w-full overflow-hidden flex flex-col pt-[54px]">
-        {/* BACKGROUND IMAGE WITH OVERLAY */}
+        {/* BACKGROUND IMAGE WITH OVERLAY AND GREEN FILTER */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1510051644265-934cb97450a5?q=80&w=2000" 
+            src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066304911_1ff1b8ac8b_o.jpg" 
             alt="Torcida Fluminense Maracanã" 
-            className="w-full h-full object-cover brightness-[0.4]"
+            className="w-full h-full object-cover brightness-[0.5]"
           />
+          {/* Greenish Filter Overlay */}
+          <div className="absolute inset-0 bg-[#185347]/40 mix-blend-multiply"></div>
+          {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-[#171717]"></div>
         </div>
 

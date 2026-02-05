@@ -49,8 +49,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CENTRAL CONTENT */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 py-8">
+        {/* CENTRAL CONTENT - Adjusted with -mt-16 to move text upwards */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 py-8 -mt-16">
           <div className="bg-[#185347] text-white px-6 py-2 rounded-full font-black text-sm tracking-widest mb-8 animate-pulse shadow-2xl border border-white/20">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
           </div>

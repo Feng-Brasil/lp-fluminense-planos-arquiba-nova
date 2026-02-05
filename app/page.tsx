@@ -26,7 +26,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none"></div>
 
         {/* TOP NAVIGATION BAR */}
-        <div className="relative z-20 w-full px-4 md:px-12 py-0 flex justify-between items-start">
+        <div className="relative z-20 w-full px-4 md:px-12 py-0 flex justify-between items-center">
           {/* LOGO SÓCIO FLU */}
           <div className="pt-4">
             <img 
@@ -36,39 +36,41 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex items-center gap-8 mt-8">
-            <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-              </svg>
-              <span className="text-xs font-medium tracking-[0.2em] uppercase">Login</span>
+          {/* BOX E BOTÕES NA MESMA LINHA */}
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 mt-4">
+            {/* BOX 1 MÊS GRÁTIS - POSICIONADO NO TOPO COM OS BOTÕES */}
+            <div className="bg-[#185347] text-white px-6 py-2 rounded-full font-black text-[10px] md:text-xs tracking-widest animate-pulse shadow-2xl border border-white/20">
+              1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
             </div>
-            <button className="bg-[#68121f] px-8 py-3 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-lg">
-              Minha Conta
-            </button>
+
+            <div className="flex items-center gap-8">
+              <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                </svg>
+                <span className="text-xs font-medium tracking-[0.2em] uppercase">Login</span>
+              </div>
+              <button className="bg-[#68121f] px-8 py-3 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-lg">
+                Minha Conta
+              </button>
+            </div>
           </div>
         </div>
 
-        {/* CENTRAL CONTENT - Adjusted: Box moved up, texts moved down and spaced */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-0 md:pt-0 pb-12">
+        {/* CENTRAL CONTENT - Textos subidos */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-8 md:pt-12 pb-12">
           
-          {/* BOX SUBIDO - 1 MÊS GRÁTIS (Moved higher with negative margin) */}
-          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-4 md:mb-8 animate-pulse shadow-2xl border border-white/20 -mt-12 md:-mt-16">
-            1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
-          </div>
-          
-          {/* TEXTOS ABAIXADOS E ESPAÇADOS (Increased top margin and spacing) */}
-          <div className="mt-16 md:mt-24 space-y-12">
+          <div className="mt-4 md:mt-8 space-y-8">
             <h1 className="text-5xl md:text-[130px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!
             </h1>
             
-            <p className="text-xl md:text-3xl font-medium max-w-3xl mx-auto text-gray-200 drop-shadow-lg leading-relaxed mt-10">
+            <p className="text-xl md:text-3xl font-medium max-w-3xl mx-auto text-gray-200 drop-shadow-lg leading-relaxed mt-6">
               Convide, economize e sigam juntos na arquibancada.
             </p>
           </div>
 
-          <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
               <span className="block text-3xl mb-3">🎟️</span>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
@@ -87,7 +89,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-16 mb-6 flex justify-center">
+          <div className="mt-12 mb-6 flex justify-center">
             <button className="bg-[#68121f] px-10 md:px-16 py-6 rounded-sm font-black text-lg md:text-xl tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(104,18,31,0.5)] hover:scale-105 block w-fit">
               Adicionar convidado agora
             </button>

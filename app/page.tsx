@@ -50,9 +50,9 @@ export default function Home() {
         </div>
 
         {/* CENTRAL CONTENT - Adjusted spacing and margins */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-16 md:pt-24 pb-12">
-          {/* BOX MANTIDO NO TOPO */}
-          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-20 animate-pulse shadow-2xl border border-white/20">
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-8 md:pt-12 pb-12">
+          {/* BOX SUBIDO (Reduzido pt do container e mb do box) */}
+          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-12 animate-pulse shadow-2xl border border-white/20">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
           </div>
           

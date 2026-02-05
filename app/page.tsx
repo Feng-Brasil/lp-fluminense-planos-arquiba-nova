@@ -182,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FLOATING WHATSAPP */}
+      {/* FLOATING WHATSAPP / SUPPORT */}
       <div className="fixed bottom-8 right-8 z-50">
         <div className="w-16 h-16 bg-[#185347] rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(24,83,71,0.5)] cursor-pointer hover:scale-110 transition-transform border-2 border-white/10 overflow-hidden">
           <img 

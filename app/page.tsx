@@ -49,10 +49,10 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CENTRAL CONTENT - Adjusted to move texts up (Changed justify-start and reduced pt) */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-0 md:pt-2 pb-12 -mt-8 md:-mt-12">
-          {/* BOX SUBIDO */}
-          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-6 animate-pulse shadow-2xl border border-white/20">
+        {/* CENTRAL CONTENT - Adjusted to move texts and box up */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-start text-center px-4 pt-4 md:pt-8 pb-12">
+          {/* BOX SUBIDO - 1 MÊS GRÁTIS */}
+          <div className="bg-[#185347] text-white px-8 py-3 rounded-full font-black text-sm md:text-base tracking-widest mb-4 animate-pulse shadow-2xl border border-white/20">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
           </div>
           

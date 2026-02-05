@@ -106,7 +106,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
             {/* ARQUIBA 100% */}
-            <div className="bg-black/70 backdrop-blur-lg border-t-8 border-[#68121f] p-10 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
+            <div className="bg-black/70 border-t-8 border-[#68121f] p-10 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex justify-between items-start mb-8">
                   <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 100%</h3>
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
 
             {/* ARQUIBA 75% */}
-            <div className="bg-black/70 backdrop-blur-lg border-t-8 border-[#185347] p-10 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
+            <div className="bg-black/70 border-t-8 border-[#185347] p-10 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex justify-between items-start mb-8">
                   <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 75%</h3>
@@ -180,8 +180,8 @@ export default function Home() {
           {/* BLOCO EMOCIONAL */}
           <div className="relative w-full h-[500px] rounded-3xl overflow-hidden mb-20 shadow-2xl">
             <img 
-              src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066304911_1ff1b8ac8b_o.jpg" 
-              alt="Torcida Fluminense" 
+              src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 
+              alt="Torcida Fluminense Libertadores" 
               className="w-full h-full object-cover brightness-[0.4]"
             />
             <div className="absolute inset-0 bg-[#185347]/40 mix-blend-multiply"></div>

@@ -81,7 +81,8 @@ export default function Home() {
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
               <div className="mb-3 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.546 1.16 3.695 1.16 5.241 0pM9.75 9.75c0-1.332 1.114-2.417 2.489-2.417 1.375 0 2.49 1.085 2.49 2.417 0 1.332-1.115 2.417-2.49 2.417M9.75 9.75c-1.375 0-2.49 1.085-2.49 2.417 0 1.332 1.115 2.417 2.49 2.417M12 21a8.966 8.966 0 0 1-5.982-2.275M15 15.25c1.254 0 2.486.209 3.63.595a8.997 8.997 0 0 1-6.63 6.63c-.386-1.144-.595-2.376-.595-3.63Z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.546 1.16 3.695 1.16 5.241 0M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                 </svg>
               </div>
               <p className="text-sm font-bold uppercase tracking-wider leading-snug">Descontos em ingressos para convidados</p>

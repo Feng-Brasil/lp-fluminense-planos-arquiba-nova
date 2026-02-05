@@ -33,12 +33,6 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="absolute left-1/2 -translate-x-1/2 top-8 flex flex-col items-center text-white">
-            <span className="text-[10px] tracking-[0.4em] font-bold opacity-90 mb-1">SOMOS</span>
-            <span className="text-6xl md:text-7xl font-black tracking-tighter leading-none">39.095</span>
-            <span className="text-[10px] tracking-[0.4em] font-bold opacity-90 mt-1">SÓCIOS DO FLU</span>
-          </div>
-
           <div className="flex items-center gap-8 mt-8">
             <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">

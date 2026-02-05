@@ -184,11 +184,11 @@ export default function Home() {
 
       {/* FLOATING WHATSAPP */}
       <div className="fixed bottom-8 right-8 z-50">
-        <div className="w-16 h-16 bg-[#185347] rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(24,83,71,0.5)] cursor-pointer hover:scale-110 transition-transform border-2 border-white/10">
+        <div className="w-16 h-16 bg-[#185347] rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(24,83,71,0.5)] cursor-pointer hover:scale-110 transition-transform border-2 border-white/10 overflow-hidden">
           <img 
-            src="https://upload.wikimedia.org/wikipedia/pt/a/a3/Fluminense_FC_escudo.png" 
+            src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/webchat-icon-1743608850551.png" 
             alt="Suporte" 
-            className="w-10 h-10 brightness-0 invert"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>

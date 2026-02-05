@@ -36,30 +36,28 @@ export default function Home() {
             />
           </div>
 
-          {/* BOX E BOTÕES NA MESMA LINHA */}
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 mt-4">
-            {/* BOX 1 MÊS GRÁTIS - POSICIONADO NO TOPO COM OS BOTÕES */}
-            <div className="bg-[#185347] text-white px-6 py-2 rounded-full font-black text-[10px] md:text-xs tracking-widest animate-pulse shadow-2xl border border-white/20">
-              1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
+          {/* BOTÕES DE LOGIN/CONTA */}
+          <div className="flex items-center gap-4 md:gap-8 mt-4">
+            <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+              <span className="text-xs font-medium tracking-[0.2em] uppercase">Login</span>
             </div>
-
-            <div className="flex items-center gap-8">
-              <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                </svg>
-                <span className="text-xs font-medium tracking-[0.2em] uppercase">Login</span>
-              </div>
-              <button className="bg-[#68121f] px-8 py-3 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-lg">
-                Minha Conta
-              </button>
-            </div>
+            <button className="bg-[#68121f] px-8 py-3 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-lg">
+              Minha Conta
+            </button>
           </div>
         </div>
 
-        {/* CENTRAL CONTENT - Textos retornados para posição centralizada */}
+        {/* CENTRAL CONTENT */}
         <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 pb-12">
           
+          {/* BOX 1 MÊS GRÁTIS - CENTRALIZADO NO PRIMEIRO SCROLL */}
+          <div className="mb-8 bg-[#185347] text-white px-8 py-3 rounded-full font-black text-xs md:text-sm tracking-widest animate-pulse shadow-2xl border border-white/20 uppercase">
+            1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
+          </div>
+
           <div className="space-y-8">
             <h1 className="text-5xl md:text-[130px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!

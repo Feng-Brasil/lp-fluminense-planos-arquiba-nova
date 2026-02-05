@@ -22,15 +22,17 @@ export default function Home() {
 
         {/* TOP NAVIGATION BAR */}
         <div className="relative z-20 w-full px-4 md:px-12 py-0 flex justify-between items-start">
-          <div className="flex flex-col items-center bg-[#68121f] p-4 pt-6 min-w-[120px] shadow-xl">
+          <div className="flex flex-col items-center bg-[#68121f] p-4 pt-6 min-w-[140px] shadow-xl">
             <img 
               src="https://upload.wikimedia.org/wikipedia/pt/a/a3/Fluminense_FC_escudo.png" 
               alt="Fluminense" 
               className="w-14 h-14 brightness-0 invert mb-3"
             />
-            <span className="text-white text-[10px] font-black tracking-widest leading-none text-center uppercase">
-              Sócio<br/>Futebol
-            </span>
+            <img 
+              src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 
+              alt="Sócio Futebol" 
+              className="h-8 w-auto object-contain"
+            />
           </div>
 
           <div className="flex items-center gap-8 mt-8">

@@ -1,6 +1,14 @@
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '500', '700', '900'],
+  display: 'swap',
+});
+
 export default function Home() {
   return (
-    <main className="min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white font-sans overflow-x-hidden relative">
+    <main className={`${montserrat.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative`}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 
@@ -42,7 +50,7 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
               </svg>
-              <span className="text-xs font-medium tracking-[0.2em] uppercase">Login</span>
+              <span className="text-xs font-bold tracking-[0.2em] uppercase">Login</span>
             </div>
             <button className="bg-[#68121f] px-8 py-3 rounded-sm font-black text-xs tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-lg">
               Minha Conta
@@ -64,7 +72,7 @@ export default function Home() {
               O FLU SE VIVE JUNTO!
             </h1>
             
-            <p className="text-xl md:text-3xl font-medium max-w-3xl mx-auto text-gray-200 drop-shadow-lg leading-relaxed mt-10">
+            <p className="text-xl md:text-3xl font-bold max-w-3xl mx-auto text-gray-200 drop-shadow-lg leading-relaxed mt-10">
               Convide, economize e sigam juntos na arquibancada.
             </p>
           </div>
@@ -77,14 +85,14 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
                 </svg>
               </div>
-              <p className="text-sm font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
+              <p className="text-sm font-black uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
             </div>
             {/* BOX 2 - ÍCONE CIFRÃO EM BRANCO */}
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
               <div className="mb-3 text-white">
                 <span className="text-3xl font-black leading-none">$</span>
               </div>
-              <p className="text-sm font-bold uppercase tracking-wider leading-snug">Descontos em ingressos para convidados</p>
+              <p className="text-sm font-black uppercase tracking-wider leading-snug">Descontos em ingressos para convidados</p>
             </div>
             {/* BOX 3 - ÍCONE GRUPO */}
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
@@ -93,7 +101,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                 </svg>
               </div>
-              <p className="text-sm font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
+              <p className="text-sm font-black uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
             {/* BOX 4 - ÍCONE FOGO (ATUALIZADO) */}
             <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
@@ -103,7 +111,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
                 </svg>
               </div>
-              <p className="text-sm font-bold uppercase tracking-wider leading-snug">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
+              <p className="text-sm font-black uppercase tracking-wider leading-snug">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
             </div>
           </div>
 
@@ -126,7 +134,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 drop-shadow-lg">Seu plano agora vale ainda mais</h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md font-medium">
               Com convidados, seu plano ganha mais poder: mais pessoas com prioridade, mais economia e mais companhia para viver cada jogo decisivo.
             </p>
           </div>
@@ -137,31 +145,31 @@ export default function Home() {
               <div className="flex-1">
                 <div className="flex flex-col sm:flex-row justify-between items-start mb-8 gap-4">
                   <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 100%</h3>
-                  <span className="bg-[#68121f] text-xs font-bold px-6 py-2 rounded whitespace-nowrap inline-block">MAIS COMPLETO</span>
+                  <span className="bg-[#68121f] text-xs font-black px-6 py-2 rounded whitespace-nowrap inline-block">MAIS COMPLETO</span>
                 </div>
                 <ul className="space-y-4 mb-10">
-                  <li className="flex items-center gap-3 text-gray-200">
+                  <li className="flex items-center gap-3 text-gray-200 font-medium">
                     <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
                     Mais liberdade para compartilhar a experiência
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200">
+                  <li className="flex items-center gap-3 text-gray-200 font-medium">
                     <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
                     Pode contratar até 3 convidados
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200">
+                  <li className="flex items-center gap-3 text-gray-200 font-medium">
                     <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
                     Pode cadastrar até 5 convidados
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200 font-bold text-white">
+                  <li className="flex items-center gap-3 text-gray-200 font-black text-white">
                     <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
                     Mais pessoas com prioridade nos ingressos
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200">
+                  <li className="flex items-center gap-3 text-gray-200 font-medium">
                     <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
                     Ideal para família e grupo de amigos
                   </li>
                 </ul>
-                <p className="text-sm text-gray-400 italic">*Valor por convidado: R$ 25,00/mês</p>
+                <p className="text-sm text-gray-400 italic font-medium">*Valor por convidado: R$ 25,00/mês</p>
               </div>
               <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
                 <img 
@@ -179,20 +187,20 @@ export default function Home() {
                   <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 75%</h3>
                 </div>
                 <ul className="space-y-4 mb-10">
-                  <li className="flex items-center gap-3 text-gray-200">
+                  <li className="flex items-center gap-3 text-gray-200 font-medium">
                     <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
                     A forma mais fácil de trazer alguém para viver o Flu com você
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200">
+                  <li className="flex items-center gap-3 text-gray-200 font-medium">
                     <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
                     Pode contratar 1 convidado
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200">
+                  <li className="flex items-center gap-3 text-gray-200 font-medium">
                     <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
                     Pode cadastrar até 3 convidados
                   </li>
                 </ul>
-                <p className="text-sm text-gray-400 italic">*Valor por convidado: R$ 25,00/mês</p>
+                <p className="text-sm text-gray-400 italic font-medium">*Valor por convidado: R$ 25,00/mês</p>
               </div>
               <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
                 <img 
@@ -226,7 +234,7 @@ export default function Home() {
             <button className="bg-[#185347] px-16 py-6 rounded-sm font-black text-2xl tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-2xl hover:scale-105 mb-4">
               Quero trazer meu convidado
             </button>
-            <p className="text-gray-300 font-bold uppercase tracking-widest text-sm drop-shadow-md">Leva menos de 1 minuto.</p>
+            <p className="text-gray-300 font-black uppercase tracking-widest text-sm drop-shadow-md">Leva menos de 1 minuto.</p>
           </div>
         </div>
       </section>
@@ -253,7 +261,7 @@ export default function Home() {
           <p className="uppercase tracking-[0.3em] text-sm font-black mb-6">
             Fluminense Football Club - Sócio Futebol
           </p>
-          <p className="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold">
+          <p className="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-black">
             &copy; {new Date().getFullYear()} - O orgulho de ser tricolor. Todos os direitos reservados.
           </p>
         </div>

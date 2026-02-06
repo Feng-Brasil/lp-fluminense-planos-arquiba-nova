@@ -3,17 +3,17 @@ import localFont from 'next/font/local';
 const balboa = localFont({
   src: [
     {
-      path: '../public/fonts/Balboa-Regular.woff2', // Certifique-se de que o arquivo existe neste caminho
+      path: '../public/fonts/Balboa-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Balboa-Bold.woff2', // Certifique-se de que o arquivo existe neste caminho
+      path: '../public/fonts/Balboa-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Balboa-Black.woff2', // Opcional para o peso 900/Black
+      path: '../public/fonts/Balboa-Black.woff2',
       weight: '900',
       style: 'normal',
     },
@@ -23,7 +23,7 @@ const balboa = localFont({
 
 export default function Home() {
   return (
-    <main className={`${balboa.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative`}>
+    <main className={`${balboa.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative font-normal`}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 

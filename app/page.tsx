@@ -69,8 +69,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CENTRAL CONTENT */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-20 md:py-32">
+        {/* CENTRAL CONTENT - Ajustado com mt-[-40px] md:mt-[-80px] para subir os textos */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-12 md:py-20 mt-[-40px] md:mt-[-80px]">
           
           <div className="mb-8 md:mb-12 bg-[#185347] text-white px-6 md:px-8 py-3 rounded-full font-bold text-[10px] md:text-xs tracking-widest animate-pulse shadow-2xl border border-white/20 uppercase">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
 
           {/* GRID DE BENEFÍCIOS */}
-          <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] w-full max-w-[1140px] mx-auto">
+          <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] w-full max-w-[1140px] mx-auto">
             <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#68121f] text-left">
               <div className="mb-4 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
@@ -121,13 +121,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-16 md:mt-20 flex justify-center">
+          <div className="mt-12 md:mt-16 flex justify-center">
             <button className="bg-[#68121f] px-10 md:px-14 py-4 md:py-5 rounded-sm font-bold text-base md:text-lg tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(104,18,31,0.4)] hover:scale-105 block w-fit">
               Adicionar convidado agora
             </button>
           </div>
           
-          <div className="animate-bounce opacity-40 mt-16 md:mt-24">
+          <div className="animate-bounce opacity-40 mt-12 md:mt-16">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
             </svg>

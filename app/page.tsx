@@ -136,7 +136,7 @@ export default function Home() {
       </section>
 
       {/* NOVO SCROLL — DETALHES DO CONVIDADO (VERTICAL SPLIT) */}
-      <section className="relative min-h-screen w-full flex items-center z-10 bg-black/40 backdrop-blur-sm py-20">
+      <section className="relative min-h-screen w-full flex items-center z-10 bg-black/60 backdrop-blur-md py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* LADO ESQUERDO: TEXTO EXPLICATIVO */}
           <div className="space-y-8">

@@ -16,7 +16,6 @@ export default function Home() {
           alt="Background Fluminense" 
           className="w-full h-full object-cover"
         />
-        {/* Camada de Filtro Esverdeado e Escurecimento */}
         <div className="absolute inset-0 bg-[#185347]/60 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
@@ -28,24 +27,21 @@ export default function Home() {
         <div className="h-[20px] bg-[#185347] w-full"></div>
       </div>
 
-      {/* SCROLL 1 — HERO SECTION */}
+      {/* SCROLL 1 — HERO SECTION (Ajustado para o padrão de espaçamento do site oficial) */}
       <section className="relative min-h-screen w-full overflow-hidden flex flex-col pt-[54px] z-10">
-        {/* Gradient Overlay para suavizar o topo */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none"></div>
 
-        {/* TOP NAVIGATION BAR */}
-        <div className="relative z-20 w-full px-4 md:px-12 py-0 flex justify-between items-center">
-          {/* LOGO SÓCIO FLU */}
-          <div className="pt-4">
+        {/* TOP NAVIGATION BAR - Espaçamento lateral alinhado ao container oficial */}
+        <div className="relative z-20 w-full max-w-[1200px] mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+          <div className="pt-2">
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 
               alt="Sócio Futebol" 
-              className="h-24 md:h-32 w-auto object-contain drop-shadow-2xl"
+              className="h-20 md:h-28 w-auto object-contain drop-shadow-2xl"
             />
           </div>
 
-          {/* BOTÕES DE LOGIN/CONTA */}
-          <div className="flex items-center gap-4 md:gap-8 mt-4">
+          <div className="flex items-center gap-6 md:gap-10">
             <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -58,54 +54,49 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CENTRAL CONTENT */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 pb-12">
+        {/* CENTRAL CONTENT - Espaçamentos verticais baseados na seção de planos */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 py-16 md:py-24">
           
-          {/* BOX 1 MÊS GRÁTIS - CENTRALIZADO E COM MARGEM INFERIOR MAIOR */}
-          <div className="mb-12 bg-[#185347] text-white px-8 py-3 rounded-full font-black text-xs md:text-sm tracking-widest animate-pulse shadow-2xl border border-white/20 uppercase">
+          <div className="mb-10 bg-[#185347] text-white px-8 py-3 rounded-full font-black text-xs md:text-sm tracking-widest animate-pulse shadow-2xl border border-white/20 uppercase">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
           </div>
 
-          {/* TEXTOS ABAIXADOS COM MARGIN TOP ADICIONAL */}
-          <div className="space-y-8 mt-4">
-            <h1 className="text-5xl md:text-[130px] font-black tracking-tighter leading-none text-white drop-shadow-2xl uppercase">
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-[110px] font-black tracking-tighter leading-[0.9] text-white drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!
             </h1>
             
-            <p className="text-xl md:text-3xl font-bold max-w-3xl mx-auto text-gray-200 drop-shadow-lg leading-relaxed mt-10">
+            <p className="text-lg md:text-2xl font-bold max-w-3xl mx-auto text-gray-200 drop-shadow-lg leading-relaxed pt-4">
               Convide, economize e sigam juntos na arquibancada.
             </p>
           </div>
 
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl">
-            {/* BOX 1 - ÍCONE TICKET */}
-            <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
-              <div className="mb-3 text-white">
+          {/* GRID DE BENEFÍCIOS - Margem superior alinhada ao grid de planos oficial */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-[1200px] mx-auto">
+            <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#68121f] text-left">
+              <div className="mb-4 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
                 </svg>
               </div>
               <p className="text-sm font-black uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
             </div>
-            {/* BOX 2 - ÍCONE CIFRÃO EM BRANCO */}
-            <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
-              <div className="mb-3 text-white">
+            <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#185347] text-left">
+              <div className="mb-4 text-white">
                 <span className="text-3xl font-black leading-none">$</span>
               </div>
               <p className="text-sm font-black uppercase tracking-wider leading-snug">Descontos em ingressos para convidados</p>
             </div>
-            {/* BOX 3 - ÍCONE GRUPO */}
-            <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#68121f] text-left">
-              <div className="mb-3 text-white">
+            <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#68121f] text-left">
+              <div className="mb-4 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                 </svg>
               </div>
               <p className="text-sm font-black uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
-            {/* BOX 4 - ÍCONE FOGO (ATUALIZADO) */}
-            <div className="bg-black/60 backdrop-blur-md p-6 border-l-4 border-[#185347] text-left">
-              <div className="mb-3 text-white">
+            <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#185347] text-left">
+              <div className="mb-4 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
@@ -115,61 +106,57 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-16 mb-6 flex justify-center">
-            <button className="bg-[#68121f] px-10 md:px-16 py-6 rounded-sm font-black text-lg md:text-xl tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(104,18,31,0.5)] hover:scale-105 block w-fit">
+          <div className="mt-12 flex justify-center">
+            <button className="bg-[#68121f] px-12 py-5 rounded-sm font-black text-lg tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(104,18,31,0.4)] hover:scale-105 block w-fit">
               Adicionar convidado agora
             </button>
           </div>
           
-          <div className="animate-bounce opacity-60 mt-8">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-8 h-8">
+          <div className="animate-bounce opacity-40 mt-12">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
             </svg>
           </div>
         </div>
       </section>
 
-      {/* SCROLL 2 — EXPLICAÇÃO + REGRAS */}
-      <section className="py-24 relative z-10 bg-black/40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* SCROLL 2 — EXPLICAÇÃO + REGRAS (Padding ajustado para 80px conforme padrão de seção) */}
+      <section className="py-20 md:py-28 relative z-10 bg-black/40">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 drop-shadow-lg">Seu plano agora vale ainda mais</h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md font-medium">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6 drop-shadow-lg">Seu plano agora vale ainda mais</h2>
+            <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md font-medium leading-relaxed">
               Com convidados, seu plano ganha mais poder: mais pessoas com prioridade, mais economia e mais companhia para viver cada jogo decisivo.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
             {/* ARQUIBA 100% */}
-            <div className="bg-black/70 border-t-8 border-[#68121f] p-10 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
+            <div className="bg-black/70 border-t-8 border-[#68121f] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex flex-col sm:flex-row justify-between items-start mb-8 gap-4">
                   <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 100%</h3>
-                  <span className="bg-[#68121f] text-xs font-black px-6 py-2 rounded whitespace-nowrap inline-block">MAIS COMPLETO</span>
+                  <span className="bg-[#68121f] text-[10px] font-black px-4 py-1.5 rounded whitespace-nowrap inline-block tracking-widest">MAIS COMPLETO</span>
                 </div>
                 <ul className="space-y-4 mb-10">
-                  <li className="flex items-center gap-3 text-gray-200 font-medium">
-                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
+                  <li className="flex items-start gap-3 text-gray-200 font-medium text-sm">
+                    <div className="h-2 w-2 bg-[#68121f] rounded-full mt-1.5 shrink-0"></div>
                     Mais liberdade para compartilhar a experiência
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200 font-medium">
-                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
+                  <li className="flex items-start gap-3 text-gray-200 font-medium text-sm">
+                    <div className="h-2 w-2 bg-[#68121f] rounded-full mt-1.5 shrink-0"></div>
                     Pode contratar até 3 convidados
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200 font-medium">
-                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
+                  <li className="flex items-start gap-3 text-gray-200 font-medium text-sm">
+                    <div className="h-2 w-2 bg-[#68121f] rounded-full mt-1.5 shrink-0"></div>
                     Pode cadastrar até 5 convidados
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200 font-black text-white">
-                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
+                  <li className="flex items-start gap-3 text-white font-black text-sm">
+                    <div className="h-2 w-2 bg-[#68121f] rounded-full mt-1.5 shrink-0"></div>
                     Mais pessoas com prioridade nos ingressos
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200 font-medium">
-                    <div className="h-2 w-2 bg-[#68121f] rounded-full"></div>
-                    Ideal para família e grupo de amigos
-                  </li>
                 </ul>
-                <p className="text-sm text-gray-400 italic font-medium">*Valor por convidado: R$ 25,00/mês</p>
+                <p className="text-xs text-gray-400 italic font-medium">*Valor por convidado: R$ 25,00/mês</p>
               </div>
               <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
                 <img 
@@ -181,26 +168,26 @@ export default function Home() {
             </div>
 
             {/* ARQUIBA 75% */}
-            <div className="bg-black/70 border-t-8 border-[#185347] p-10 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
+            <div className="bg-black/70 border-t-8 border-[#185347] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex justify-between items-start mb-8">
                   <h3 className="text-3xl font-black uppercase tracking-tighter">ARQUIBA 75%</h3>
                 </div>
                 <ul className="space-y-4 mb-10">
-                  <li className="flex items-center gap-3 text-gray-200 font-medium">
-                    <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
+                  <li className="flex items-start gap-3 text-gray-200 font-medium text-sm">
+                    <div className="h-2 w-2 bg-[#185347] rounded-full mt-1.5 shrink-0"></div>
                     A forma mais fácil de trazer alguém para viver o Flu com você
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200 font-medium">
-                    <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
+                  <li className="flex items-start gap-3 text-gray-200 font-medium text-sm">
+                    <div className="h-2 w-2 bg-[#185347] rounded-full mt-1.5 shrink-0"></div>
                     Pode contratar 1 convidado
                   </li>
-                  <li className="flex items-center gap-3 text-gray-200 font-medium">
-                    <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
+                  <li className="flex items-start gap-3 text-gray-200 font-medium text-sm">
+                    <div className="h-2 w-2 bg-[#185347] rounded-full mt-1.5 shrink-0"></div>
                     Pode cadastrar até 3 convidados
                   </li>
                 </ul>
-                <p className="text-sm text-gray-400 italic font-medium">*Valor por convidado: R$ 25,00/mês</p>
+                <p className="text-xs text-gray-400 italic font-medium">*Valor por convidado: R$ 25,00/mês</p>
               </div>
               <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
                 <img 
@@ -212,36 +199,36 @@ export default function Home() {
             </div>
           </div>
 
-          {/* BLOCO EMOCIONAL */}
-          <div className="relative w-full h-[500px] rounded-3xl overflow-hidden mb-20 shadow-2xl">
+          {/* BLOCO EMOCIONAL - Margens ajustadas para respiro visual do site oficial */}
+          <div className="relative w-full h-[450px] md:h-[550px] rounded-2xl overflow-hidden mb-20 shadow-2xl">
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 
               alt="Torcida Fluminense Libertadores" 
-              className="w-full h-full object-cover brightness-[0.4]"
+              className="w-full h-full object-cover brightness-[0.35]"
             />
-            <div className="absolute inset-0 bg-[#185347]/40 mix-blend-multiply"></div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
-              <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6 max-w-4xl drop-shadow-2xl">
+            <div className="absolute inset-0 bg-[#185347]/30 mix-blend-multiply"></div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-12">
+              <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight">
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?
               </h3>
-              <div className="bg-[#68121f] px-8 py-4 rounded-sm shadow-xl">
-                <p className="font-black text-xl uppercase tracking-widest">Contrate um convidado e ganhe 1 mês grátis na mensalidade dele.</p>
+              <div className="bg-[#68121f] px-8 py-5 rounded-sm shadow-xl border border-white/10">
+                <p className="font-black text-lg md:text-xl uppercase tracking-widest">Contrate um convidado e ganhe 1 mês grátis na mensalidade dele.</p>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col items-center">
-            <button className="bg-[#185347] px-16 py-6 rounded-sm font-black text-2xl tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-2xl hover:scale-105 mb-4">
+          <div className="flex flex-col items-center pb-12">
+            <button className="bg-[#185347] px-12 py-6 rounded-sm font-black text-xl md:text-2xl tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-2xl hover:scale-105 mb-6">
               Quero trazer meu convidado
             </button>
-            <p className="text-gray-300 font-black uppercase tracking-widest text-sm drop-shadow-md">Leva menos de 1 minuto.</p>
+            <p className="text-gray-300 font-black uppercase tracking-[0.2em] text-xs drop-shadow-md">Leva menos de 1 minuto.</p>
           </div>
         </div>
       </section>
 
       {/* FLOATING WHATSAPP / SUPPORT */}
-      <div className="fixed bottom-8 right-8 z-50">
-        <div className="w-16 h-16 bg-[#185347] rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(24,83,71,0.5)] cursor-pointer hover:scale-110 transition-transform border-2 border-white/10 overflow-hidden">
+      <div className="fixed bottom-6 right-6 z-50">
+        <div className="w-14 h-14 md:w-16 md:h-16 bg-[#185347] rounded-full flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 transition-transform border-2 border-white/10 overflow-hidden">
           <img 
             src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/webchat-icon-1743608850551.png" 
             alt="Suporte" 
@@ -250,18 +237,18 @@ export default function Home() {
         </div>
       </div>
 
-      {/* FOOTER */}
-      <footer className="py-16 border-t border-white/10 bg-black/80 backdrop-blur-md relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center gap-1 mb-10">
-            <span className="w-16 h-1.5 bg-[#68121f]"></span>
-            <span className="w-16 h-1.5 bg-[#ffffff]"></span>
-            <span className="w-16 h-1.5 bg-[#185347]"></span>
+      {/* FOOTER - Espaçamento vertical reduzido conforme rodapé oficial */}
+      <footer className="py-12 border-t border-white/10 bg-black/90 backdrop-blur-md relative z-10">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-6 text-center">
+          <div className="flex justify-center gap-1 mb-8">
+            <span className="w-12 h-1 bg-[#68121f]"></span>
+            <span className="w-12 h-1 bg-[#ffffff]"></span>
+            <span className="w-12 h-1 bg-[#185347]"></span>
           </div>
-          <p className="uppercase tracking-[0.3em] text-sm font-black mb-6">
+          <p className="uppercase tracking-[0.3em] text-xs font-black mb-4">
             Fluminense Football Club - Sócio Futebol
           </p>
-          <p className="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-black">
+          <p className="text-gray-500 text-[9px] uppercase tracking-[0.2em] font-black">
             &copy; {new Date().getFullYear()} - O orgulho de ser tricolor. Todos os direitos reservados.
           </p>
         </div>

@@ -135,64 +135,70 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NOVO SCROLL — DETALHES DO CONVIDADO (VERTICAL SPLIT) */}
-      <section className="relative min-h-screen w-full flex items-center z-10 bg-black/80 backdrop-blur-xl py-20 border-y border-white/5">
-        <div className="max-w-[1140px] mx-auto px-[15px] grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-          {/* LADO ESQUERDO: TEXTO EXPLICATIVO */}
-          <div className="space-y-8">
-            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-tight border-l-8 border-[#68121f] pl-6">
-              Leve mais uma pessoa para todos os jogos
-            </h2>
-            
-            <div className="space-y-6 text-gray-200">
-              <p className="text-lg md:text-xl font-bold text-white leading-relaxed">
-                Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com:
-              </p>
+      {/* NOVO SCROLL — COMO FUNCIONA O CONVIDADO */}
+      <section className="relative min-h-screen w-full flex flex-col items-center justify-center z-10 bg-black/80 backdrop-blur-xl py-20 border-y border-white/5">
+        <div className="max-w-[1140px] mx-auto px-[15px] w-full">
+          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-16 text-center">
+            COMO FUNCIONA O CONVIDADO
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+            {/* LADO ESQUERDO: TEXTO EXPLICATIVO */}
+            <div className="space-y-8">
+              <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-tight border-l-8 border-[#68121f] pl-6">
+                Leve mais uma pessoa para todos os jogos
+              </h3>
               
-              <ul className="space-y-4">
-                <li className="flex items-center gap-4">
-                  <div className="h-3 w-3 bg-[#185347] rotate-45 shrink-0"></div>
-                  <span className="text-base md:text-lg font-bold">50% de desconto garantido</span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="h-3 w-3 bg-[#185347] rotate-45 shrink-0"></div>
-                  <span className="text-base md:text-lg font-bold">Mesma prioridade de compra do titular</span>
-                </li>
-              </ul>
-
-              <p className="text-base md:text-lg italic text-[#ffffff]/90 font-medium">
-                Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
-              </p>
-
-              <div className="pt-8 border-t border-white/10 space-y-4">
-                <p className="text-sm md:text-base leading-relaxed">
-                  <strong className="text-white block mb-2 uppercase tracking-widest text-xs">Como usar na prática:</strong>
-                  Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso.
+              <div className="space-y-6 text-gray-200">
+                <p className="text-lg md:text-xl font-bold text-white leading-relaxed">
+                  Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com:
                 </p>
-                <p className="text-sm md:text-base leading-relaxed">
-                  A quantidade de pessoas que podem ser cadastradas depende do seu plano — assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
+                
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-4">
+                    <div className="h-3 w-3 bg-[#185347] rotate-45 shrink-0"></div>
+                    <span className="text-base md:text-lg font-bold">50% de desconto garantido</span>
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <div className="h-3 w-3 bg-[#185347] rotate-45 shrink-0"></div>
+                    <span className="text-base md:text-lg font-bold">Mesma prioridade de compra do titular</span>
+                  </li>
+                </ul>
+
+                <p className="text-base md:text-lg italic text-[#ffffff]/90 font-medium">
+                  Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
                 </p>
+
+                <div className="pt-8 border-t border-white/10 space-y-4">
+                  <p className="text-sm md:text-base leading-relaxed">
+                    <strong className="text-white block mb-2 uppercase tracking-widest text-xs">Como usar na prática:</strong>
+                    Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso.
+                  </p>
+                  <p className="text-sm md:text-base leading-relaxed">
+                    A quantidade de pessoas que podem ser cadastradas depende do seu plano — assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* LADO DIREITO: ESPAÇO PARA IMAGEM */}
-          <div className="relative group">
-            <div className="absolute -inset-4 bg-[#68121f]/20 rounded-xl blur-2xl group-hover:bg-[#185347]/20 transition-colors duration-500"></div>
-            <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[4/5] md:aspect-square lg:aspect-[4/5]">
-              <img 
-                src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/54124694464_515904085f_o.jpg" 
-                alt="Sócio e convidado entrando juntos no Maracanã" 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
-              <div className="absolute bottom-8 left-8 right-8">
-                <div className="flex gap-2 mb-3">
-                  <div className="h-1 w-8 bg-[#68121f]"></div>
-                  <div className="h-1 w-8 bg-white"></div>
-                  <div className="h-1 w-8 bg-[#185347]"></div>
+            {/* LADO DIREITO: IMAGEM */}
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-[#68121f]/20 rounded-xl blur-2xl group-hover:bg-[#185347]/20 transition-colors duration-500"></div>
+              <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[4/5] md:aspect-square lg:aspect-[4/5]">
+                <img 
+                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/54124694464_515904085f_o.jpg" 
+                  alt="Sócio e convidado entrando juntos no Maracanã" 
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+                <div className="absolute bottom-8 left-8 right-8">
+                  <div className="flex gap-2 mb-3">
+                    <div className="h-1 w-8 bg-[#68121f]"></div>
+                    <div className="h-1 w-8 bg-white"></div>
+                    <div className="h-1 w-8 bg-[#185347]"></div>
+                  </div>
+                  <p className="text-xs uppercase tracking-[0.3em] font-bold text-white">Vibre em cada lance acompanhado</p>
                 </div>
-                <p className="text-xs uppercase tracking-[0.3em] font-bold text-white">Vibre em cada lance acompanhado</p>
               </div>
             </div>
           </div>

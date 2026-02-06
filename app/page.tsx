@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CENTRAL CONTENT - Ajustado com mt-[-40px] md:mt-[-80px] para subir os textos */}
+        {/* CENTRAL CONTENT */}
         <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-12 md:py-20 mt-[-40px] md:mt-[-80px]">
           
           <div className="mb-8 md:mb-12 bg-[#185347] text-white px-6 md:px-8 py-3 rounded-full font-bold text-[10px] md:text-xs tracking-widest animate-pulse shadow-2xl border border-white/20 uppercase">
@@ -131,6 +131,63 @@ export default function Home() {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
             </svg>
+          </div>
+        </div>
+      </section>
+
+      {/* NOVO SCROLL — DETALHES DO CONVIDADO */}
+      <section className="relative min-h-screen w-full flex items-center z-10 bg-black/20 backdrop-blur-sm py-20">
+        <div className="max-w-[1140px] mx-auto px-[15px] grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* LADO ESQUERDO: TEXTO */}
+          <div className="space-y-8">
+            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-tight border-l-8 border-[#68121f] pl-6">
+              Leve mais uma pessoa para todos os jogos
+            </h2>
+            
+            <div className="space-y-6 text-gray-200">
+              <p className="text-lg md:text-xl font-bold text-white">
+                Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com:
+              </p>
+              
+              <ul className="space-y-4">
+                <li className="flex items-center gap-3">
+                  <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
+                  <span className="text-base md:text-lg font-bold">50% de desconto garantido</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="h-2 w-2 bg-[#185347] rounded-full"></div>
+                  <span className="text-base md:text-lg font-bold">Mesma prioridade de compra do titular</span>
+                </li>
+              </ul>
+
+              <p className="text-base md:text-lg italic text-[#ffffff]/80">
+                Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
+              </p>
+
+              <div className="pt-6 border-t border-white/10">
+                <p className="text-sm md:text-base leading-relaxed">
+                  <strong className="text-white block mb-2 uppercase tracking-wider">Como usar na prática:</strong>
+                  Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso.
+                  A quantidade de pessoas que podem ser cadastradas depende do seu plano — assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* LADO DIREITO: IMAGEM */}
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-[#68121f]/20 rounded-xl blur-2xl group-hover:bg-[#185347]/20 transition-colors duration-500"></div>
+            <div className="relative rounded-xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/5] md:aspect-auto">
+              <img 
+                src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/54124694464_515904085f_o.jpg" 
+                alt="Sócio e convidado no Maracanã" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6">
+                <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/60">Maracanã - Rio de Janeiro</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

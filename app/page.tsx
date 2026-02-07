@@ -135,19 +135,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NOVO SCROLL — COMO FUNCIONA O CONVIDADO */}
+      {/* NOVO SCROLL — DETALHES DO CONVIDADO */}
       <section className="relative min-h-screen w-full flex flex-col items-center justify-center z-10 bg-black/80 backdrop-blur-xl py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
-          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-16 text-center">
-            COMO FUNCIONA O CONVIDADO
-          </h2>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* LADO ESQUERDO: TEXTO EXPLICATIVO */}
             <div className="space-y-8">
-              <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-tight border-l-8 border-[#68121f] pl-6">
+              <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-tight text-white">
                 Leve mais uma pessoa para todos os jogos
-              </h3>
+              </h2>
               
               <div className="space-y-6 text-gray-200">
                 <p className="text-lg md:text-xl font-bold text-white leading-relaxed">
@@ -156,12 +152,12 @@ export default function Home() {
                 
                 <ul className="space-y-4">
                   <li className="flex items-center gap-4">
-                    <div className="h-3 w-3 bg-[#185347] rotate-45 shrink-0"></div>
-                    <span className="text-base md:text-lg font-bold">50% de desconto garantido</span>
+                    <div className="h-3 w-3 bg-[#68121f] rotate-45 shrink-0"></div>
+                    <span className="text-base md:text-lg font-bold uppercase tracking-wide">50% de desconto garantido</span>
                   </li>
                   <li className="flex items-center gap-4">
-                    <div className="h-3 w-3 bg-[#185347] rotate-45 shrink-0"></div>
-                    <span className="text-base md:text-lg font-bold">Mesma prioridade de compra do titular</span>
+                    <div className="h-3 w-3 bg-[#68121f] rotate-45 shrink-0"></div>
+                    <span className="text-base md:text-lg font-bold uppercase tracking-wide">Mesma prioridade de compra do titular</span>
                   </li>
                 </ul>
 
@@ -169,14 +165,27 @@ export default function Home() {
                   Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
                 </p>
 
-                <div className="pt-8 border-t border-white/10 space-y-4">
+                <div className="pt-8 border-t border-white/10 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    <strong className="text-white block mb-2 uppercase tracking-widest text-xs">Como usar na prática:</strong>
+                    <strong className="text-white block mb-2 uppercase tracking-widest text-xs font-bold">Como usar na prática:</strong>
                     Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
                     A quantidade de pessoas que podem ser cadastradas depende do seu plano — assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
                   </p>
+                  
+                  <div className="bg-[#185347]/20 border border-[#185347]/40 p-6 rounded-sm">
+                    <p className="text-2xl md:text-3xl font-bold text-white uppercase tracking-tighter">
+                      Preço: R$ 25 <span className="text-sm font-normal tracking-normal lowercase">por mês por convidado contratado</span>
+                    </p>
+                    <p className="text-xs mt-2 text-gray-300 uppercase tracking-widest">Simples, acessível e pensado para você nunca precisar ir sozinho ao Maracanã.</p>
+                  </div>
+                </div>
+
+                <div className="pt-4">
+                  <button className="bg-transparent border-2 border-[#68121f] text-white px-8 py-4 rounded-sm font-bold text-sm tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all">
+                    Quero adicionar um convidado
+                  </button>
                 </div>
               </div>
             </div>

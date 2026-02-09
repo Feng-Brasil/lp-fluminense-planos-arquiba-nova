@@ -69,8 +69,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* CENTRAL CONTENT */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-12 md:py-20 mt-[-40px] md:mt-[-80px]">
+        {/* CENTRAL CONTENT - Espaçamento superior diminuído com mt-[-80px] e md:mt-[-140px] */}
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-12 md:py-20 mt-[-80px] md:mt-[-140px]">
           
           <div className="mb-8 md:mb-12 bg-[#185347] text-white px-6 md:px-8 py-3 rounded-full font-bold text-[10px] md:text-xs tracking-widest animate-pulse shadow-2xl border border-white/20 uppercase">
             1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO

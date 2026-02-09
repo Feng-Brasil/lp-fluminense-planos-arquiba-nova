@@ -135,54 +135,59 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NOVA SEÇÃO — DETALHES DO CONVIDADO (DIVIDIDA VERTICALMENTE) */}
-      <section className="relative min-h-screen w-full flex items-center justify-center z-10 bg-black/80 backdrop-blur-xl py-20 border-y border-white/5">
+      {/* SCROLL 2 — COMO FUNCIONA O CONVIDADO */}
+      <section className="relative min-h-screen w-full flex items-center justify-center z-10 bg-black/90 backdrop-blur-xl py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
+          <div className="mb-12">
+            <h2 className="text-[#68121f] font-bold tracking-[0.3em] text-xs md:text-sm uppercase">SCROLL 2 — COMO FUNCIONA O CONVIDADO</h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* LADO ESQUERDO: TEXTO */}
             <div className="flex flex-col space-y-6">
-              <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-tight text-white">
+              <h3 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-tight text-white">
                 Leve mais uma pessoa para todos os jogos
-              </h2>
-              <div className="space-y-4 text-gray-200">
+              </h3>
+              <div className="space-y-6 text-gray-200">
                 <p className="text-lg md:text-xl font-bold text-white leading-relaxed">
-                  Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: 50% de desconto garantido, Mesma prioridade de compra do titular.
+                  Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: 50% de desconto garantido, Mesma prioridade de compra do titular. Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
                 </p>
-                <p className="text-base md:text-lg italic text-[#ffffff]/90">
-                  Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
-                </p>
-                <div className="pt-4 space-y-4">
-                  <p className="text-sm md:text-base leading-relaxed">
-                    <strong className="text-white uppercase tracking-widest text-xs block mb-1">Como usar na prática:</strong>
+                
+                <div className="space-y-3">
+                  <h4 className="text-[#185347] font-bold uppercase tracking-widest text-sm">Como usar na prática:</h4>
+                  <p className="text-base md:text-lg leading-relaxed text-gray-300">
                     Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas que podem ser cadastradas depende do seu plano, assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
                   </p>
-                  <div className="bg-[#185347]/20 border-l-4 border-[#185347] p-4">
-                    <p className="text-xl md:text-2xl font-bold text-white">
-                      Preço: R$ 25 por mês por convidado contratado.
-                    </p>
-                    <p className="text-xs mt-1 text-gray-400 uppercase tracking-widest">Simples, acessível e pensado para você nunca precisar ir sozinho ao Maracanã.</p>
-                  </div>
+                </div>
+
+                <div className="bg-[#185347]/10 border-l-4 border-[#185347] p-6 space-y-2">
+                  <p className="text-2xl md:text-3xl font-bold text-white">
+                    R$ 25 por mês por convidado contratado
+                  </p>
+                  <p className="text-sm text-gray-400 font-medium italic">
+                    Simples, acessível e pensado para você nunca precisar ir sozinho ao Maracanã.
+                  </p>
                 </div>
               </div>
               <div className="pt-6">
-                <button className="bg-transparent border-2 border-[#68121f] text-white px-8 py-4 rounded-sm font-bold text-sm tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all">
+                <button className="bg-transparent border-2 border-[#68121f] text-white px-10 py-4 rounded-sm font-bold text-sm tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-lg">
                   Quero adicionar um convidado
                 </button>
               </div>
             </div>
 
             {/* LADO DIREITO: IMAGEM */}
-            <div className="relative">
-              <div className="absolute -inset-2 bg-gradient-to-r from-[#68121f] to-[#185347] opacity-20 blur-xl"></div>
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-tr from-[#68121f]/30 to-[#185347]/30 opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
               <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[4/5] md:aspect-square">
                 <img 
                   src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/54124694464_515904085f_o.jpg" 
-                  alt="Sócio e convidado entrando juntos no Maracanã" 
-                  className="w-full h-full object-cover"
+                  alt="Sócio e convidado entrando juntos no Maracanã / dois ingressos na mão / grupo chegando ao estádio." 
+                  className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                <div className="absolute bottom-6 left-6">
-                  <p className="text-xs uppercase tracking-[0.3em] font-bold text-white">Vibre em cada lance acompanhado</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+                <div className="absolute bottom-8 left-8 right-8">
+                  <div className="h-[2px] w-12 bg-[#68121f] mb-4"></div>
+                  <p className="text-xs uppercase tracking-[0.4em] font-bold text-white/90">A experiência completa de ser tricolor</p>
                 </div>
               </div>
             </div>
@@ -190,7 +195,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SCROLL 2 — EXPLICAÇÃO + REGRAS */}
+      {/* SCROLL 3 — EXPLICAÇÃO + REGRAS */}
       <section className="py-20 md:py-32 relative z-10 bg-black/40">
         <div className="max-w-[1140px] mx-auto px-[15px]">
           <div className="text-center mb-16 md:mb-24">

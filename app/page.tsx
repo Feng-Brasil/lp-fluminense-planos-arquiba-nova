@@ -7,13 +7,23 @@ const oswald = Oswald({
 });
 
 export default function Home() {
-  // Estilo atualizado: Aumentado fontSize de 138px para 160px e ajustado lineHeight
+  // Estilo base para títulos gigantes
   const titleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
     color: 'rgb(244, 244, 244)',
     fontSize: '160px',
     lineHeight: '140px',
+  };
+
+  // Estilo ajustado para os títulos das seções internas (Scroll 2 e 3)
+  // Reduzido o fontSize para evitar compressão e garantindo que o texto respire
+  const sectionTitleStyle = {
+    fontFamily: oswald.style.fontFamily,
+    fontWeight: 700,
+    color: 'rgb(244, 244, 244)',
+    fontSize: 'clamp(48px, 6vw, 90px)', // Responsivo: não comprime em telas médias
+    lineHeight: '1.1',
   };
 
   return (
@@ -70,7 +80,6 @@ export default function Home() {
             Desconto na mensalidade do convidado!
           </div>
 
-          {/* Espaçamento aumentado entre título e subtítulo: space-y-12 md:space-y-16 */}
           <div className="space-y-12 md:space-y-16">
             <h1 
               className="hidden md:block tracking-tighter drop-shadow-2xl uppercase"
@@ -78,7 +87,6 @@ export default function Home() {
             >
               O FLU SE VIVE JUNTO!
             </h1>
-            {/* Fallback mobile para o título gigante */}
             <h1 className="md:hidden text-5xl font-bold tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!
             </h1>
@@ -141,14 +149,14 @@ export default function Home() {
       <section className="relative min-h-screen w-full flex items-center justify-center z-10 bg-black/90 backdrop-blur-xl py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
           <div className="mb-12">
-            <h2 className="text-[#68121f] font-bold tracking-[0.3em] text-xs md:text-sm uppercase">SCROLL 2 — COMO FUNCIONA O CONVIDADO</h2>
+            <h2 className="text-[#68121f] font-bold tracking-[0.3em] text-xs md:text-sm uppercase">COMO FUNCIONA O CONVIDADO</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* LADO ESQUERDO: TEXTO */}
             <div className="flex flex-col space-y-6">
               <h3 
                 className="hidden md:block uppercase tracking-tighter"
-                style={{...titleStyle, fontSize: '110px', lineHeight: '100px'}}
+                style={sectionTitleStyle}
               >
                 Leve mais uma pessoa para todos os jogos
               </h3>
@@ -209,7 +217,7 @@ export default function Home() {
           <div className="text-center mb-16 md:mb-24 flex flex-col items-center">
             <h2 
               className="hidden md:block uppercase tracking-tighter mb-6 drop-shadow-lg"
-              style={{...titleStyle, fontSize: '110px', lineHeight: '100px'}}
+              style={sectionTitleStyle}
             >
               Seu plano agora vale ainda mais
             </h2>
@@ -301,7 +309,7 @@ export default function Home() {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-16">
               <h3 
                 className="hidden md:block uppercase tracking-tighter mb-12 max-w-5xl drop-shadow-2xl"
-                style={{...titleStyle, fontSize: '80px', lineHeight: '75px'}}
+                style={{...sectionTitleStyle, fontSize: 'clamp(32px, 4vw, 64px)', lineHeight: '1.2'}}
               >
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?
               </h3>

@@ -7,13 +7,13 @@ const oswald = Oswald({
 });
 
 export default function Home() {
-  // Estilo base para títulos gigantes - Tamanho reduzido de 90px para 72px conforme solicitado
+  // Estilo base para títulos gigantes - Tamanho aumentado de 72px para 84px conforme solicitado
   const titleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
     color: 'rgb(244, 244, 244)',
-    fontSize: '72px',
-    lineHeight: '70px',
+    fontSize: '84px',
+    lineHeight: '80px',
   };
 
   // Estilo ajustado para os títulos das seções internas (Scroll 2 e 3)
@@ -82,7 +82,7 @@ export default function Home() {
             >
               O FLU SE VIVE JUNTO!
             </h1>
-            <h1 className="md:hidden text-4xl font-bold tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase">
+            <h1 className="md:hidden text-5xl font-bold tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!
             </h1>
             
@@ -91,7 +91,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* GRID DE BENEFÍCIOS - Removido o box de desconto na mensalidade e centralizado os 2 restantes */}
+          {/* GRID DE BENEFÍCIOS */}
           <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-[30px] w-full max-w-[800px] mx-auto">
             <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#68121f] text-left">
               <div className="mb-4 text-white">
@@ -171,7 +171,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* LADO DIREITO: IMAGEM (AUMENTADA) */}
+            {/* LADO DIREITO: IMAGEM */}
             <div className="relative group md:-mr-12 lg:-mr-20">
               <div className="absolute -inset-4 bg-gradient-to-tr from-[#68121f]/30 to-black/30 opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
               <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[16/10] md:aspect-[4/5] lg:aspect-square max-h-[650px] w-full">

@@ -144,7 +144,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SCROLL 2 — COMO FUNCIONA O CONVIDADO (ALTURA OTIMIZADA) */}
+      {/* SCROLL 2 — COMO FUNCIONA O CONVIDADO */}
       <section className="relative min-h-[80vh] md:min-h-[90vh] w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-12 md:py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
           <div className="mb-8 md:mb-10">
@@ -191,13 +191,13 @@ export default function Home() {
             </div>
 
             {/* LADO DIREITO: IMAGEM (AUMENTADA) */}
-            <div className="relative group">
+            <div className="relative group md:-mr-12 lg:-mr-20">
               <div className="absolute -inset-4 bg-gradient-to-tr from-[#68121f]/30 to-black/30 opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
-              <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[16/10] md:aspect-[4/5] lg:aspect-square max-h-[550px] w-full">
+              <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[16/10] md:aspect-[4/5] lg:aspect-square max-h-[650px] w-full">
                 <img 
                   src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 
                   alt="Torcida Fluminense" 
-                  className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                  className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
                 <div className="absolute bottom-8 left-8 right-8">

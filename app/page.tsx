@@ -91,39 +91,39 @@ export default function Home() {
             </p>
           </div>
 
-          {/* GRID DE BENEFÍCIOS - ALINHADOS EM UMA LINHA NO DESKTOP */}
-          <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-4 gap-[20px] md:gap-[15px] w-full max-w-[1200px] mx-auto">
-            <div className="bg-black/60 backdrop-blur-md p-6 md:p-5 border-l-4 border-[#68121f] text-left">
-              <div className="mb-4 text-white">
+          {/* GRID DE BENEFÍCIOS - ALINHADOS EM UMA LINHA NO DESKTOP E MOBILE */}
+          <div className="mt-12 md:mt-16 grid grid-cols-4 gap-[10px] md:gap-[15px] w-full max-w-[1200px] mx-auto">
+            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#68121f] text-left">
+              <div className="mb-4 text-white hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
                 </svg>
               </div>
-              <p className="text-xs font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
+              <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
             </div>
-            <div className="bg-black/60 backdrop-blur-md p-6 md:p-5 border-l-4 border-[#68121f] text-left">
-              <div className="mb-4 text-white">
+            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#68121f] text-left">
+              <div className="mb-4 text-white hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                 </svg>
               </div>
-              <p className="text-xs font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
+              <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
-            <div className="bg-black/60 backdrop-blur-md p-6 md:p-5 border-l-4 border-[#68121f] text-left">
-              <div className="mb-4 text-white">
+            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#68121f] text-left">
+              <div className="mb-4 text-white hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75m0 3v.75m0 3v.75m0 3V15m19.125-11.25h-15c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h15c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H3.375Z" />
                 </svg>
               </div>
-              <p className="text-xs font-bold uppercase tracking-wider leading-snug">Desconto garantido para todos os convidados</p>
+              <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug">Desconto garantido para todos os convidados</p>
             </div>
-            <div className="bg-black/60 backdrop-blur-md p-6 md:p-5 border-l-4 border-[#68121f] text-left">
-              <div className="mb-4 text-white">
+            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#68121f] text-left">
+              <div className="mb-4 text-white hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 </svg>
               </div>
-              <p className="text-xs font-bold uppercase tracking-wider leading-snug">Vamos todos juntos rumo à glória</p>
+              <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug">Vamos todos juntos rumo à glória</p>
             </div>
           </div>
 

@@ -67,7 +67,7 @@ export default function Home() {
         <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-12 md:py-20 mt-[-80px] md:mt-[-140px]">
           
           <div className="mb-8 md:mb-12 bg-[#185347] text-white px-6 md:px-8 py-3 rounded-full font-bold text-[10px] md:text-xs tracking-widest animate-pulse shadow-2xl border border-white/20 uppercase">
-            1 MÊS GRÁTIS NA MENSALIDADE DO CONVIDADO
+            Desconto na mensalidade do convidado!
           </div>
 
           <div className="space-y-6 md:space-y-8">
@@ -308,7 +308,7 @@ export default function Home() {
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?
               </h3>
               <div className="bg-[#68121f] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10">
-                <p className="font-bold text-base md:text-xl uppercase tracking-widest">Contrate um convidado e ganhe 1 mês grátis na mensalidade dele.</p>
+                <p className="font-bold text-base md:text-xl uppercase tracking-widest">contrate um convidado e ganhe desconto na mensalidade dele.</p>
               </div>
             </div>
           </div>

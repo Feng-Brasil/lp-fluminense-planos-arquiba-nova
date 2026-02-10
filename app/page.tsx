@@ -148,7 +148,7 @@ export default function Home() {
       <section className="relative min-h-screen w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
           <div className="mb-12">
-            <h2 className="text-[#68121f] font-bold tracking-[0.3em] text-xs md:text-sm uppercase">COMO FUNCIONA O CONVIDADO</h2>
+            <h2 className="text-[#ffffff] font-bold tracking-[0.3em] text-xs md:text-sm uppercase">COMO FUNCIONA O CONVIDADO</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* LADO ESQUERDO: TEXTO */}
@@ -168,7 +168,7 @@ export default function Home() {
                 </p>
                 
                 <div className="space-y-3">
-                  <h4 className="text-[#68121f] font-bold uppercase tracking-widest text-sm">Como usar na prática:</h4>
+                  <h4 className="text-[#ffffff] font-bold uppercase tracking-widest text-sm">Como usar na prática:</h4>
                   <p className="text-sm md:text-base leading-relaxed text-gray-300">
                     Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas que podem ser cadastradas depende do seu plano, assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
                   </p>

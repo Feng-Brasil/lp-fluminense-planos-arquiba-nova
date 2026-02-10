@@ -49,31 +49,31 @@ export default function Home() {
       <section className="relative min-h-screen w-full overflow-hidden flex flex-col pt-[54px] z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none"></div>
 
-        {/* TOP NAVIGATION BAR - ADJUSTED FOR MAXIMUM WIDTH */}
-        <div className="relative z-20 w-full px-4 md:px-10 py-6 flex justify-between items-center">
-          <div className="pt-2">
+        {/* TOP NAVIGATION BAR - MODIFICADA PARA EXTREMIDADES */}
+        <div className="relative z-20 w-full px-2 md:px-6 py-4 flex justify-between items-start">
+          <div className="pt-0">
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 
               alt="Sócio Futebol" 
-              className="h-16 md:h-24 w-auto object-contain drop-shadow-2xl"
+              className="h-16 md:h-28 w-auto object-contain drop-shadow-2xl"
             />
           </div>
 
-          <div className="flex items-center gap-4 md:gap-8">
+          <div className="flex items-center gap-3 md:gap-6 pt-2">
             <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 md:w-5 md:h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
               </svg>
               <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">Login</span>
             </div>
-            <button className="bg-[#68121f] px-6 md:px-8 py-2.5 md:py-3 rounded-sm font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-lg">
+            <button className="bg-[#68121f] px-4 md:px-8 py-2 md:py-3 rounded-sm font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-lg">
               Minha Conta
             </button>
           </div>
         </div>
 
         {/* CENTRAL CONTENT */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-12 md:py-20 mt-[-40px] md:mt-[-80px]">
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-12 md:py-20 mt-[-60px] md:mt-[-100px]">
           
           <div className="space-y-12 md:space-y-16">
             <h1 
@@ -91,7 +91,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* GRID DE BENEFÍCIOS - ALINHADOS EM UMA LINHA NO DESKTOP E MOBILE */}
+          {/* GRID DE BENEFÍCIOS */}
           <div className="mt-12 md:mt-16 grid grid-cols-4 gap-[10px] md:gap-[15px] w-full max-w-[1200px] mx-auto">
             <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#68121f] text-left">
               <div className="mb-4 text-white hidden md:block">
@@ -148,7 +148,6 @@ export default function Home() {
             <h2 className="text-[#ffffff] font-bold tracking-[0.3em] text-xs md:text-sm uppercase">COMO FUNCIONA O CONVIDADO</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-            {/* LADO ESQUERDO: TEXTO */}
             <div className="flex flex-col space-y-5">
               <h3 
                 className="hidden md:block uppercase tracking-tighter"
@@ -187,7 +186,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* LADO DIREITO: IMAGEM */}
             <div className="relative group md:-mr-12 lg:-mr-20">
               <div className="absolute -inset-4 bg-gradient-to-tr from-[#68121f]/30 to-black/30 opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
               <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[16/10] md:aspect-[4/5] lg:aspect-square max-h-[650px] w-full">
@@ -226,7 +224,6 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] mb-20 md:mb-32">
-            {/* ARQUIBA 100% */}
             <div className="bg-black/70 border-t-8 border-[#68121f] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex flex-col sm:flex-row justify-between items-start mb-8 gap-4">
@@ -262,7 +259,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ARQUIBA 75% */}
             <div className="bg-black/70 border-t-8 border-[#185347] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex justify-between items-start mb-8">
@@ -294,7 +290,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* BLOCO EMOCIONAL */}
           <div className="relative w-full h-[400px] md:h-[550px] rounded-2xl overflow-hidden mb-20 md:mb-32 shadow-2xl">
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 

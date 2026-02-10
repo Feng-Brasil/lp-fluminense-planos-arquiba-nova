@@ -7,13 +7,13 @@ const oswald = Oswald({
 });
 
 export default function Home() {
-  // Estilo base para títulos gigantes - Tamanho reduzido de 160px para 120px
+  // Estilo base para títulos gigantes - Tamanho reduzido de 120px para 90px
   const titleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
     color: 'rgb(244, 244, 244)',
-    fontSize: '120px',
-    lineHeight: '110px',
+    fontSize: '90px',
+    lineHeight: '85px',
   };
 
   // Estilo ajustado para os títulos das seções internas (Scroll 2 e 3)
@@ -82,7 +82,7 @@ export default function Home() {
             >
               O FLU SE VIVE JUNTO!
             </h1>
-            <h1 className="md:hidden text-5xl font-bold tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase">
+            <h1 className="md:hidden text-4xl font-bold tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!
             </h1>
             
@@ -91,8 +91,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* GRID DE BENEFÍCIOS */}
-          <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] w-full max-w-[1140px] mx-auto">
+          {/* GRID DE BENEFÍCIOS - Removido o box de desconto na mensalidade */}
+          <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-[30px] w-full max-w-[1140px] mx-auto">
             <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#68121f] text-left">
               <div className="mb-4 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
@@ -114,15 +114,6 @@ export default function Home() {
                 </svg>
               </div>
               <p className="text-xs font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
-            </div>
-            <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#185347] text-left">
-              <div className="mb-4 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
-                </svg>
-              </div>
-              <p className="text-xs font-bold uppercase tracking-wider leading-snug">VAMOS TODOS JUNTOS RUMO À GLÓRIA</p>
             </div>
           </div>
 

@@ -7,6 +7,8 @@ const oswald = Oswald({
 });
 
 export default function Home() {
+  const REDIRECT_URL = "https://nense.com.br/minha-conta/lista-de-convidado";
+
   // Estilo base para títulos gigantes - Tamanho aumentado de 72px para 84px conforme solicitado
   const titleStyle = {
     fontFamily: oswald.style.fontFamily,
@@ -60,15 +62,15 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-3 md:gap-6 pt-2">
-            <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
+            <a href={REDIRECT_URL} className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 md:w-5 md:h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
               </svg>
               <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">Login</span>
-            </div>
-            <button className="bg-[#68121f] px-4 md:px-8 py-2 md:py-3 rounded-sm font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-lg">
+            </a>
+            <a href={REDIRECT_URL} className="bg-[#68121f] px-4 md:px-8 py-2 md:py-3 rounded-sm font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-lg inline-block">
               Minha Conta
-            </button>
+            </a>
           </div>
         </div>
 
@@ -129,9 +131,9 @@ export default function Home() {
           </div>
 
           <div className="mt-12 md:mt-16 flex justify-center">
-            <button className="bg-[#68121f] px-10 md:px-14 py-4 md:py-5 rounded-sm font-bold text-base md:text-lg tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(104,18,31,0.4)] hover:scale-105 block w-fit">
+            <a href={REDIRECT_URL} className="bg-[#68121f] px-10 md:px-14 py-4 md:py-5 rounded-sm font-bold text-base md:text-lg tracking-[0.2em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(104,18,31,0.4)] hover:scale-105 block w-fit">
               Adicionar convidado agora
-            </button>
+            </a>
           </div>
           
           <div className="animate-bounce opacity-40 mt-12 md:mt-16">
@@ -181,9 +183,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="pt-4">
-                <button className="bg-transparent border-2 border-[#68121f] text-white px-10 py-4 rounded-sm font-bold text-sm tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-lg">
+                <a href={REDIRECT_URL} className="bg-transparent border-2 border-[#68121f] text-white px-10 py-4 rounded-sm font-bold text-sm tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-lg inline-block">
                   Quero adicionar um convidado
-                </button>
+                </a>
               </div>
             </div>
 
@@ -308,16 +310,16 @@ export default function Home() {
               <h3 className="md:hidden text-2xl font-bold uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight text-[#f4f4f4]">
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
-              <div className="bg-[#68121f] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10">
+              <a href={REDIRECT_URL} className="bg-[#68121f] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10 inline-block">
                 <p className="font-bold text-base md:text-xl uppercase tracking-widest">contrate um convidado!</p>
-              </div>
+              </a>
             </div>
           </div>
 
           <div className="flex flex-col items-center pb-12 md:pb-20">
-            <button className="bg-[#185347] px-10 md:px-14 py-5 md:py-7 rounded-sm font-bold text-lg md:text-2xl tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-2xl hover:scale-105 mb-6">
+            <a href={REDIRECT_URL} className="bg-[#185347] px-10 md:px-14 py-5 md:py-7 rounded-sm font-bold text-lg md:text-2xl tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-2xl hover:scale-105 mb-6 inline-block">
               Quero trazer meu convidado
-            </button>
+            </a>
             <p className="text-gray-300 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs drop-shadow-md">Leva menos de 1 minuto.</p>
           </div>
         </div>
@@ -325,13 +327,13 @@ export default function Home() {
 
       {/* FLOATING WHATSAPP / SUPPORT */}
       <div className="fixed bottom-6 right-6 z-50">
-        <div className="w-14 h-14 md:w-16 md:h-16 bg-[#185347] rounded-full flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 transition-transform border-2 border-white/10 overflow-hidden">
+        <a href={REDIRECT_URL} className="w-14 h-14 md:w-16 md:h-16 bg-[#185347] rounded-full flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 transition-transform border-2 border-white/10 overflow-hidden">
           <img 
             src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/webchat-icon-1743608850551.png" 
             alt="Suporte" 
             className="w-full h-full object-cover"
           />
-        </div>
+        </a>
       </div>
 
       {/* FOOTER */}

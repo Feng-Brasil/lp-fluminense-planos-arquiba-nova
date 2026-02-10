@@ -7,13 +7,13 @@ const oswald = Oswald({
 });
 
 export default function Home() {
-  // Estilo base para títulos gigantes - Tamanho reduzido de 120px para 90px
+  // Estilo base para títulos gigantes - Tamanho reduzido de 90px para 72px conforme solicitado
   const titleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
     color: 'rgb(244, 244, 244)',
-    fontSize: '90px',
-    lineHeight: '85px',
+    fontSize: '72px',
+    lineHeight: '70px',
   };
 
   // Estilo ajustado para os títulos das seções internas (Scroll 2 e 3)
@@ -91,8 +91,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* GRID DE BENEFÍCIOS - Removido o box de desconto na mensalidade */}
-          <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-[30px] w-full max-w-[1140px] mx-auto">
+          {/* GRID DE BENEFÍCIOS - Removido o box de desconto na mensalidade e centralizado os 2 restantes */}
+          <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-[30px] w-full max-w-[800px] mx-auto">
             <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#68121f] text-left">
               <div className="mb-4 text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
@@ -100,12 +100,6 @@ export default function Home() {
                 </svg>
               </div>
               <p className="text-xs font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
-            </div>
-            <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#185347] text-left">
-              <div className="mb-4 text-white">
-                <span className="text-3xl font-bold leading-none">$</span>
-              </div>
-              <p className="text-xs font-bold uppercase tracking-wider leading-snug">Descontos em ingressos para convidados</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-8 border-l-4 border-[#68121f] text-left">
               <div className="mb-4 text-white">

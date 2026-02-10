@@ -17,12 +17,12 @@ export default function Home() {
   };
 
   // Estilo ajustado para os títulos das seções internas (Scroll 2 e 3)
-  // Reduzido o fontSize para evitar compressão e garantindo que o texto respire
+  // Reduzido o fontSize para melhorar a legibilidade e o espaçamento conforme solicitado
   const sectionTitleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
     color: 'rgb(244, 244, 244)',
-    fontSize: 'clamp(48px, 6vw, 90px)', // Responsivo: não comprime em telas médias
+    fontSize: 'clamp(40px, 5vw, 72px)', // Reduzido de 48px/90px para 40px/72px
     lineHeight: '1.1',
   };
 
@@ -160,26 +160,26 @@ export default function Home() {
               >
                 Leve mais uma pessoa para todos os jogos
               </h3>
-              <h3 className="md:hidden text-4xl font-bold uppercase tracking-tighter leading-tight text-[#f4f4f4]">
+              <h3 className="md:hidden text-3xl font-bold uppercase tracking-tighter leading-tight text-[#f4f4f4]">
                 Leve mais uma pessoa para todos os jogos
               </h3>
               <div className="space-y-6 text-gray-200">
-                <p className="text-lg md:text-xl font-bold text-white leading-relaxed">
+                <p className="text-base md:text-lg font-bold text-white leading-relaxed">
                   Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: 50% de desconto garantido e a mesma prioridade de compra do titular. Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
                 </p>
                 
                 <div className="space-y-3">
                   <h4 className="text-[#68121f] font-bold uppercase tracking-widest text-sm">Como usar na prática:</h4>
-                  <p className="text-base md:text-lg leading-relaxed text-gray-300">
+                  <p className="text-sm md:text-base leading-relaxed text-gray-300">
                     Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas que podem ser cadastradas depende do seu plano, assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
                   </p>
                 </div>
 
                 <div className="bg-black/20 border-l-4 border-[#68121f] p-6 space-y-2">
-                  <p className="text-2xl md:text-3xl font-bold text-white">
+                  <p className="text-xl md:text-2xl font-bold text-white">
                     R$ 25 por mês por convidado contratado
                   </p>
-                  <p className="text-sm text-gray-400 font-medium italic">
+                  <p className="text-xs text-gray-400 font-medium italic">
                     Simples, acessível e pensado para você nunca precisar ir sozinho ao Maracanã.
                   </p>
                 </div>
@@ -309,7 +309,7 @@ export default function Home() {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-16">
               <h3 
                 className="hidden md:block uppercase tracking-tighter mb-12 max-w-5xl drop-shadow-2xl"
-                style={{...sectionTitleStyle, fontSize: 'clamp(32px, 4vw, 64px)', lineHeight: '1.2'}}
+                style={{...sectionTitleStyle, fontSize: 'clamp(28px, 3.5vw, 56px)', lineHeight: '1.2'}}
               >
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>

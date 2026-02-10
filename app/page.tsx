@@ -149,7 +149,7 @@ export default function Home() {
               </h3>
               <div className="space-y-6 text-gray-200">
                 <p className="text-lg md:text-xl font-bold text-white leading-relaxed">
-                  Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: 50% de desconto garantido, Mesma prioridade de compra do titular. Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
+                  Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: 50% de desconto garantido e a mesma prioridade de compra do titular. Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
                 </p>
                 
                 <div className="space-y-3">

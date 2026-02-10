@@ -17,12 +17,11 @@ export default function Home() {
   };
 
   // Estilo ajustado para os títulos das seções internas (Scroll 2 e 3)
-  // Reduzido o fontSize para melhorar a legibilidade e o espaçamento conforme solicitado
   const sectionTitleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
     color: 'rgb(244, 244, 244)',
-    fontSize: 'clamp(40px, 5vw, 72px)', // Reduzido de 48px/90px para 40px/72px
+    fontSize: 'clamp(40px, 5vw, 72px)',
     lineHeight: '1.1',
   };
 
@@ -145,7 +144,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SCROLL 2 — COMO FUNCIONA O CONVIDADO */}
+      {/* SCROLL 2 — COMO FUNCIONA O CONVIDADO (Fundo alterado para verde) */}
       <section className="relative min-h-screen w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
           <div className="mb-12">

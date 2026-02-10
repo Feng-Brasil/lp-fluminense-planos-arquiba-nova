@@ -309,7 +309,7 @@ export default function Home() {
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
               <div className="bg-[#68121f] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10">
-                <p className="font-bold text-base md:text-xl uppercase tracking-widest">contrate um convidado e ganhe desconto na mensalidade dele.</p>
+                <p className="font-bold text-base md:text-xl uppercase tracking-widest">contrate um convidado!</p>
               </div>
             </div>
           </div>

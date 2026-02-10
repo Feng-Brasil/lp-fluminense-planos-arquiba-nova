@@ -1,29 +1,6 @@
-import localFont from 'next/font/local';
-
-const balboa = localFont({
-  src: [
-    {
-      path: '../public/fonts/Balboa-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/Balboa-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/Balboa-Black.woff2',
-      weight: '900',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-balboa',
-});
-
 export default function Home() {
   return (
-    <main className={`${balboa.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative font-normal`}>
+    <main className="min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative font-sans">
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 
@@ -181,7 +158,7 @@ export default function Home() {
               <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[4/5] md:aspect-square">
                 <img 
                   src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/54124694464_515904085f_o.jpg" 
-                  alt="Sócio e convidado entrando juntos no Maracanã / dois ingressos na mão / grupo chegando ao estádio." 
+                  alt="Sócio e convidado entrando juntos no Maracanã" 
                   className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>

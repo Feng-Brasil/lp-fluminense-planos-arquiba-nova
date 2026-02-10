@@ -53,7 +53,8 @@ export default function Home() {
 
         {/* TOP NAVIGATION BAR - MODIFICADA PARA EXTREMIDADES */}
         <div className="relative z-20 w-full px-2 md:px-6 py-4 flex justify-between items-start">
-          <div className="pt-0">
+          {/* Logo movida para a direita com pl-4 (mobile) e md:pl-12 (desktop) */}
+          <div className="pt-0 pl-4 md:pl-12">
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 
               alt="Sócio Futebol" 

@@ -1,6 +1,14 @@
+import { Oswald } from 'next/font/google';
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+});
+
 export default function Home() {
   return (
-    <main className="min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative font-sans">
+    <main className={`${oswald.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative`}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 

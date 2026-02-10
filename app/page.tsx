@@ -146,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* SCROLL 2 — COMO FUNCIONA O CONVIDADO */}
-      <section className="relative min-h-screen w-full flex items-center justify-center z-10 bg-black/90 backdrop-blur-xl py-20 border-y border-white/5">
+      <section className="relative min-h-screen w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
           <div className="mb-12">
             <h2 className="text-[#68121f] font-bold tracking-[0.3em] text-xs md:text-sm uppercase">COMO FUNCIONA O CONVIDADO</h2>
@@ -169,13 +169,13 @@ export default function Home() {
                 </p>
                 
                 <div className="space-y-3">
-                  <h4 className="text-[#185347] font-bold uppercase tracking-widest text-sm">Como usar na prática:</h4>
+                  <h4 className="text-[#68121f] font-bold uppercase tracking-widest text-sm">Como usar na prática:</h4>
                   <p className="text-base md:text-lg leading-relaxed text-gray-300">
                     Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas que podem ser cadastradas depende do seu plano, assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
                   </p>
                 </div>
 
-                <div className="bg-[#185347]/10 border-l-4 border-[#185347] p-6 space-y-2">
+                <div className="bg-black/20 border-l-4 border-[#68121f] p-6 space-y-2">
                   <p className="text-2xl md:text-3xl font-bold text-white">
                     R$ 25 por mês por convidado contratado
                   </p>
@@ -193,7 +193,7 @@ export default function Home() {
 
             {/* LADO DIREITO: IMAGEM */}
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-[#68121f]/30 to-[#185347]/30 opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
+              <div className="absolute -inset-4 bg-gradient-to-tr from-[#68121f]/30 to-black/30 opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
               <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[4/5] md:aspect-square">
                 <img 
                   src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/54124694464_515904085f_o.jpg" 
@@ -311,10 +311,10 @@ export default function Home() {
                 className="hidden md:block uppercase tracking-tighter mb-12 max-w-5xl drop-shadow-2xl"
                 style={{...sectionTitleStyle, fontSize: 'clamp(32px, 4vw, 64px)', lineHeight: '1.2'}}
               >
-                A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?
+                A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
               <h3 className="md:hidden text-2xl font-bold uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight text-[#f4f4f4]">
-                A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?
+                A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
               <div className="bg-[#68121f] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10">
                 <p className="font-bold text-base md:text-xl uppercase tracking-widest">contrate um convidado e ganhe desconto na mensalidade dele.</p>

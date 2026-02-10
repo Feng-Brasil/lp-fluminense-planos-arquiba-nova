@@ -7,6 +7,15 @@ const oswald = Oswald({
 });
 
 export default function Home() {
+  // Estilo comum para os títulos principais conforme solicitado
+  const titleStyle = {
+    fontFamily: oswald.style.fontFamily,
+    fontWeight: 700,
+    color: 'rgb(244, 244, 244)',
+    fontSize: '138px',
+    lineHeight: '69px',
+  };
+
   return (
     <main className={`${oswald.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative`}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
@@ -62,7 +71,14 @@ export default function Home() {
           </div>
 
           <div className="space-y-6 md:space-y-8">
-            <h1 className="text-4xl md:text-[90px] lg:text-[110px] font-bold tracking-tighter leading-[0.9] text-white drop-shadow-2xl uppercase">
+            <h1 
+              className="hidden md:block tracking-tighter drop-shadow-2xl uppercase"
+              style={titleStyle}
+            >
+              O FLU SE VIVE JUNTO!
+            </h1>
+            {/* Fallback mobile para o título gigante */}
+            <h1 className="md:hidden text-4xl font-bold tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!
             </h1>
             
@@ -129,7 +145,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* LADO ESQUERDO: TEXTO */}
             <div className="flex flex-col space-y-6">
-              <h3 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter leading-tight text-white">
+              <h3 
+                className="hidden md:block uppercase tracking-tighter"
+                style={titleStyle}
+              >
+                Leve mais uma pessoa para todos os jogos
+              </h3>
+              <h3 className="md:hidden text-4xl font-bold uppercase tracking-tighter leading-tight text-[#f4f4f4]">
                 Leve mais uma pessoa para todos os jogos
               </h3>
               <div className="space-y-6 text-gray-200">
@@ -183,8 +205,16 @@ export default function Home() {
       {/* SCROLL 3 — EXPLICAÇÃO + REGRAS */}
       <section className="py-20 md:py-32 relative z-10 bg-black/40">
         <div className="max-w-[1140px] mx-auto px-[15px]">
-          <div className="text-center mb-16 md:mb-24">
-            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter mb-6 drop-shadow-lg">Seu plano agora vale ainda mais</h2>
+          <div className="text-center mb-16 md:mb-24 flex flex-col items-center">
+            <h2 
+              className="hidden md:block uppercase tracking-tighter mb-6 drop-shadow-lg"
+              style={titleStyle}
+            >
+              Seu plano agora vale ainda mais
+            </h2>
+            <h2 className="md:hidden text-3xl font-bold uppercase tracking-tighter mb-6 drop-shadow-lg text-[#f4f4f4]">
+              Seu plano agora vale ainda mais
+            </h2>
             <p className="text-base md:text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md font-normal leading-relaxed">
               Com convidados, seu plano ganha mais poder: mais pessoas com prioridade, mais economia e mais companhia para viver cada jogo decisivo.
             </p>
@@ -268,7 +298,13 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-[#185347]/30 mix-blend-multiply"></div>
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-16">
-              <h3 className="text-2xl md:text-5xl font-bold uppercase tracking-tighter mb-8 md:mb-12 max-w-4xl drop-shadow-2xl leading-tight">
+              <h3 
+                className="hidden md:block uppercase tracking-tighter mb-12 max-w-5xl drop-shadow-2xl"
+                style={titleStyle}
+              >
+                A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?
+              </h3>
+              <h3 className="md:hidden text-2xl font-bold uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight text-[#f4f4f4]">
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?
               </h3>
               <div className="bg-[#68121f] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10">

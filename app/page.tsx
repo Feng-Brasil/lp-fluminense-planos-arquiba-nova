@@ -53,8 +53,8 @@ export default function Home() {
 
         {/* TOP NAVIGATION BAR - MODIFICADA PARA EXTREMIDADES */}
         <div className="relative z-20 w-full px-2 md:px-6 py-4 flex justify-between items-start">
-          {/* Logo movida para a direita com pl-8 (mobile) e md:pl-20 (desktop) para descolar do canto */}
-          <div className="pt-0 pl-8 md:pl-20">
+          {/* Logo movida para a direita com pl-12 (mobile) e md:pl-32 (desktop) para descolar mais do canto */}
+          <div className="pt-0 pl-12 md:pl-32">
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 
               alt="Sócio Futebol" 
@@ -62,7 +62,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex items-center gap-3 md:gap-6 pt-2">
+          <div className="flex items-center gap-3 md:gap-6 pt-2 pr-2 md:pr-6">
             <a href={REDIRECT_URL} className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 md:w-5 md:h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />

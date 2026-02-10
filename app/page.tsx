@@ -7,13 +7,13 @@ const oswald = Oswald({
 });
 
 export default function Home() {
-  // Estilo comum para os títulos principais conforme solicitado
+  // Estilo atualizado: Aumentado fontSize de 138px para 160px e ajustado lineHeight
   const titleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
     color: 'rgb(244, 244, 244)',
-    fontSize: '138px',
-    lineHeight: '69px',
+    fontSize: '160px',
+    lineHeight: '140px',
   };
 
   return (
@@ -70,7 +70,8 @@ export default function Home() {
             Desconto na mensalidade do convidado!
           </div>
 
-          <div className="space-y-6 md:space-y-8">
+          {/* Espaçamento aumentado entre título e subtítulo: space-y-12 md:space-y-16 */}
+          <div className="space-y-12 md:space-y-16">
             <h1 
               className="hidden md:block tracking-tighter drop-shadow-2xl uppercase"
               style={titleStyle}
@@ -78,7 +79,7 @@ export default function Home() {
               O FLU SE VIVE JUNTO!
             </h1>
             {/* Fallback mobile para o título gigante */}
-            <h1 className="md:hidden text-4xl font-bold tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase">
+            <h1 className="md:hidden text-5xl font-bold tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase">
               O FLU SE VIVE JUNTO!
             </h1>
             
@@ -147,7 +148,7 @@ export default function Home() {
             <div className="flex flex-col space-y-6">
               <h3 
                 className="hidden md:block uppercase tracking-tighter"
-                style={titleStyle}
+                style={{...titleStyle, fontSize: '110px', lineHeight: '100px'}}
               >
                 Leve mais uma pessoa para todos os jogos
               </h3>
@@ -208,7 +209,7 @@ export default function Home() {
           <div className="text-center mb-16 md:mb-24 flex flex-col items-center">
             <h2 
               className="hidden md:block uppercase tracking-tighter mb-6 drop-shadow-lg"
-              style={titleStyle}
+              style={{...titleStyle, fontSize: '110px', lineHeight: '100px'}}
             >
               Seu plano agora vale ainda mais
             </h2>
@@ -300,7 +301,7 @@ export default function Home() {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 md:p-16">
               <h3 
                 className="hidden md:block uppercase tracking-tighter mb-12 max-w-5xl drop-shadow-2xl"
-                style={titleStyle}
+                style={{...titleStyle, fontSize: '80px', lineHeight: '75px'}}
               >
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maracanã pulsar com o verde e grená?
               </h3>

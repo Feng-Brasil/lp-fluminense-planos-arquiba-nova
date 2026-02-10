@@ -7,13 +7,13 @@ const oswald = Oswald({
 });
 
 export default function Home() {
-  // Estilo base para títulos gigantes
+  // Estilo base para títulos gigantes - Tamanho reduzido de 160px para 120px
   const titleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
     color: 'rgb(244, 244, 244)',
-    fontSize: '160px',
-    lineHeight: '140px',
+    fontSize: '120px',
+    lineHeight: '110px',
   };
 
   // Estilo ajustado para os títulos das seções internas (Scroll 2 e 3)
@@ -73,12 +73,8 @@ export default function Home() {
         </div>
 
         {/* CENTRAL CONTENT */}
-        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-12 md:py-20 mt-[-80px] md:mt-[-140px]">
+        <div className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-[15px] py-12 md:py-20 mt-[-40px] md:mt-[-80px]">
           
-          <div className="mb-8 md:mb-12 bg-[#185347] text-white px-6 md:px-8 py-3 rounded-full font-bold text-[10px] md:text-xs tracking-widest animate-pulse shadow-2xl border border-white/20 uppercase">
-            Desconto na mensalidade do convidado!
-          </div>
-
           <div className="space-y-12 md:space-y-16">
             <h1 
               className="hidden md:block tracking-tighter drop-shadow-2xl uppercase"

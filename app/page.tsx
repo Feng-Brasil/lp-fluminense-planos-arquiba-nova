@@ -144,15 +144,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SCROLL 2 — COMO FUNCIONA O CONVIDADO */}
-      <section className="relative min-h-screen w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-20 border-y border-white/5">
+      {/* SCROLL 2 — COMO FUNCIONA O CONVIDADO (ALTURA OTIMIZADA) */}
+      <section className="relative min-h-[80vh] md:min-h-[85vh] w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-12 md:py-16 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
-          <div className="mb-12">
+          <div className="mb-8 md:mb-10">
             <h2 className="text-[#ffffff] font-bold tracking-[0.3em] text-xs md:text-sm uppercase">COMO FUNCIONA O CONVIDADO</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* LADO ESQUERDO: TEXTO */}
-            <div className="flex flex-col space-y-6">
+            <div className="flex flex-col space-y-5">
               <h3 
                 className="hidden md:block uppercase tracking-tighter"
                 style={sectionTitleStyle}
@@ -162,19 +162,19 @@ export default function Home() {
               <h3 className="md:hidden text-3xl font-bold uppercase tracking-tighter leading-tight text-[#f4f4f4]">
                 Leve mais uma pessoa para todos os jogos
               </h3>
-              <div className="space-y-6 text-gray-200">
+              <div className="space-y-5 text-gray-200">
                 <p className="text-base md:text-lg font-bold text-white leading-relaxed">
-                  Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: 50% de desconto garantido e a mesma prioridade de compra do titular. Ou seja: mais chances reais de garantir presença nos jogos mais disputados.
+                  Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: 50% de desconto garantido e a mesma prioridade de compra do titular.
                 </p>
                 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <h4 className="text-[#ffffff] font-bold uppercase tracking-widest text-sm">Como usar na prática:</h4>
                   <p className="text-sm md:text-base leading-relaxed text-gray-300">
-                    Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas que podem ser cadastradas depende do seu plano, assim você mantém flexibilidade para levar amigos e familiares ao longo da temporada.
+                    Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas depende do seu plano.
                   </p>
                 </div>
 
-                <div className="bg-black/20 border-l-4 border-[#68121f] p-6 space-y-2">
+                <div className="bg-black/20 border-l-4 border-[#68121f] p-5 space-y-1">
                   <p className="text-xl md:text-2xl font-bold text-white">
                     R$ 25 por mês por convidado contratado
                   </p>
@@ -183,26 +183,26 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="pt-6">
+              <div className="pt-4">
                 <button className="bg-transparent border-2 border-[#68121f] text-white px-10 py-4 rounded-sm font-bold text-sm tracking-[0.2em] uppercase hover:bg-[#68121f] transition-all shadow-lg">
                   Quero adicionar um convidado
                 </button>
               </div>
             </div>
 
-            {/* LADO DIREITO: IMAGEM ATUALIZADA */}
+            {/* LADO DIREITO: IMAGEM */}
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-tr from-[#68121f]/30 to-black/30 opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
-              <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[4/5] md:aspect-square">
+              <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[16/10] md:aspect-square max-h-[450px]">
                 <img 
                   src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 
                   alt="Torcida Fluminense" 
                   className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
-                <div className="absolute bottom-8 left-8 right-8">
-                  <div className="h-[2px] w-12 bg-[#68121f] mb-4"></div>
-                  <p className="text-xs uppercase tracking-[0.4em] font-bold text-white/90">A experiência completa de ser tricolor</p>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="h-[2px] w-12 bg-[#68121f] mb-3"></div>
+                  <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-white/90">A experiência completa de ser tricolor</p>
                 </div>
               </div>
             </div>

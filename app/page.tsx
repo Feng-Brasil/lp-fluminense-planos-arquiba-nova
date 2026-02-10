@@ -49,8 +49,8 @@ export default function Home() {
       <section className="relative min-h-screen w-full overflow-hidden flex flex-col pt-[54px] z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none"></div>
 
-        {/* TOP NAVIGATION BAR */}
-        <div className="relative z-20 w-full max-w-[1140px] mx-auto px-[15px] py-6 flex justify-between items-center">
+        {/* TOP NAVIGATION BAR - ADJUSTED FOR MAXIMUM WIDTH */}
+        <div className="relative z-20 w-full px-4 md:px-10 py-6 flex justify-between items-center">
           <div className="pt-2">
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 

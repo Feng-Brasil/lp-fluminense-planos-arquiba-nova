@@ -7,7 +7,7 @@ const oswald = Oswald({
 });
 
 export default function Home() {
-  const REDIRECT_URL = "https://nense.com.br/minha-conta/lista-de-convidado";
+  const REDIRECT_URL = "https://fluminense-planos-arquiba-nova.vercel.app/";
 
   // Estilo base para títulos gigantes - Tamanho aumentado de 72px para 84px conforme solicitado
   const titleStyle = {

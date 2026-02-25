@@ -3,12 +3,14 @@ import { Bebas_Neue, Montserrat } from 'next/font/google';
 const bebasNeue = Bebas_Neue({
   subsets: ['latin'],
   weight: ['400'],
+  variable: '--font-bebas',
   display: 'swap',
 });
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
+  variable: '--font-montserrat',
   display: 'swap',
 });
 
@@ -37,7 +39,7 @@ export default function Home() {
   const buttonFontStyle = bebasNeue.className;
 
   return (
-    <main className={`${montserrat.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative`}>
+    <main className={`${montserrat.className} ${bebasNeue.variable} ${montserrat.variable} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative`}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 

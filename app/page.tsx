@@ -18,7 +18,7 @@ const balboa = localFont({
   variable: '--font-balboa',
 });
 
-// Mantendo Montserrat como fallback ou auxiliar se necessário, mas priorizando Balboa
+// Mantendo Montserrat apenas como fallback técnico, mas a interface usará Balboa
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
@@ -51,7 +51,7 @@ export default function Home() {
   const buttonFontStyle = `${balboa.className} font-bold`;
 
   return (
-    <main className={`${balboa.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative`}>
+    <main className={`${balboa.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative font-normal`}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 

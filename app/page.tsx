@@ -1,12 +1,24 @@
-import { Bebas_Neue, Montserrat } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
+import localFont from 'next/font/local';
 
-const bebasNeue = Bebas_Neue({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-bebas',
-  display: 'swap',
+// Configuração da fonte Balboa (Local)
+const balboa = localFont({
+  src: [
+    {
+      path: '../public/fonts/Balboa-Regular.woff2', // Certifique-se que o arquivo existe neste caminho
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/Balboa-Bold.woff2', // Certifique-se que o arquivo existe neste caminho
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-balboa',
 });
 
+// Mantendo Montserrat como fallback ou auxiliar se necessário, mas priorizando Balboa
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
@@ -17,29 +29,29 @@ const montserrat = Montserrat({
 export default function Home() {
   const REDIRECT_URL = "https://fluminense-planos-arquiba-nova.vercel.app/";
 
-  // Estilo base para títulos gigantes - Bebas Neue
+  // Estilo base para títulos gigantes - Balboa Bold
   const titleStyle = {
-    fontFamily: bebasNeue.style.fontFamily,
-    fontWeight: 400,
+    fontFamily: balboa.style.fontFamily,
+    fontWeight: 700,
     color: 'rgb(244, 244, 244)',
     fontSize: '84px',
     lineHeight: '80px',
   };
 
-  // Estilo ajustado para os títulos das seções internas (Scroll 2 e 3) - Bebas Neue
+  // Estilo ajustado para os títulos das seções internas - Balboa Bold
   const sectionTitleStyle = {
-    fontFamily: bebasNeue.style.fontFamily,
-    fontWeight: 400,
+    fontFamily: balboa.style.fontFamily,
+    fontWeight: 700,
     color: 'rgb(244, 244, 244)',
     fontSize: 'clamp(40px, 5vw, 72px)',
     lineHeight: '1.1',
   };
 
-  // Estilo para botões - Bebas Neue
-  const buttonFontStyle = bebasNeue.className;
+  // Estilo para botões e elementos de destaque - Balboa Bold
+  const buttonFontStyle = `${balboa.className} font-bold`;
 
   return (
-    <main className={`${montserrat.className} ${bebasNeue.variable} ${montserrat.variable} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative`}>
+    <main className={`${balboa.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative`}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 
@@ -62,7 +74,7 @@ export default function Home() {
       <section className="relative min-h-screen w-full overflow-hidden flex flex-col pt-[54px] z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none"></div>
 
-        {/* TOP NAVIGATION BAR - MODIFICADA PARA EXTREMIDADES */}
+        {/* TOP NAVIGATION BAR */}
         <div className="relative z-20 w-full px-2 md:px-6 py-4 flex justify-between items-start">
           <div className="pt-0 pl-16 md:pl-48">
             <img 
@@ -95,7 +107,7 @@ export default function Home() {
             >
               O FLU SE VIVE JUNTO!
             </h1>
-            <h1 className={`${bebasNeue.className} md:hidden text-6xl tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase`}>
+            <h1 className={`${balboa.className} font-bold md:hidden text-6xl tracking-tighter leading-[0.9] text-[#f4f4f4] drop-shadow-2xl uppercase`}>
               O FLU SE VIVE JUNTO!
             </h1>
             
@@ -159,7 +171,7 @@ export default function Home() {
       <section className="relative min-h-[80vh] md:min-h-[90vh] w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-12 md:py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
           <div className="mb-8 md:mb-10">
-            <h2 className={`${bebasNeue.className} text-[#ffffff] tracking-[0.2em] text-lg md:text-xl uppercase`}>COMO FUNCIONA O CONVIDADO</h2>
+            <h2 className={`${balboa.className} font-bold text-[#ffffff] tracking-[0.2em] text-lg md:text-xl uppercase`}>COMO FUNCIONA O CONVIDADO</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div className="flex flex-col space-y-5">
@@ -169,7 +181,7 @@ export default function Home() {
               >
                 Leve mais uma pessoa para todos os jogos
               </h3>
-              <h3 className={`${bebasNeue.className} md:hidden text-4xl uppercase tracking-tighter leading-tight text-[#f4f4f4]`}>
+              <h3 className={`${balboa.className} font-bold md:hidden text-4xl uppercase tracking-tighter leading-tight text-[#f4f4f4]`}>
                 Leve mais uma pessoa para todos os jogos
               </h3>
               <div className="space-y-5 text-gray-200">
@@ -178,14 +190,14 @@ export default function Home() {
                 </p>
                 
                 <div className="space-y-2">
-                  <h4 className={`${bebasNeue.className} text-[#ffffff] uppercase tracking-widest text-xl`}>Como usar na prática:</h4>
+                  <h4 className={`${balboa.className} font-bold text-[#ffffff] uppercase tracking-widest text-xl`}>Como usar na prática:</h4>
                   <p className="text-sm md:text-base leading-relaxed text-gray-300">
                     Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas depende do seu plano.
                   </p>
                 </div>
 
                 <div className="bg-black/20 border-l-4 border-[#68121f] p-5 space-y-1">
-                  <p className={`${bebasNeue.className} text-2xl md:text-3xl text-white`}>
+                  <p className={`${balboa.className} font-bold text-2xl md:text-3xl text-white`}>
                     R$ 25 por mês por convidado contratado
                   </p>
                   <p className="text-xs text-gray-400 font-medium italic">
@@ -211,7 +223,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
                 <div className="absolute bottom-8 left-8 right-8">
                   <div className="h-[3px] w-16 bg-[#68121f] mb-4"></div>
-                  <p className={`${bebasNeue.className} text-lg uppercase tracking-[0.2em] text-white/90`}>A experiência completa de ser tricolor</p>
+                  <p className={`${balboa.className} font-bold text-lg uppercase tracking-[0.2em] text-white/90`}>A experiência completa de ser tricolor</p>
                 </div>
               </div>
             </div>
@@ -229,7 +241,7 @@ export default function Home() {
             >
               Seu plano agora vale ainda mais
             </h2>
-            <h2 className={`${bebasNeue.className} md:hidden text-4xl uppercase tracking-tighter mb-6 drop-shadow-lg text-[#f4f4f4]`}>
+            <h2 className={`${balboa.className} font-bold md:hidden text-4xl uppercase tracking-tighter mb-6 drop-shadow-lg text-[#f4f4f4]`}>
               Seu plano agora vale ainda mais
             </h2>
             <p className="text-base md:text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md font-normal leading-relaxed">
@@ -241,8 +253,8 @@ export default function Home() {
             <div className="bg-black/70 border-t-8 border-[#68121f] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex flex-col sm:flex-row justify-between items-start mb-8 gap-4">
-                  <h3 className={`${bebasNeue.className} text-3xl md:text-4xl tracking-tighter`}>ARQUIBA 100%</h3>
-                  <span className={`${bebasNeue.className} bg-[#68121f] text-sm px-4 py-1.5 rounded whitespace-nowrap inline-block tracking-widest`}>MAIS COMPLETO</span>
+                  <h3 className={`${balboa.className} font-bold text-3xl md:text-4xl tracking-tighter`}>ARQUIBA 100%</h3>
+                  <span className={`${balboa.className} font-bold bg-[#68121f] text-sm px-4 py-1.5 rounded whitespace-nowrap inline-block tracking-widest`}>MAIS COMPLETO</span>
                 </div>
                 <ul className="space-y-4 mb-10">
                   <li className="flex items-start gap-3 text-gray-200 font-normal text-sm">
@@ -276,7 +288,7 @@ export default function Home() {
             <div className="bg-black/70 border-t-8 border-[#185347] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex justify-between items-start mb-8">
-                  <h3 className={`${bebasNeue.className} text-3xl md:text-4xl tracking-tighter`}>ARQUIBA 75%</h3>
+                  <h3 className={`${balboa.className} font-bold text-3xl md:text-4xl tracking-tighter`}>ARQUIBA 75%</h3>
                 </div>
                 <ul className="space-y-4 mb-10">
                   <li className="flex items-start gap-3 text-gray-200 font-normal text-sm">
@@ -318,7 +330,7 @@ export default function Home() {
               >
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
-              <h3 className={`${bebasNeue.className} md:hidden text-3xl uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight text-[#f4f4f4]`}>
+              <h3 className={`${balboa.className} font-bold md:hidden text-3xl uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight text-[#f4f4f4]`}>
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
               <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#68121f] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10 inline-block`}>
@@ -355,7 +367,7 @@ export default function Home() {
             <span className="w-12 h-1 bg-[#ffffff]"></span>
             <span className="w-12 h-1 bg-[#185347]"></span>
           </div>
-          <p className={`${bebasNeue.className} uppercase tracking-[0.2em] text-lg md:text-xl mb-4`}>
+          <p className={`${balboa.className} font-bold uppercase tracking-[0.2em] text-lg md:text-xl mb-4`}>
             Fluminense Football Club - Sócio Futebol
           </p>
           <p className="text-gray-500 text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">

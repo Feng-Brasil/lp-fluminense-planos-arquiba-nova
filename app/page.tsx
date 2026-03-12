@@ -1,20 +1,11 @@
-import { Oswald, Montserrat } from 'next/font/google';
+import { Oswald } from 'next/font/google';
 import { Metadata } from 'next';
 
-// Configuração das fontes para replicar o estilo do site nense.com.br
-// Oswald é usada para títulos e elementos de destaque (impacto)
+// Configuração da fonte Oswald como única para toda a página
 const oswald = Oswald({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-oswald',
-  display: 'swap',
-});
-
-// Montserrat é a fonte principal de corpo e textos auxiliares no site de referência
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800'],
-  variable: '--font-montserrat',
   display: 'swap',
 });
 
@@ -26,9 +17,9 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const REDIRECT_URL = "https://fluminense-planos-arquiba-nova.vercel.app/";
+  const REDIRECT_URL = "https://nense.com.br/planos";
 
-  // Estilo base para títulos gigantes - Oswald Bold (Replica o estilo de impacto do nense.com.br)
+  // Estilo base para títulos gigantes - Oswald Bold
   const titleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
@@ -50,7 +41,7 @@ export default function Home() {
   const buttonFontStyle = `${oswald.className} font-bold`;
 
   return (
-    <main className={`${montserrat.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative font-normal`}>
+    <main className={`${oswald.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative font-normal`}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 
@@ -91,7 +82,7 @@ export default function Home() {
               <span className="text-[14px] md:text-lg tracking-[0.1em] uppercase">Login</span>
             </a>
             <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#68121f] px-4 md:px-8 py-2 md:py-3 rounded-sm text-[14px] md:text-lg tracking-[0.1em] uppercase hover:bg-[#185347] transition-all shadow-lg inline-block`}>
-              Minha Conta
+              Cadastre-se
             </a>
           </div>
         </div>
@@ -300,7 +291,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3 text-gray-200 font-normal text-sm">
                     <div className="h-2 w-2 bg-[#185347] rounded-full mt-1.5 shrink-0"></div>
-                    Pode cadastrar até 3 convidados
+                    Pode cadastrar até 5 convidados
                   </li>
                 </ul>
                 <p className="text-[10px] md:text-xs text-gray-400 italic font-normal">*Valor por convidado: R$ 25,00/mês</p>

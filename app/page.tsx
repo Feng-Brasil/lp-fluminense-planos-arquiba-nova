@@ -1,10 +1,10 @@
 import { Oswald } from 'next/font/google';
 import { Metadata } from 'next';
 
-// Configuração da fonte Oswald como única para toda a página, sem variações de estilo (normal)
+// Configuração da fonte Oswald idêntica ao padrão utilizado no portal oficial
 const oswald = Oswald({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['200', '300', '400', '500', '600', '700'],
   variable: '--font-oswald',
   display: 'swap',
 });
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Home() {
   const REDIRECT_URL = "https://nense.com.br/minha-conta/lista-de-convidado";
 
-  // Estilo base para títulos gigantes usando a variável da fonte Oswald
+  // Estilo base para títulos gigantes usando a variável da fonte Oswald sem variações
   const titleStyle = {
     fontFamily: 'var(--font-oswald), sans-serif',
     fontWeight: 700,

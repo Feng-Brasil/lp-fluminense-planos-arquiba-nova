@@ -72,7 +72,7 @@ export default function Home() {
             <img 
               src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/logo-socio-flu.png" 
               alt="Sócio Futebol" 
-              className="h-12 md:h-20 w-auto object-contain drop-shadow-2xl"
+              className="h-16 md:h-28 w-auto object-contain drop-shadow-2xl"
             />
           </div>
 

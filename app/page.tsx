@@ -1,7 +1,7 @@
 import { Oswald } from 'next/font/google';
 import { Metadata } from 'next';
 
-// Configuração da fonte Oswald
+// Configuração da fonte Oswald - Removida a variação Fallback
 const oswald = Oswald({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700'],

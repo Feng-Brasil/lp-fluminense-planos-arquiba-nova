@@ -352,7 +352,7 @@ export default function Home() {
       </div>
 
       {/* FOOTER */}
-      <footer className="py-12 md:py-16 border-t border-white/10 bg-black/90 backdrop-blur-md relative z-10">
+      <footer className="py-12 md:py-16 border-t border-white/10 bg-[#185347] backdrop-blur-md relative z-10">
         <div className="max-w-[1140px] mx-auto px-[15px] text-center">
           <div className="flex justify-center gap-1 mb-8">
             <span className="w-12 h-1 bg-[#451021]"></span>

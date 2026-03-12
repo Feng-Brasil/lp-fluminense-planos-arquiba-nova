@@ -24,7 +24,7 @@ export default function Home() {
     fontFamily: 'var(--font-oswald)',
     fontWeight: 700,
     color: 'rgb(244, 244, 244)',
-    fontSize: '72px', // Aumentado de 64px
+    fontSize: '72px',
     lineHeight: '1.1',
     letterSpacing: '0.02em',
     fontStyle: 'normal',
@@ -34,7 +34,7 @@ export default function Home() {
     fontFamily: 'var(--font-oswald)',
     fontWeight: 700,
     color: 'rgb(248, 248, 248)',
-    fontSize: 'clamp(36px, 5vw, 64px)', // Aumentado de clamp(32px, 4vw, 56px)
+    fontSize: 'clamp(36px, 5vw, 64px)',
     lineHeight: '1.1',
     letterSpacing: '0.01em',
     fontStyle: 'normal',
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#451021] text-left">
               <div className="mb-3 text-[rgb(248,248,248)] hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a5.97 5.97 0 0 0-.942 3.197M12 10.5a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75ZM21 12a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0ZM3.75 12a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1-4.5 0ZM5.25 18.72a9.094 9.094 0 0 1-3.741-.479 3 3 0 0 1 4.682-2.72m-.94 3.198.001.031c0 .225.012.447.037.666A11.944 11.944 0 0 0 12 21c2.17 0 4.207-.576 5.963-1.584A6.062 6.062 0 0 0 18 18.719" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                 </svg>
               </div>
               <p className="text-[8px] md:text-[12px] font-bold uppercase tracking-[0.15em] leading-relaxed text-[rgb(248,248,248)]">Viva o jogo com quem faz parte da sua história</p>

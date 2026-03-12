@@ -21,7 +21,7 @@ export default function Home() {
 
   // Estilo base para títulos gigantes - Oswald Bold com cor rgb(248, 248, 248)
   const titleStyle = {
-    fontFamily: 'Oswald, sans-serif',
+    fontFamily: 'var(--font-oswald), sans-serif',
     fontWeight: 700,
     color: 'rgb(248, 248, 248)',
     fontSize: '84px',
@@ -31,7 +31,7 @@ export default function Home() {
 
   // Estilo ajustado para os títulos das seções internas com cor rgb(248, 248, 248)
   const sectionTitleStyle = {
-    fontFamily: 'Oswald, sans-serif',
+    fontFamily: 'var(--font-oswald), sans-serif',
     fontWeight: 700,
     color: 'rgb(248, 248, 248)',
     fontSize: 'clamp(40px, 5vw, 72px)',
@@ -43,7 +43,7 @@ export default function Home() {
   const buttonFontStyle = `font-bold`;
 
   return (
-    <main className={`${oswald.variable} font-oswald min-h-screen text-[rgb(248,248,248)] selection:bg-[#851f40] selection:text-white overflow-x-hidden relative font-normal`} style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>
+    <main className={`${oswald.variable} font-oswald min-h-screen text-[rgb(248,248,248)] selection:bg-[#451021] selection:text-white overflow-x-hidden relative font-normal`} style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 
@@ -57,7 +57,7 @@ export default function Home() {
 
       {/* HEADER STRIPES */}
       <div className="w-full fixed top-0 z-50">
-        <div className="h-[28px] bg-[#851f40] w-full"></div>
+        <div className="h-[28px] bg-[#451021] w-full"></div>
         <div className="h-[6px] bg-[#ffffff] w-full"></div>
         <div className="h-[20px] bg-[#185347] w-full"></div>
       </div>
@@ -83,7 +83,7 @@ export default function Home() {
               </svg>
               <span className="text-[14px] md:text-lg tracking-[0.1em] uppercase">Login</span>
             </a>
-            <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#851f40] text-[rgb(248,248,248)] px-4 md:px-8 py-2 md:py-3 rounded-sm text-[14px] md:text-lg tracking-[0.1em] uppercase hover:bg-[#185347] transition-all shadow-lg inline-block`}>
+            <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#451021] text-[rgb(248,248,248)] px-4 md:px-8 py-2 md:py-3 rounded-sm text-[14px] md:text-lg tracking-[0.1em] uppercase hover:bg-[#185347] transition-all shadow-lg inline-block`}>
               Cadastre-se
             </a>
           </div>
@@ -99,7 +99,7 @@ export default function Home() {
             >
               O FLU SE VIVE JUNTO!
             </h1>
-            <h1 className="font-bold md:hidden text-6xl tracking-tighter leading-[0.9] text-[rgb(248,248,248)] drop-shadow-2xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>
+            <h1 className="font-bold md:hidden text-6xl tracking-tighter leading-[0.9] text-[rgb(248,248,248)] drop-shadow-2xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
               O FLU SE VIVE JUNTO!
             </h1>
             
@@ -110,7 +110,7 @@ export default function Home() {
 
           {/* GRID DE BENEFÍCIOS */}
           <div className="mt-12 md:mt-16 grid grid-cols-4 gap-[10px] md:gap-[15px] w-full max-w-[1200px] mx-auto">
-            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#851f40] text-left">
+            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#451021] text-left">
               <div className="mb-4 text-[rgb(248,248,248)] hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
@@ -118,7 +118,7 @@ export default function Home() {
               </div>
               <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug text-[rgb(248,248,248)]">Mais prioridade na compra de ingressos</p>
             </div>
-            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#851f40] text-left">
+            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#451021] text-left">
               <div className="mb-4 text-[rgb(248,248,248)] hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0-4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
@@ -126,7 +126,7 @@ export default function Home() {
               </div>
               <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug text-[rgb(248,248,248)]">Viva o jogo com quem faz parte da sua história</p>
             </div>
-            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#851f40] text-left">
+            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#451021] text-left">
               <div className="mb-4 text-[rgb(248,248,248)] hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
@@ -134,7 +134,7 @@ export default function Home() {
               </div>
               <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug text-[rgb(248,248,248)]">Desconto garantido para todos os convidados</p>
             </div>
-            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#851f40] text-left">
+            <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#451021] text-left">
               <div className="mb-4 text-[rgb(248,248,248)] hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 1 3 2.48Z" />
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12 md:mt-16 flex justify-center">
-            <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#851f40] text-[rgb(248,248,248)] px-10 md:px-14 py-4 md:py-5 rounded-sm text-xl md:text-2xl tracking-[0.1em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(133,31,64,0.4)] hover:scale-105 block w-fit`}>
+            <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#451021] text-[rgb(248,248,248)] px-10 md:px-14 py-4 md:py-5 rounded-sm text-xl md:text-2xl tracking-[0.1em] uppercase hover:bg-[#185347] transition-all shadow-[0_0_40px_rgba(69,16,33,0.4)] hover:scale-105 block w-fit`}>
               Adicionar convidado agora
             </a>
           </div>
@@ -163,7 +163,7 @@ export default function Home() {
       <section className="relative min-h-[80vh] md:min-h-[90vh] w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-12 md:py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
           <div className="mb-8 md:mb-10">
-            <h2 className="font-bold text-[rgb(248,248,248)] tracking-[0.2em] text-lg md:text-xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>COMO FUNCIONA O CONVIDADO</h2>
+            <h2 className="font-bold text-[rgb(248,248,248)] tracking-[0.2em] text-lg md:text-xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>COMO FUNCIONA O CONVIDADO</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div className="flex flex-col space-y-5">
@@ -173,7 +173,7 @@ export default function Home() {
               >
                 Leve mais uma pessoa para todos os jogos
               </h3>
-              <h3 className="font-bold md:hidden text-4xl uppercase tracking-tighter leading-tight text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>
+              <h3 className="font-bold md:hidden text-4xl uppercase tracking-tighter leading-tight text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
                 Leve mais uma pessoa para todos os jogos
               </h3>
               <div className="space-y-5 text-[rgb(248,248,248)]">
@@ -182,14 +182,14 @@ export default function Home() {
                 </p>
                 
                 <div className="space-y-2">
-                  <h4 className="font-bold text-[rgb(248,248,248)] uppercase tracking-widest text-xl" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>Como usar na prática:</h4>
+                  <h4 className="font-bold text-[rgb(248,248,248)] uppercase tracking-widest text-xl" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>Como usar na prática:</h4>
                   <p className="text-sm md:text-base leading-relaxed text-[rgb(248,248,248)] opacity-80">
                     Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas depende do seu plano.
                   </p>
                 </div>
 
-                <div className="bg-black/20 border-l-4 border-[#851f40] p-5 space-y-1">
-                  <p className="font-bold text-2xl md:text-3xl text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>
+                <div className="bg-black/20 border-l-4 border-[#451021] p-5 space-y-1">
+                  <p className="font-bold text-2xl md:text-3xl text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
                     R$ 25 por mês por convidado contratado
                   </p>
                   <p className="text-xs text-[rgb(248,248,248)] opacity-60 font-medium italic">
@@ -198,14 +198,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="pt-4">
-                <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-transparent border-2 border-[#851f40] text-[rgb(248,248,248)] px-10 py-4 rounded-sm text-lg tracking-[0.1em] uppercase hover:bg-[#851f40] transition-all shadow-lg inline-block`}>
+                <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-transparent border-2 border-[#451021] text-[rgb(248,248,248)] px-10 py-4 rounded-sm text-lg tracking-[0.1em] uppercase hover:bg-[#451021] transition-all shadow-lg inline-block`}>
                   Quero adicionar um convidado
                 </a>
               </div>
             </div>
 
             <div className="relative group md:-mr-12 lg:-mr-20">
-              <div className="absolute -inset-4 bg-gradient-to-tr from-[#851f40]/30 to-black/30 opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
+              <div className="absolute -inset-4 bg-gradient-to-tr from-[#451021]/30 to-black/30 opacity-50 blur-2xl group-hover:opacity-70 transition-opacity"></div>
               <div className="relative rounded-sm overflow-hidden shadow-2xl border border-white/10 aspect-[16/10] md:aspect-[4/5] lg:aspect-square max-h-[650px] w-full">
                 <img 
                   src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066556724_670bdec29c_o.jpg" 
@@ -214,8 +214,8 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
                 <div className="absolute bottom-8 left-8 right-8">
-                  <div className="h-[3px] w-16 bg-[#851f40] mb-4"></div>
-                  <p className="font-bold text-lg uppercase tracking-[0.2em] text-[rgb(248,248,248)] opacity-90" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>A experiência completa de ser tricolor</p>
+                  <div className="h-[3px] w-16 bg-[#451021] mb-4"></div>
+                  <p className="font-bold text-lg uppercase tracking-[0.2em] text-[rgb(248,248,248)] opacity-90" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>A experiência completa de ser tricolor</p>
                 </div>
               </div>
             </div>
@@ -233,7 +233,7 @@ export default function Home() {
             >
               Seu plano agora vale ainda mais
             </h2>
-            <h2 className="font-bold md:hidden text-4xl uppercase tracking-tighter mb-6 drop-shadow-lg text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>
+            <h2 className="font-bold md:hidden text-4xl uppercase tracking-tighter mb-6 drop-shadow-lg text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
               Seu plano agora vale ainda mais
             </h2>
             <p className="text-base md:text-xl text-[rgb(248,248,248)] max-w-3xl mx-auto drop-shadow-md font-normal leading-relaxed">
@@ -242,27 +242,27 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] mb-20 md:mb-32">
-            <div className="bg-black/70 border-t-8 border-[#851f40] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
+            <div className="bg-black/70 border-t-8 border-[#451021] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex flex-col sm:flex-row justify-between items-start mb-8 gap-4">
-                  <h3 className="font-bold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>ARQUIBA 100%</h3>
-                  <span className="font-bold bg-[#851f40] text-[rgb(248,248,248)] text-sm px-4 py-1.5 rounded whitespace-nowrap inline-block tracking-widest" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>MAIS COMPLETO</span>
+                  <h3 className="font-bold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>ARQUIBA 100%</h3>
+                  <span className="font-bold bg-[#451021] text-[rgb(248,248,248)] text-sm px-4 py-1.5 rounded whitespace-nowrap inline-block tracking-widest" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>MAIS COMPLETO</span>
                 </div>
                 <ul className="space-y-4 mb-10">
                   <li className="flex items-start gap-3 text-[rgb(248,248,248)] font-normal text-sm">
-                    <div className="h-2 w-2 bg-[#851f40] rounded-full mt-1.5 shrink-0"></div>
+                    <div className="h-2 w-2 bg-[#451021] rounded-full mt-1.5 shrink-0"></div>
                     Mais liberdade para compartilhar a experiência
                   </li>
                   <li className="flex items-start gap-3 text-[rgb(248,248,248)] font-normal text-sm">
-                    <div className="h-2 w-2 bg-[#851f40] rounded-full mt-1.5 shrink-0"></div>
+                    <div className="h-2 w-2 bg-[#451021] rounded-full mt-1.5 shrink-0"></div>
                     Pode contratar até 3 convidados
                   </li>
                   <li className="flex items-start gap-3 text-[rgb(248,248,248)] font-normal text-sm">
-                    <div className="h-2 w-2 bg-[#851f40] rounded-full mt-1.5 shrink-0"></div>
+                    <div className="h-2 w-2 bg-[#451021] rounded-full mt-1.5 shrink-0"></div>
                     Pode cadastrar até 5 convidados
                   </li>
                   <li className="flex items-start gap-3 text-[rgb(248,248,248)] font-bold text-sm">
-                    <div className="h-2 w-2 bg-[#851f40] rounded-full mt-1.5 shrink-0"></div>
+                    <div className="h-2 w-2 bg-[#451021] rounded-full mt-1.5 shrink-0"></div>
                     Mais pessoas com prioridade nos ingressos
                   </li>
                 </ul>
@@ -280,7 +280,7 @@ export default function Home() {
             <div className="bg-black/70 border-t-8 border-[#185347] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
               <div className="flex-1">
                 <div className="flex justify-between items-start mb-8">
-                  <h3 className="font-bold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>ARQUIBA 75%</h3>
+                  <h3 className="font-bold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>ARQUIBA 75%</h3>
                 </div>
                 <ul className="space-y-4 mb-10">
                   <li className="flex items-start gap-3 text-[rgb(248,248,248)] font-normal text-sm">
@@ -322,17 +322,17 @@ export default function Home() {
               >
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
-              <h3 className="font-bold md:hidden text-3xl uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>
+              <h3 className="font-bold md:hidden text-3xl uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
-              <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#851f40] text-[rgb(248,248,248)] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10 inline-block`}>
+              <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#451021] text-[rgb(248,248,248)] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10 inline-block`}>
                 <p className="text-xl md:text-3xl uppercase tracking-widest">contrate um convidado!</p>
               </a>
             </div>
           </div>
 
           <div className="flex flex-col items-center pb-12 md:pb-20">
-            <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#185347] text-[rgb(248,248,248)] px-10 md:px-14 py-5 md:py-7 rounded-sm text-xl md:text-3xl tracking-[0.1em] uppercase hover:bg-[#851f40] transition-all shadow-2xl hover:scale-105 mb-6 inline-block`}>
+            <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#185347] text-[rgb(248,248,248)] px-10 md:px-14 py-5 md:py-7 rounded-sm text-xl md:text-3xl tracking-[0.1em] uppercase hover:bg-[#451021] transition-all shadow-2xl hover:scale-105 mb-6 inline-block`}>
               Quero trazer meu convidado
             </a>
             <p className="text-[rgb(248,248,248)] opacity-80 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs drop-shadow-md">Leva menos de 1 minuto.</p>
@@ -355,11 +355,11 @@ export default function Home() {
       <footer className="py-12 md:py-16 border-t border-white/10 bg-black/90 backdrop-blur-md relative z-10">
         <div className="max-w-[1140px] mx-auto px-[15px] text-center">
           <div className="flex justify-center gap-1 mb-8">
-            <span className="w-12 h-1 bg-[#851f40]"></span>
+            <span className="w-12 h-1 bg-[#451021]"></span>
             <span className="w-12 h-1 bg-[#ffffff]"></span>
             <span className="w-12 h-1 bg-[#185347]"></span>
           </div>
-          <p className="font-bold uppercase tracking-[0.2em] text-lg md:text-xl mb-4 text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'Oswald, sans-serif' }}>
+          <p className="font-bold uppercase tracking-[0.2em] text-lg md:text-xl mb-4 text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
             Fluminense Football Club - Sócio Futebol
           </p>
           <p className="text-[rgb(248,248,248)] opacity-40 text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">

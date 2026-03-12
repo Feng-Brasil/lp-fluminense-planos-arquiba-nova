@@ -120,7 +120,7 @@ export default function Home() {
             <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#451021] text-left">
               <div className="mb-4 text-[rgb(248,248,248)] hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0-4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a5.97 5.97 0 0 0-.942 3.197M12 10.5a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75ZM21 12a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0ZM3.75 12a2.25 2.25 0 1 1 4.5 0 2.25 2.25 0 0 1-4.5 0ZM5.25 18.72a9.094 9.094 0 0 1-3.741-.479 3 3 0 0 1 4.682-2.72m-.94 3.198.001.031c0 .225.012.447.037.666A11.944 11.944 0 0 0 12 21c2.17 0 4.207-.576 5.963-1.584A6.062 6.062 0 0 0 18 18.719" />
                 </svg>
               </div>
               <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug text-[rgb(248,248,248)]">Viva o jogo com quem faz parte da sua história</p>
@@ -162,7 +162,7 @@ export default function Home() {
       <section className="relative min-h-[80vh] md:min-h-[90vh] w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-12 md:py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
           <div className="mb-8 md:mb-10">
-            <h2 className="font-bold text-[rgb(248,248,248)] tracking-[0.2em] text-lg md:text-xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>COMO FUNCIONA O CONVIDADO</h2>
+            <h2 className="font-bold text-[rgb(248,248,248)] tracking-[0.2em] text-lg md:text-xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>Como funciona o convidado:</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div className="flex flex-col space-y-5">
@@ -170,20 +170,20 @@ export default function Home() {
                 className="hidden md:block uppercase tracking-tighter"
                 style={sectionTitleStyle}
               >
-                Leve mais uma pessoa para todos os jogos
+                Leve até 3 pessoas para todos os jogos
               </h3>
               <h3 className="font-bold md:hidden text-4xl uppercase tracking-tighter leading-tight text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
-                Leve mais uma pessoa para todos os jogos
+                Leve até 3 pessoas para todos os jogos
               </h3>
               <div className="space-y-5 text-[rgb(248,248,248)]">
                 <p className="text-base md:text-lg font-bold text-[rgb(248,248,248)] leading-relaxed">
-                  Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: 50% de desconto garantido e a mesma prioridade de compra do titular.
+                  Ao adicionar convidado(s) ao seu plano, você passa a ter direito a comprar um ingresso extra para cada convidado contratado, sempre com: 50% de desconto e a mesma prioridade de compra do titular.
                 </p>
                 
                 <div className="space-y-2">
                   <h4 className="font-bold text-[rgb(248,248,248)] uppercase tracking-widest text-xl" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>Como usar na prática:</h4>
                   <p className="text-sm md:text-base leading-relaxed text-[rgb(248,248,248)] opacity-80">
-                    Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas depende do seu plano.
+                    Você cadastra uma lista com até 5 pessoas autorizadas e decide, a cada jogo, para quem comprar o ingresso extra. A quantidade de pessoas contratadas depende do seu plano.
                   </p>
                 </div>
 
@@ -198,7 +198,7 @@ export default function Home() {
               </div>
               <div className="pt-4">
                 <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-transparent border-2 border-[#451021] text-[rgb(248,248,248)] px-10 py-4 rounded-sm text-lg tracking-[0.1em] uppercase hover:bg-[#451021] transition-all shadow-lg inline-block`}>
-                  Quero adicionar um convidado
+                  QUERO ADICIONAR CONVIDADO(S)
                 </a>
               </div>
             </div>

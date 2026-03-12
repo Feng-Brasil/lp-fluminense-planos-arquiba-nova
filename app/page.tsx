@@ -1,4 +1,5 @@
 import { Oswald } from 'next/font/google';
+import { Metadata } from 'next';
 
 // Configuração da fonte Oswald conforme solicitado
 const oswald = Oswald({
@@ -7,6 +8,13 @@ const oswald = Oswald({
   variable: '--font-oswald',
   display: 'swap',
 });
+
+export const metadata: Metadata = {
+  title: 'Convidados Sócio Futebol',
+  icons: {
+    icon: 'https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/escudo-flu.png',
+  },
+};
 
 export default function Home() {
   const REDIRECT_URL = "https://fluminense-planos-arquiba-nova.vercel.app/";

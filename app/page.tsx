@@ -1,11 +1,20 @@
-import { Oswald } from 'next/font/google';
+import { Oswald, Montserrat } from 'next/font/google';
 import { Metadata } from 'next';
 
-// Configuração da fonte Oswald conforme solicitado
+// Configuração das fontes para replicar o estilo do site nense.com.br
+// Oswald é usada para títulos e elementos de destaque (impacto)
 const oswald = Oswald({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-oswald',
+  display: 'swap',
+});
+
+// Montserrat é a fonte principal de corpo e textos auxiliares no site de referência
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-montserrat',
   display: 'swap',
 });
 
@@ -19,7 +28,7 @@ export const metadata: Metadata = {
 export default function Home() {
   const REDIRECT_URL = "https://fluminense-planos-arquiba-nova.vercel.app/";
 
-  // Estilo base para títulos gigantes - Oswald Bold
+  // Estilo base para títulos gigantes - Oswald Bold (Replica o estilo de impacto do nense.com.br)
   const titleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
@@ -28,7 +37,7 @@ export default function Home() {
     lineHeight: '80px',
   };
 
-  // Estilo ajustado para os títulos das seções internas - Oswald Bold
+  // Estilo ajustado para os títulos das seções internas
   const sectionTitleStyle = {
     fontFamily: oswald.style.fontFamily,
     fontWeight: 700,
@@ -37,11 +46,11 @@ export default function Home() {
     lineHeight: '1.1',
   };
 
-  // Estilo para botões e elementos de destaque - Oswald Bold
+  // Estilo para botões e elementos de navegação
   const buttonFontStyle = `${oswald.className} font-bold`;
 
   return (
-    <main className={`${oswald.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative font-normal`}>
+    <main className={`${montserrat.className} min-h-screen text-[#ffffff] selection:bg-[#68121f] selection:text-white overflow-x-hidden relative font-normal`}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 
@@ -101,7 +110,7 @@ export default function Home() {
               O FLU SE VIVE JUNTO!
             </h1>
             
-            <p className={`${oswald.className} text-base md:text-xl lg:text-2xl font-bold max-w-[800px] mx-auto text-gray-200 drop-shadow-lg leading-relaxed`}>
+            <p className="text-base md:text-xl lg:text-2xl font-bold max-w-[800px] mx-auto text-gray-200 drop-shadow-lg leading-relaxed">
               Convide, economize e sigam juntos na arquibancada.
             </p>
           </div>
@@ -114,15 +123,15 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
                 </svg>
               </div>
-              <p className={`${oswald.className} text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug`}>Mais prioridade na compra de ingressos</p>
+              <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug">Mais prioridade na compra de ingressos</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#68121f] text-left">
               <div className="mb-4 text-white hidden md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0-4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                 </svg>
               </div>
-              <p className={`${oswald.className} text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug`}>Viva o jogo com quem faz parte da sua história</p>
+              <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug">Viva o jogo com quem faz parte da sua história</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#68121f] text-left">
               <div className="mb-4 text-white hidden md:block">
@@ -130,7 +139,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 </svg>
               </div>
-              <p className={`${oswald.className} text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug`}>Desconto garantido para todos os convidados</p>
+              <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug">Desconto garantido para todos os convidados</p>
             </div>
             <div className="bg-black/60 backdrop-blur-md p-3 md:p-5 border-l-4 border-[#68121f] text-left">
               <div className="mb-4 text-white hidden md:block">
@@ -139,7 +148,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
                 </svg>
               </div>
-              <p className={`${oswald.className} text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug`}>Vamos todos juntos rumo à glória</p>
+              <p className="text-[8px] md:text-xs font-bold uppercase tracking-wider leading-snug">Vamos todos juntos rumo à glória</p>
             </div>
           </div>
 
@@ -175,13 +184,13 @@ export default function Home() {
                 Leve mais uma pessoa para todos os jogos
               </h3>
               <div className="space-y-5 text-gray-200">
-                <p className={`${oswald.className} text-base md:text-lg font-bold text-white leading-relaxed`}>
+                <p className="text-base md:text-lg font-bold text-white leading-relaxed">
                   Ao adicionar um convidado ao seu plano, você passa a ter direito a comprar 1 ingresso extra por partida, sempre com: 50% de desconto garantido e a mesma prioridade de compra do titular.
                 </p>
                 
                 <div className="space-y-2">
                   <h4 className={`${oswald.className} font-bold text-[#ffffff] uppercase tracking-widest text-xl`}>Como usar na prática:</h4>
-                  <p className={`${oswald.className} text-sm md:text-base leading-relaxed text-gray-300`}>
+                  <p className="text-sm md:text-base leading-relaxed text-gray-300">
                     Você cadastra uma lista de pessoas autorizadas e decide, a cada jogo, quem vai usar o ingresso. A quantidade de pessoas depende do seu plano.
                   </p>
                 </div>
@@ -190,7 +199,7 @@ export default function Home() {
                   <p className={`${oswald.className} font-bold text-2xl md:text-3xl text-white`}>
                     R$ 25 por mês por convidado contratado
                   </p>
-                  <p className={`${oswald.className} text-xs text-gray-400 font-medium italic`}>
+                  <p className="text-xs text-gray-400 font-medium italic">
                     Simples, acessível e pensado para você nunca precisar ir sozinho ao Maracanã.
                   </p>
                 </div>
@@ -234,7 +243,7 @@ export default function Home() {
             <h2 className={`${oswald.className} font-bold md:hidden text-4xl uppercase tracking-tighter mb-6 drop-shadow-lg text-[#f4f4f4]`}>
               Seu plano agora vale ainda mais
             </h2>
-            <p className={`${oswald.className} text-base md:text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md font-normal leading-relaxed`}>
+            <p className="text-base md:text-xl text-gray-200 max-w-3xl mx-auto drop-shadow-md font-normal leading-relaxed">
               Com convidados, seu plano ganha mais poder: mais pessoas com prioridade, mais economia e mais companhia para viver cada jogo decisivo.
             </p>
           </div>
@@ -247,24 +256,24 @@ export default function Home() {
                   <span className={`${oswald.className} font-bold bg-[#68121f] text-sm px-4 py-1.5 rounded whitespace-nowrap inline-block tracking-widest`}>MAIS COMPLETO</span>
                 </div>
                 <ul className="space-y-4 mb-10">
-                  <li className={`${oswald.className} flex items-start gap-3 text-gray-200 font-normal text-sm`}>
+                  <li className="flex items-start gap-3 text-gray-200 font-normal text-sm">
                     <div className="h-2 w-2 bg-[#68121f] rounded-full mt-1.5 shrink-0"></div>
                     Mais liberdade para compartilhar a experiência
                   </li>
-                  <li className={`${oswald.className} flex items-start gap-3 text-gray-200 font-normal text-sm`}>
+                  <li className="flex items-start gap-3 text-gray-200 font-normal text-sm">
                     <div className="h-2 w-2 bg-[#68121f] rounded-full mt-1.5 shrink-0"></div>
                     Pode contratar até 3 convidados
                   </li>
-                  <li className={`${oswald.className} flex items-start gap-3 text-gray-200 font-normal text-sm`}>
+                  <li className="flex items-start gap-3 text-gray-200 font-normal text-sm">
                     <div className="h-2 w-2 bg-[#68121f] rounded-full mt-1.5 shrink-0"></div>
                     Pode cadastrar até 5 convidados
                   </li>
-                  <li className={`${oswald.className} flex items-start gap-3 text-white font-bold text-sm`}>
+                  <li className="flex items-start gap-3 text-white font-bold text-sm">
                     <div className="h-2 w-2 bg-[#68121f] rounded-full mt-1.5 shrink-0"></div>
                     Mais pessoas com prioridade nos ingressos
                   </li>
                 </ul>
-                <p className={`${oswald.className} text-[10px] md:text-xs text-gray-400 italic font-normal`}>*Valor por convidado: R$ 25,00/mês</p>
+                <p className="text-[10px] md:text-xs text-gray-400 italic font-normal">*Valor por convidado: R$ 25,00/mês</p>
               </div>
               <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
                 <img 
@@ -281,20 +290,20 @@ export default function Home() {
                   <h3 className={`${oswald.className} font-bold text-3xl md:text-4xl tracking-tighter`}>ARQUIBA 75%</h3>
                 </div>
                 <ul className="space-y-4 mb-10">
-                  <li className={`${oswald.className} flex items-start gap-3 text-gray-200 font-normal text-sm`}>
+                  <li className="flex items-start gap-3 text-gray-200 font-normal text-sm">
                     <div className="h-2 w-2 bg-[#185347] rounded-full mt-1.5 shrink-0"></div>
                     A forma mais fácil de trazer alguém para viver o Flu com você
                   </li>
-                  <li className={`${oswald.className} flex items-start gap-3 text-gray-200 font-normal text-sm`}>
+                  <li className="flex items-start gap-3 text-gray-200 font-normal text-sm">
                     <div className="h-2 w-2 bg-[#185347] rounded-full mt-1.5 shrink-0"></div>
                     Pode contratar 1 convidado
                   </li>
-                  <li className={`${oswald.className} flex items-start gap-3 text-gray-200 font-normal text-sm`}>
+                  <li className="flex items-start gap-3 text-gray-200 font-normal text-sm">
                     <div className="h-2 w-2 bg-[#185347] rounded-full mt-1.5 shrink-0"></div>
                     Pode cadastrar até 3 convidados
                   </li>
                 </ul>
-                <p className={`${oswald.className} text-[10px] md:text-xs text-gray-400 italic font-normal`}>*Valor por convidado: R$ 25,00/mês</p>
+                <p className="text-[10px] md:text-xs text-gray-400 italic font-normal">*Valor por convidado: R$ 25,00/mês</p>
               </div>
               <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
                 <img 
@@ -333,7 +342,7 @@ export default function Home() {
             <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#185347] px-10 md:px-14 py-5 md:py-7 rounded-sm text-xl md:text-3xl tracking-[0.1em] uppercase hover:bg-[#68121f] transition-all shadow-2xl hover:scale-105 mb-6 inline-block`}>
               Quero trazer meu convidado
             </a>
-            <p className={`${oswald.className} text-gray-300 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs drop-shadow-md`}>Leva menos de 1 minuto.</p>
+            <p className="text-gray-300 font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs drop-shadow-md">Leva menos de 1 minuto.</p>
           </div>
         </div>
       </section>
@@ -360,7 +369,7 @@ export default function Home() {
           <p className={`${oswald.className} font-bold uppercase tracking-[0.2em] text-lg md:text-xl mb-4`}>
             Fluminense Football Club - Sócio Futebol
           </p>
-          <p className={`${oswald.className} text-gray-500 text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold`}>
+          <p className="text-gray-500 text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">
             &copy; {new Date().getFullYear()} - O orgulho de ser tricolor. Todos os direitos reservados.
           </p>
         </div>

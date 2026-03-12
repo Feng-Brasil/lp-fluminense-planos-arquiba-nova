@@ -1,11 +1,11 @@
-import { Oswald } from 'next/font/google';
+import { Source_Sans_3 } from 'next/font/google';
 import { Metadata } from 'next';
 
-// Configuração da fonte Oswald - Removida a variação Fallback
-const oswald = Oswald({
+// Configuração da fonte Sans Pro (Source Sans 3 é a versão atualizada no Google Fonts)
+const sansPro = Source_Sans_3({
   subsets: ['latin'],
-  weight: ['200', '300', '400', '500', '600', '700'],
-  variable: '--font-oswald',
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-sans-pro',
   display: 'swap',
 });
 
@@ -19,20 +19,20 @@ export const metadata: Metadata = {
 export default function Home() {
   const REDIRECT_URL = "https://nense.com.br/minha-conta/lista-de-convidado";
 
-  // Estilo base para títulos gigantes usando apenas Oswald
+  // Estilo base para títulos gigantes usando Sans Pro
   const titleStyle = {
-    fontFamily: 'var(--font-oswald)',
-    fontWeight: 700,
+    fontFamily: 'var(--font-sans-pro)',
+    fontWeight: 900,
     color: 'rgb(244, 244, 244)',
     fontSize: '84px',
     lineHeight: '69px',
     fontStyle: 'normal',
   };
 
-  // Estilo ajustado para os títulos das seções internas usando apenas Oswald
+  // Estilo ajustado para os títulos das seções internas usando Sans Pro
   const sectionTitleStyle = {
-    fontFamily: 'var(--font-oswald)',
-    fontWeight: 700,
+    fontFamily: 'var(--font-sans-pro)',
+    fontWeight: 800,
     color: 'rgb(248, 248, 248)',
     fontSize: 'clamp(40px, 5vw, 72px)',
     lineHeight: '1.1',
@@ -42,7 +42,7 @@ export default function Home() {
   const buttonFontStyle = `font-bold`;
 
   return (
-    <main className={`${oswald.variable} font-oswald min-h-screen text-[rgb(248,248,248)] selection:bg-[#451021] selection:text-white overflow-x-hidden relative font-normal`} style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>
+    <main className={`${sansPro.variable} font-sans min-h-screen text-[rgb(248,248,248)] selection:bg-[#451021] selection:text-white overflow-x-hidden relative font-normal`} style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>
       {/* BACKGROUND GLOBAL COM FILTRO VERDE */}
       <div className="fixed inset-0 z-0">
         <img 
@@ -98,7 +98,7 @@ export default function Home() {
             >
               O FLU SE VIVE JUNTO!
             </h1>
-            <h1 className="font-bold md:hidden text-6xl tracking-tighter leading-[0.9] text-[rgb(244,244,244)] drop-shadow-2xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>
+            <h1 className="font-black md:hidden text-6xl tracking-tighter leading-[0.9] text-[rgb(244,244,244)] drop-shadow-2xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>
               O FLU SE VIVE JUNTO!
             </h1>
             
@@ -162,7 +162,7 @@ export default function Home() {
       <section className="relative min-h-[80vh] md:min-h-[90vh] w-full flex items-center justify-center z-10 bg-[#185347] backdrop-blur-xl py-12 md:py-20 border-y border-white/5">
         <div className="max-w-[1140px] mx-auto px-[15px] w-full">
           <div className="mb-8 md:mb-10">
-            <h2 className="font-bold text-[rgb(248,248,248)] tracking-[0.2em] text-lg md:text-xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>Como funciona o convidado:</h2>
+            <h2 className="font-extrabold text-[rgb(248,248,248)] tracking-[0.2em] text-lg md:text-xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>Como funciona o convidado:</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             <div className="flex flex-col space-y-5">
@@ -172,7 +172,7 @@ export default function Home() {
               >
                 Leve até 3 pessoas para todos os jogos
               </h3>
-              <h3 className="font-bold md:hidden text-4xl uppercase tracking-tighter leading-tight text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>
+              <h3 className="font-extrabold md:hidden text-4xl uppercase tracking-tighter leading-tight text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>
                 Leve até 3 pessoas para todos os jogos
               </h3>
               <div className="space-y-5 text-[rgb(248,248,248)]">
@@ -181,14 +181,14 @@ export default function Home() {
                 </p>
                 
                 <div className="space-y-2">
-                  <h4 className="font-bold text-[rgb(248,248,248)] uppercase tracking-widest text-xl" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>Como usar na prática:</h4>
+                  <h4 className="font-extrabold text-[rgb(248,248,248)] uppercase tracking-widest text-xl" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>Como usar na prática:</h4>
                   <p className="text-sm md:text-base leading-relaxed text-[rgb(248,248,248)] opacity-80">
                     Você cadastra uma lista com até 5 pessoas autorizadas e decide, a cada jogo, para quem comprar o ingresso extra. A quantidade de pessoas contratadas depende do seu plano.
                   </p>
                 </div>
 
                 <div className="bg-black/20 border-l-4 border-[#451021] p-5 space-y-1">
-                  <p className="font-bold text-2xl md:text-3xl text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>
+                  <p className="font-extrabold text-2xl md:text-3xl text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>
                     R$ 25 por mês por convidado contratado
                   </p>
                   <p className="text-xs text-[rgb(248,248,248)] opacity-60 font-medium italic">
@@ -213,7 +213,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
                 <div className="absolute bottom-8 left-8 right-8">
-                  <p className="font-bold text-lg uppercase tracking-[0.2em] text-[rgb(248,248,248)] opacity-90" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>A experiência completa de ser tricolor</p>
+                  <p className="font-extrabold text-lg uppercase tracking-[0.2em] text-[rgb(248,248,248)] opacity-90" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>A experiência completa de ser tricolor</p>
                 </div>
               </div>
             </div>
@@ -231,7 +231,7 @@ export default function Home() {
             >
               Seu plano agora vale ainda mais
             </h2>
-            <h2 className="font-bold md:hidden text-4xl uppercase tracking-tighter mb-6 drop-shadow-lg text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>
+            <h2 className="font-extrabold md:hidden text-4xl uppercase tracking-tighter mb-6 drop-shadow-lg text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>
               Seu plano agora vale ainda mais
             </h2>
             <p className="text-base md:text-xl text-[rgb(248,248,248)] max-w-3xl mx-auto drop-shadow-md font-normal leading-relaxed">
@@ -244,8 +244,8 @@ export default function Home() {
             <div className="bg-black/70 border-t-8 border-[#451021] rounded-b-xl shadow-2xl flex flex-col md:flex-row overflow-hidden">
               <div className="flex-1 p-8 md:p-10">
                 <div className="flex flex-col sm:flex-row justify-between items-start mb-8 gap-4">
-                  <h3 className="font-bold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>ARQUIBA 100%</h3>
-                  <span className="font-bold bg-[#451021] text-[rgb(248,248,248)] text-sm px-4 py-1.5 rounded whitespace-nowrap inline-block tracking-widest" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>MAIS COMPLETO</span>
+                  <h3 className="font-extrabold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>ARQUIBA 100%</h3>
+                  <span className="font-extrabold bg-[#451021] text-[rgb(248,248,248)] text-sm px-4 py-1.5 rounded whitespace-nowrap inline-block tracking-widest" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>MAIS COMPLETO</span>
                 </div>
                 <ul className="space-y-4 mb-10">
                   <li className="flex items-start gap-3 text-[rgb(248,248,248)] font-normal text-sm">
@@ -282,7 +282,7 @@ export default function Home() {
             <div className="bg-black/70 border-t-8 border-[#185347] rounded-b-xl shadow-2xl flex flex-col md:flex-row overflow-hidden">
               <div className="flex-1 p-8 md:p-10">
                 <div className="flex justify-between items-start mb-8">
-                  <h3 className="font-bold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>ARQUIBA 75%</h3>
+                  <h3 className="font-extrabold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>ARQUIBA 75%</h3>
                 </div>
                 <ul className="space-y-4 mb-10">
                   <li className="flex items-start gap-3 text-[rgb(248,248,248)] font-normal text-sm">
@@ -326,7 +326,7 @@ export default function Home() {
               >
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
-              <h3 className="font-bold md:hidden text-3xl uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>
+              <h3 className="font-extrabold md:hidden text-3xl uppercase tracking-tighter mb-8 max-w-4xl drop-shadow-2xl leading-tight text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>
                 A Libertadores está chegando. Quem vai estar ao seu lado quando o Maraca pulsar com o verde, branco e grená?
               </h3>
               <a href={REDIRECT_URL} className={`${buttonFontStyle} bg-[#451021] text-[rgb(248,248,248)] px-6 md:px-10 py-4 md:py-6 rounded-sm shadow-xl border border-white/10 inline-block`}>
@@ -358,7 +358,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="py-12 md:py-16 border-t border-white/10 bg-[#185347] backdrop-blur-md relative z-10">
         <div className="max-w-[1140px] mx-auto px-[15px] text-center">
-          <p className="font-bold uppercase tracking-[0.2em] text-lg md:text-xl mb-4 text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald)' }}>
+          <p className="font-extrabold uppercase tracking-[0.2em] text-lg md:text-xl mb-4 text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-sans-pro)' }}>
             Fluminense Football Club - Sócio Futebol
           </p>
           <p className="text-[rgb(248,248,248)] opacity-40 text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">

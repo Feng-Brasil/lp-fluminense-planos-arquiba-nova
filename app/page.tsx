@@ -267,7 +267,7 @@ export default function Home() {
                 </ul>
                 <p className="text-[10px] md:text-xs text-[rgb(248,248,248)] opacity-50 italic font-normal">*Valor por convidado: R$ 25,00/mês</p>
               </div>
-              <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
+              <div className="w-full md:w-[45%] h-48 md:h-auto rounded-lg overflow-hidden border border-white/10 md:-mr-16 lg:-mr-24 relative z-20">
                 <img 
                   src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066489568_bbbfe6968c_o.jpg" 
                   alt="Torcida Tricolor Arquiba 100%" 
@@ -297,7 +297,7 @@ export default function Home() {
                 </ul>
                 <p className="text-[10px] md:text-xs text-[rgb(248,248,248)] opacity-50 italic font-normal">*Valor por convidado: R$ 25,00/mês</p>
               </div>
-              <div className="w-full md:w-1/3 h-48 md:h-auto rounded-lg overflow-hidden border border-white/10">
+              <div className="w-full md:w-[45%] h-48 md:h-auto rounded-lg overflow-hidden border border-white/10 md:-mr-16 lg:-mr-24 relative z-20">
                 <img 
                   src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55067665758_fd737bdc80_jhgsfrd.jpg" 
                   alt="Torcida Tricolor Arquiba 75%" 

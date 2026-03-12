@@ -214,7 +214,6 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
                 <div className="absolute bottom-8 left-8 right-8">
-                  <div className="h-[3px] w-16 bg-[#451021] mb-4"></div>
                   <p className="font-bold text-lg uppercase tracking-[0.2em] text-[rgb(248,248,248)] opacity-90" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>A experiência completa de ser tricolor</p>
                 </div>
               </div>
@@ -354,11 +353,6 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="py-12 md:py-16 border-t border-white/10 bg-[#185347] backdrop-blur-md relative z-10">
         <div className="max-w-[1140px] mx-auto px-[15px] text-center">
-          <div className="flex justify-center gap-1 mb-8">
-            <span className="w-12 h-1 bg-[#451021]"></span>
-            <span className="w-12 h-1 bg-[#ffffff]"></span>
-            <span className="w-12 h-1 bg-[#185347]"></span>
-          </div>
           <p className="font-bold uppercase tracking-[0.2em] text-lg md:text-xl mb-4 text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
             Fluminense Football Club - Sócio Futebol
           </p>

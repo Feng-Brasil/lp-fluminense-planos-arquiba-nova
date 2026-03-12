@@ -17,15 +17,15 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const REDIRECT_URL = "https://nense.com.br/planos";
+  const REDIRECT_URL = "https://nense.com.br/minha-conta/lista-de-convidado";
 
-  // Estilo base para títulos gigantes - Oswald Bold com cor rgb(248, 248, 248)
+  // Estilo base para títulos gigantes - Family Oswald, Style normal, Weight 700, Color rgb(244, 244, 244), Size 84px, Line Height 69px
   const titleStyle = {
     fontFamily: 'var(--font-oswald), sans-serif',
     fontWeight: 700,
-    color: 'rgb(248, 248, 248)',
+    color: 'rgb(244, 244, 244)',
     fontSize: '84px',
-    lineHeight: '80px',
+    lineHeight: '69px',
     fontStyle: 'normal',
   };
 
@@ -99,7 +99,7 @@ export default function Home() {
             >
               O FLU SE VIVE JUNTO!
             </h1>
-            <h1 className="font-bold md:hidden text-6xl tracking-tighter leading-[0.9] text-[rgb(248,248,248)] drop-shadow-2xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
+            <h1 className="font-bold md:hidden text-6xl tracking-tighter leading-[0.9] text-[rgb(244,244,244)] drop-shadow-2xl uppercase" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>
               O FLU SE VIVE JUNTO!
             </h1>
             

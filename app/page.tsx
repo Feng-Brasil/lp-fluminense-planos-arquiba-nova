@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Home() {
   const REDIRECT_URL = "https://nense.com.br/minha-conta/lista-de-convidado";
 
-  // Estilo base para títulos gigantes - Family Oswald, Style normal, Weight 700, Color rgb(244, 244, 244), Size 84px, Line Height 69px
+  // Estilo base para títulos gigantes
   const titleStyle = {
     fontFamily: 'var(--font-oswald), sans-serif',
     fontWeight: 700,
@@ -29,7 +29,7 @@ export default function Home() {
     fontStyle: 'normal',
   };
 
-  // Estilo ajustado para os títulos das seções internas com cor rgb(248, 248, 248)
+  // Estilo ajustado para os títulos das seções internas
   const sectionTitleStyle = {
     fontFamily: 'var(--font-oswald), sans-serif',
     fontWeight: 700,
@@ -39,7 +39,6 @@ export default function Home() {
     fontStyle: 'normal',
   };
 
-  // Estilo para botões e elementos de navegação
   const buttonFontStyle = `font-bold`;
 
   return (
@@ -241,8 +240,9 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] mb-20 md:mb-32">
-            <div className="bg-black/70 border-t-8 border-[#451021] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
-              <div className="flex-1">
+            {/* BOX ARQUIBA 100% */}
+            <div className="bg-black/70 border-t-8 border-[#451021] rounded-b-xl shadow-2xl flex flex-col md:flex-row overflow-visible">
+              <div className="flex-1 p-8 md:p-10">
                 <div className="flex flex-col sm:flex-row justify-between items-start mb-8 gap-4">
                   <h3 className="font-bold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>ARQUIBA 100%</h3>
                   <span className="font-bold bg-[#451021] text-[rgb(248,248,248)] text-sm px-4 py-1.5 rounded whitespace-nowrap inline-block tracking-widest" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>MAIS COMPLETO</span>
@@ -267,17 +267,20 @@ export default function Home() {
                 </ul>
                 <p className="text-[10px] md:text-xs text-[rgb(248,248,248)] opacity-50 italic font-normal">*Valor por convidado: R$ 25,00/mês</p>
               </div>
-              <div className="w-full md:w-[45%] h-48 md:h-auto rounded-lg overflow-hidden border border-white/10 md:-mr-16 lg:-mr-24 relative z-20">
-                <img 
-                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066489568_bbbfe6968c_o.jpg" 
-                  alt="Torcida Tricolor Arquiba 100%" 
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-full md:w-[42%] h-64 md:h-auto relative">
+                <div className="md:absolute md:inset-y-6 md:-right-8 md:left-0 h-full md:h-[calc(100%-48px)]">
+                  <img 
+                    src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55066489568_bbbfe6968c_o.jpg" 
+                    alt="Torcida Tricolor Arquiba 100%" 
+                    className="w-full h-full object-cover rounded-lg border border-white/10 shadow-xl"
+                  />
+                </div>
               </div>
             </div>
 
-            <div className="bg-black/70 border-t-8 border-[#185347] p-8 md:p-12 rounded-b-xl shadow-2xl flex flex-col md:flex-row gap-8">
-              <div className="flex-1">
+            {/* BOX ARQUIBA 75% */}
+            <div className="bg-black/70 border-t-8 border-[#185347] rounded-b-xl shadow-2xl flex flex-col md:flex-row overflow-visible">
+              <div className="flex-1 p-8 md:p-10">
                 <div className="flex justify-between items-start mb-8">
                   <h3 className="font-bold text-3xl md:text-4xl tracking-tighter text-[rgb(248,248,248)]" style={{ fontStyle: 'normal', fontFamily: 'var(--font-oswald), sans-serif' }}>ARQUIBA 75%</h3>
                 </div>
@@ -297,12 +300,14 @@ export default function Home() {
                 </ul>
                 <p className="text-[10px] md:text-xs text-[rgb(248,248,248)] opacity-50 italic font-normal">*Valor por convidado: R$ 25,00/mês</p>
               </div>
-              <div className="w-full md:w-[45%] h-48 md:h-auto rounded-lg overflow-hidden border border-white/10 md:-mr-16 lg:-mr-24 relative z-20">
-                <img 
-                  src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55067665758_fd737bdc80_jhgsfrd.jpg" 
-                  alt="Torcida Tricolor Arquiba 75%" 
-                  className="w-full h-full object-cover object-[center_35%]"
-                />
+              <div className="w-full md:w-[42%] h-64 md:h-auto relative">
+                <div className="md:absolute md:inset-y-6 md:-right-8 md:left-0 h-full md:h-[calc(100%-48px)]">
+                  <img 
+                    src="https://fluminensefc.s3.us-east-1.amazonaws.com/2026/Fevereiro/0502/55067665758_fd737bdc80_jhgsfrd.jpg" 
+                    alt="Torcida Tricolor Arquiba 75%" 
+                    className="w-full h-full object-cover object-[center_35%] rounded-lg border border-white/10 shadow-xl"
+                  />
+                </div>
               </div>
             </div>
           </div>

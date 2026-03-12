@@ -5,12 +5,12 @@ import localFont from 'next/font/local';
 const balboa = localFont({
   src: [
     {
-      path: '../public/fonts/Balboa-Regular.woff2', // Certifique-se que o arquivo existe neste caminho
+      path: '../public/fonts/Balboa-Regular.woff2',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/fonts/Balboa-Bold.woff2', // Certifique-se que o arquivo existe neste caminho
+      path: '../public/fonts/Balboa-Bold.woff2',
       weight: '700',
       style: 'normal',
     },
@@ -18,7 +18,7 @@ const balboa = localFont({
   variable: '--font-balboa',
 });
 
-// Mantendo Montserrat apenas como fallback técnico, mas a interface usará Balboa
+// Mantendo Montserrat apenas como fallback técnico
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
